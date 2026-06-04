@@ -121,7 +121,6 @@ Learn more at [Tailwind CSS Documentation](https://tailwindcss.com/docs).
 ## 📝 Notes
 
 - This is a **frontend-only** repository. The UI components and pages are included here.
-- Backend services and APIs would be handled separately.
 - All styling is done with Tailwind CSS for consistency and maintainability.
 
 ## 🤝 Contributing
@@ -146,4 +145,3 @@ For questions or issues, please open an issue on the repository or contact the t
 
 ---
 
-**Built with ❤️ by the Bellecroft team**
