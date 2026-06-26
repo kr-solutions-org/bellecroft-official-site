@@ -1,14 +1,15 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Replace with your actual logo import
 // import BellecroftLogo from "../assets/bellecroft-logo.svg";
 const BellecrogtLogo = "LOGO_PLACEHOLDER";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Industries", href: "#industries" },
-  { label: "Insights", href: "#insights" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Industries", href: "/#industries" },
+  { label: "Insights", href: "/#insights" },
 ];
 
 const Navbar: React.FC = () => {
@@ -17,7 +18,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="absolute top-0 left-0 w-full px-6 md:px-12 py-6 flex items-center justify-between z-50 bg-transparent">
       {/* Logo */}
-      <a href="/" className="flex items-center gap-2 shrink-0">
+      <Link to="/" className="flex items-center gap-2 shrink-0">
         {/* Replace <img> src with your actual logo variable */}
         <img
           src={BellecrogtLogo}
@@ -43,28 +44,28 @@ const Navbar: React.FC = () => {
             </span>
           </span>
         </span>
-      </a>
+      </Link>
 
       {/* Desktop Nav Links — pill container */}
       <div className="hidden md:flex items-center gap-2 bg-white/95 backdrop-blur-md rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.05)] px-6 py-1.5">
         {NAV_LINKS.map((link) => (
-          <a
+          <Link
             key={link.label}
-            href={link.href}
+            to={link.href}
             className="px-5 py-2 text-gray-600 text-sm font-medium hover:text-gray-900 transition-colors rounded-full hover:bg-gray-50"
           >
             {link.label}
-          </a>
+          </Link>
         ))}
       </div>
 
       {/* CTA Button */}
-      <a
-        href="#contact"
+      <Link
+        to="/#contact"
         className="hidden md:inline-flex items-center px-8 py-2.5 rounded-full border border-[#E6A2A9] text-[#E6A2A9] text-sm font-medium hover:bg-[#E6A2A9] hover:text-white transition-all duration-200 shadow-sm bg-white/50 backdrop-blur-sm"
       >
         Contact Us
-      </a>
+      </Link>
 
       {/* Mobile hamburger */}
       <button
@@ -93,21 +94,21 @@ const Navbar: React.FC = () => {
       {mobileOpen && (
         <div className="absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-100 flex flex-col gap-1 py-4 px-6 md:hidden z-50">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
+              to={link.href}
               className="py-2.5 text-gray-700 text-sm font-medium border-b border-gray-50 hover:text-[#c9878a] transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"
             className="mt-3 inline-flex justify-center px-6 py-2.5 rounded-full border-2 border-[#c9878a] text-[#c9878a] text-sm font-semibold hover:bg-[#c9878a] hover:text-white transition-all duration-200"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       )}
     </nav>

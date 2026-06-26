@@ -1,5 +1,6 @@
 import React from "react";
-import WebMeetingImg from "../assets/WebMeeting.png";
+import { Link } from "react-router-dom";
+import AboutUsHero from "../assets/AboutUsHero.png";
 
 const AboutUs: React.FC = () => {
   return (
@@ -7,11 +8,11 @@ const AboutUs: React.FC = () => {
       
       {/* Absolute Background Image (Spans full height of AboutUs, going under the black strip) */}
       <div className="absolute top-0 left-0 bottom-0 w-full md:w-1/2 z-0">
-        <img src={WebMeetingImg} alt="Web Meeting" className="w-full h-full object-cover object-left" />
+        <img src={AboutUsHero} alt="Web Meeting" className="w-full h-full object-cover object-left" />
         {/* Fade gradient to blend smoothly into the white background on the right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/80 to-white"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/80 to-white"></div>
         {/* Bottom fade so it seamlessly transitions to the footer */}
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-50"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-white via-transparent to-transparent opacity-50"></div>
       </div>
       
       {/* Main Content (Image Spacer + Text) */}
@@ -26,7 +27,7 @@ const AboutUs: React.FC = () => {
             Trust Built Through<br />
             Expertise.
           </h2>
-          <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-8 max-w-[500px]">
+          <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-8 max-w-125">
             At <strong className="text-gray-900 font-bold">Bellecroft</strong>, we believe that strategic guidance is more than
             just advice, it's a partnership. Our consultants are senior leaders
             with decades of experience across finance, hospitality, and public
@@ -46,9 +47,9 @@ const AboutUs: React.FC = () => {
             ))}
           </ul>
 
-          <a href="#about" className="text-[#E6A2A9] font-bold text-[14px] md:text-[15px] hover:text-[#d68a91] transition-colors w-max">
+          <Link to="/about" className="text-[#E6A2A9] font-bold text-[14px] md:text-[15px] hover:text-[#d68a91] transition-colors w-max">
             Learn More About Us
-          </a>
+          </Link>
         </div>
       </div>
 
