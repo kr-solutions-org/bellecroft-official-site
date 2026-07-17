@@ -14,7 +14,7 @@ const TestimonialCTASection: React.FC = () => {
       <div className="relative z-10 w-full max-w-5xl flex flex-col items-center justify-center gap-8 md:gap-12 h-full">
         
         {/* Testimonial Card */}
-        <div className="w-full bg-white rounded-[2rem] shadow-[0_8px_40px_rgb(0,0,0,0.06)] flex flex-col md:flex-row overflow-hidden relative min-h-[300px]">
+        <div className="w-full bg-white rounded-4xl shadow-[0_8px_40px_rgb(0,0,0,0.06)] flex flex-col md:flex-row overflow-hidden relative min-h-[300px]">
           
           {/* Left - Person Silhouette Placeholder */}
           <div className="w-full md:w-[45%] bg-gray-300 relative min-h-[250px] md:min-h-full flex items-center justify-center">

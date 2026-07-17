@@ -58,9 +58,9 @@ const CoreOfferings: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 max-w-7xl mx-auto w-full h-full">
           
           {/* Card 1 */}
-          <div className="flex flex-col h-full min-h-0">
+          <div className="group flex flex-col h-full min-h-0 cursor-pointer hover:shadow-xl transition-shadow duration-300">
             {/* Image Box */}
-            <div className="relative w-full flex-1 min-h-0 bg-gray-200 overflow-hidden grayscale">
+            <div className="relative w-full flex-1 min-h-0 bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
               <div className="absolute inset-0">
                 <img src={StrategicConsultingImg} alt="Strategic Consulting" className="w-full h-full object-cover object-top" />
               </div>
@@ -85,8 +85,8 @@ const CoreOfferings: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="flex flex-col h-full min-h-0">
-            <div className="relative w-full flex-1 min-h-0 bg-gray-300 overflow-hidden grayscale">
+          <div className="group flex flex-col h-full min-h-0 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="relative w-full flex-1 min-h-0 bg-gray-300 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
               <div className="absolute inset-0">
                 <img src={CorporateTrainingImg} alt="Corporate Training" className="w-full h-full object-cover object-top" />
               </div>
@@ -105,8 +105,8 @@ const CoreOfferings: React.FC = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="flex flex-col h-full min-h-0">
-            <div className="relative w-full flex-1 min-h-0 bg-gray-200 overflow-hidden grayscale">
+          <div className="group flex flex-col h-full min-h-0 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <div className="relative w-full flex-1 min-h-0 bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
               <div className="absolute inset-0">
                 <img src={ExecutiveCoachingImg} alt="Executive Coaching" className="w-full h-full object-cover object-top" />
               </div>
