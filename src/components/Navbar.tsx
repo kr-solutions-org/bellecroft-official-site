@@ -7,9 +7,9 @@ const BellecrogtLogo = "LOGO_PLACEHOLDER";
 
 const NAV_LINKS = [
   { label: "About", href: "/about" },
-  { label: "Services", href: "/#services" },
-  { label: "Industries", href: "/#industries" },
-  { label: "Insights", href: "/#insights" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/industries" },
+  { label: "Insights", href: "/insights" },
 ];
 
 const Navbar: React.FC = () => {
