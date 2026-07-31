@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
 
       {/* CTA Button */}
       <Link
-        to="/#contact"
+        to="/contact"
         className="hidden md:inline-flex items-center px-8 py-2.5 rounded-full border border-[#E6A2A9] text-[#E6A2A9] text-sm font-medium hover:bg-[#E6A2A9] hover:text-white transition-all duration-200 shadow-sm bg-white/50 backdrop-blur-sm"
       >
         Contact Us
@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
             </Link>
           ))}
           <Link
-            to="/#contact"
+            to="/contact"
             className="mt-3 inline-flex justify-center px-6 py-2.5 rounded-full border-2 border-[#c9878a] text-[#c9878a] text-sm font-semibold hover:bg-[#c9878a] hover:text-white transition-all duration-200"
           >
             Contact Us

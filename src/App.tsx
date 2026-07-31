@@ -5,6 +5,9 @@ import AboutUsPage from './pages/AboutUsPage'
 import ServicesPage from './pages/ServicesPage'
 import IndustriesPage from './pages/IndustriesPage'
 import InsightsPage from './pages/InsightsPage'
+import MethodologyPage from './pages/MethodologyPage'
+import ContactPage from './pages/ContactPage'
+import TeamPage from './pages/TeamPage'
 
 function App() {
   return(
@@ -15,6 +18,9 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/industries" element={<IndustriesPage />} />
         <Route path="/insights" element={<InsightsPage />} />
+        <Route path="/methodology" element={<MethodologyPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/team" element={<TeamPage />} />
       </Routes>
     </Router>
   )

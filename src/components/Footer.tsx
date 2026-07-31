@@ -1,20 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import BellecroftLogo from '../assets/Bellcroft_Logo.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="shrink-0 w-full bg-white px-8 md:px-16 lg:px-28 pt-8 pb-6 flex flex-col z-10 relative">
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-8 mb-8">
+    <footer className="shrink-0 w-full bg-white px-8 md:px-16 lg:px-28 pt-6 pb-4 flex flex-col z-10 relative">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-6 mb-6">
         
         {/* Column 1 & 2: Logo & Description */}
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 mb-4">
-            {/* Simplified Crown/b Logo SVG placeholder based on design */}
-            <div className="text-[#E6A2A9] font-serif text-3xl font-bold flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#E6A2A9]">
-              b
-            </div>
-            <span className="text-2xl font-light text-[#E6A2A9] tracking-tight">bellecroft</span>
+          <div className="flex items-center mb-4">
+            <img src={BellecroftLogo} alt="Bellecroft Logo" className="h-14 w-auto object-contain" />
           </div>
-          <p className="text-gray-400 text-[13px] leading-relaxed max-w-[280px] mb-6 font-medium">
+          <p className="text-gray-400 text-[13px] leading-relaxed max-w-[280px] mb-4 font-medium">
             Cultivating growth through elegant strategy and
             expert professional development.
           </p>
@@ -30,8 +28,8 @@ const Footer: React.FC = () => {
         <div className="flex flex-col gap-3 text-[13px] font-medium">
           <h4 className="font-bold text-[11px] uppercase tracking-wider text-gray-900 mb-2">Company</h4>
           <a href="#" className="text-gray-500 hover:text-gray-900 transition-colors">Our Story</a>
-          <a href="#" className="text-gray-500 hover:text-gray-900 transition-colors">Team &amp; Experts</a>
-          <a href="#" className="text-gray-500 hover:text-gray-900 transition-colors">Methodology</a>
+          <Link to="/team" className="text-gray-500 hover:text-gray-900 transition-colors">Team &amp; Experts</Link>
+          <Link to="/methodology" className="text-gray-500 hover:text-gray-900 transition-colors">Methodology</Link>
           <a href="#" className="text-gray-500 hover:text-gray-900 transition-colors">Careers</a>
         </div>
 
@@ -69,7 +67,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="border-t border-gray-200 pt-4 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-[12px] text-gray-500 font-medium">© 2026 Bellecroft. All rights reserved.</p>
         <div className="flex gap-8 text-[12px] text-gray-500 font-medium">
           <a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
