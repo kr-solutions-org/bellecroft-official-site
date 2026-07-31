@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SkyscraperBG from "../assets/SkycraperBG.png";
 
 const GlobalWisdom: React.FC = () => {
@@ -46,12 +47,12 @@ const GlobalWisdom: React.FC = () => {
             We don't just apply foreign frameworks. We adapt international best practices to the unique cultural and economic landscape of the Maldives, ensuring solutions that actually work.
           </p>
 
-          <a
-            href="#methodology"
+          <Link
+            to="/methodology"
             className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#d68a91] transition-colors duration-200 shadow-sm"
           >
             Explore Our Methodology
-          </a>
+          </Link>
           
         </div>
       </div>

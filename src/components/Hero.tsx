@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroBG from "../assets/HeroBG.png";
 import HeroPerson from "../assets/HeroPerson.png";
 
@@ -76,21 +77,21 @@ const HeroSection: React.FC = () => {
 
           {/* CTA row */}
           <div className="flex items-center gap-6 flex-wrap">
-            <a
-              href="#contact"
-              className="inline-flex items-center px-8 py-3.5 bg-gray-900 text-white text-sm font-semibold rounded-xl hover:bg-gray-700 transition-colors duration-200 shadow-md"
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#2B2A2A] text-white text-[15px] font-bold rounded-xl hover:bg-[#404040] transition-colors duration-200 shadow-sm"
             >
               Get in Touch
-            </a>
-            <a
-              href="#story"
+            </Link>
+            <Link
+              to="/team"
               className="inline-flex items-center gap-2 text-sm font-semibold text-gray-800 hover:text-[#c9878a] transition-colors duration-200 group"
             >
               Our Story
               <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
                 →
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
