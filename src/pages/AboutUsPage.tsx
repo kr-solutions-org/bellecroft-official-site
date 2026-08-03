@@ -23,8 +23,8 @@ const AboutUsPage: React.FC = () => {
         {/* Title */}
         <div className="absolute top-32 md:top-36 left-0 w-full z-10 text-center">
           <h1 className="text-6xl md:text-[5.5rem] font-black tracking-tight leading-none">
-            <span className="text-[#2c2c2c]">Cultivated</span><br/>
-            <span className="text-[#E6A2A9]">Growth.</span>
+            <span className="text-[#2c2c2c]">Building Capability</span><br/>
+            <span className="text-[#E6A2A9]">Creating Impact.</span>
           </h1>
         </div>
 
@@ -44,10 +44,14 @@ const AboutUsPage: React.FC = () => {
         <div className="absolute bottom-0 left-0 w-full z-20">
           <div className="w-full bg-linear-to-t from-[#e9ebed] via-[#e9ebed]/90 to-transparent pt-24 pb-8 px-6 text-center">
             <h3 className="text-[#3b3b4f] font-bold text-lg md:text-[22px] mb-2 max-w-4xl mx-auto">
-              We define strategic futures by blending global excellence with deep local insights.
+              Bellecroft was established to help organisations and leaders navigate complexity with clarity, confidence, and purpose
             </h3>
-            <p className="text-[#848496] text-sm md:text-base font-medium max-w-4xl mx-auto">
-              BellaCroft is more than consulting; it's an architectural approach to corporate evolution.
+            <p className="text-[#848496] text-sm md:text-base text-justify font-medium max-w-4xl mx-auto">
+              In today’s rapidly evolving environment, organisations require more than advice. They need trusted partners who understand both strategic priorities and operational realities.
+Bellecroft was founded to bridge that gap.
+Through strategic advisory, leadership development, professional training, and organisational support, we help organisations strengthen capability, improve performance, and achieve sustainable success.
+Rooted in the Maldives and informed by international best practices, Bellecroft provides practical solutions tailored to each organisation’s unique context.
+
             </p>
           </div>
         </div>

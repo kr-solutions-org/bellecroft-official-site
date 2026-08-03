@@ -28,8 +28,8 @@ const GlobalWisdom: React.FC = () => {
               <span 
                 className="text-[clamp(3rem,5vw,4.5rem)] text-[#E6A2A9]"
                 style={{
-                  fontFamily: "'Caveat', 'Pacifico', 'Dancing Script', cursive",
-                  fontWeight: 400,
+                  fontFamily: "'Inter', system-ui, sans-serif",
+                  fontWeight: 600,
                 }}
               >
                 Global Wisdom

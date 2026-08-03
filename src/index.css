@@ -13,6 +13,16 @@
     --text-white: #FFFFFF;
     --text-black-muted: #666666;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+  }
 }
 
 @layer utilities {

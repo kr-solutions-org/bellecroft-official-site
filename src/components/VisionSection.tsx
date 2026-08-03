@@ -17,9 +17,8 @@ const VisionSection: React.FC = () => {
 
         {/* Top Right - Content */}
         <div className="w-full md:w-1/2 h-1/2 md:h-full bg-[#E6A2A9] p-6 md:p-12 lg:p-24 flex flex-col justify-center text-white">
-          <h2 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold mb-4 md:mb-8 relative inline-block self-start">
-            <span className="relative z-10">A Vision for Excellence</span>
-            <span className="absolute bottom-1 left-0 w-16 md:w-24 h-0.5 md:h-0.75 bg-white z-0" />
+          <h2 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold mb-4 md:mb-8 self-start">
+            A Vision for Excellence
           </h2>
           <p className="text-sm md:text-base lg:text-[17px] mb-3 md:mb-6 leading-relaxed opacity-90 font-medium">
             Founded on the principles of precision and strategic foresight, BelleCroft emerged to bridge the gap between abstract corporate theory and tangible operational success.
@@ -36,27 +35,16 @@ const VisionSection: React.FC = () => {
         {/* Bottom Left - Overlapping Logo Box */}
         <div className="w-full md:w-1/2 h-1/2 md:h-full relative flex items-center justify-center pointer-events-none">
           {/* This box is positioned to overlap the top row */}
-          <div className="absolute -top-7.5 md:-top-20 left-1/2 md:left-[55%] -translate-x-1/2 w-[70%] max-w-100 aspect-4/3 bg-white border-10 md:border-20 border-[#E6A2A9] flex items-center justify-center p-4 md:p-8 z-20 pointer-events-auto shadow-sm">
+          <div className="absolute -top-7.5 md:-top-20 left-1/2 md:left-[55%] -translate-x-1/2 w-[70%] max-w-100 aspect-4/3 bg-white flex items-center justify-center p-4 md:p-8 z-20 pointer-events-auto shadow-sm">
             {/* StrEdge Logo Placeholder */}
-            <div className="flex items-center gap-1 scale-75 md:scale-100">
-              <div className="w-10 md:w-14 h-12 md:h-16 relative flex flex-col justify-between py-1">
-                 <div className="w-full h-2 md:h-3 border-2 border-gray-800 rounded-sm skew-x-12 transform -translate-x-1" />
-                 <div className="w-full h-2 md:h-3 border-2 border-gray-800 rounded-sm skew-x-12" />
-                 <div className="w-full h-2 md:h-3 border-2 border-[#3caaf0] rounded-sm skew-x-12 transform translate-x-1" />
-              </div>
-              <div className="text-3xl md:text-5xl font-medium tracking-tight text-gray-900 ml-2 md:ml-4 font-sans">
-                str<span className="text-[#3caaf0]">e</span>dge
-              </div>
-            </div>
+            <img src="/path/to/StrEdgeLogo.png" alt="StrEdge Logo" className="w-3/4 h-auto object-contain" />
           </div>
         </div>
 
         {/* Bottom Right - Content */}
         <div className="w-full md:w-1/2 h-1/2 md:h-full p-6 md:p-12 lg:p-24 flex flex-col justify-center relative z-10">
-          <h3 className="text-xl md:text-3xl lg:text-[2.2rem] font-bold text-gray-900 mb-4 md:mb-8 relative inline-block self-start">
+          <h3 className="text-xl md:text-3xl lg:text-[2.2rem] font-bold text-gray-900 mb-4 md:mb-8 self-start">
             The StrEdge Connection
-            {/* Small pink underline */}
-            <span className="absolute -bottom-2 left-0 w-12 md:w-16 h-1 bg-[#E6A2A9]" />
           </h3>
           <p className="text-[#848496] text-xs md:text-sm lg:text-[15px] leading-relaxed max-w-xl font-medium">
             Our strategic alliance with StrEdge Advisory represents a fusion of powerhouses. By integrating their analytical depth with our developmental expertise, we offer a 360-degree transformation suite that is unparalleled in the Maldives and beyond. Together, we navigate complexity with elegant simplicity.

@@ -37,12 +37,12 @@ const CoreOfferings: React.FC = () => {
                 Offerings
               </span>
             </h2>
-            <p className="text-white/90 text-sm md:text-lg leading-relaxed max-w-md mb-4 md:mb-6 font-light">
+            <p className="text-white/90 text-sm md:text-[20px] leading-relaxed max-w-md mb-4 md:mb-6 font-light">
               We deliver specialized expertise through a methodology that
             </p>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 text-[13px] md:text-[14px] font-bold text-gray-900 hover:text-gray-700 transition-colors group"
+              className="inline-flex items-center gap-2 text-[13px] md:text-[20px] font-bold text-gray-900 hover:text-gray-700 transition-colors group"
             >
               See All Services
               <span className="transition-transform duration-200 group-hover:translate-x-1">
@@ -77,10 +77,10 @@ const CoreOfferings: React.FC = () => {
                   Consulting
                 </span>
               </h3>
-              <p className="text-gray-600 text-[12px] md:text-[15px] leading-relaxed max-w-xs mx-auto hidden md:block">
+              {/* <p className="text-gray-600 text-[12px] md:text-[15px] leading-relaxed max-w-xs mx-auto hidden md:block">
                 Bespoke organizational strategies designed to navigate complex
                 market dynamics and drive sustainable growth.
-              </p>
+              </p> */}
             </div>
           </div>
 
