@@ -25,15 +25,14 @@ const HeroSection: React.FC = () => {
       {/* ── Main content row ───────────────────────────────────── */}
       <div className="flex-1 flex flex-col md:flex-row relative">
         {/* Faint Background Text */}
-        <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 flex flex-col gap-0 leading-[0.8] opacity-3">
-          <span className="text-[22vw] font-black text-gray-900 uppercase mt-12 tracking-tighter">BELLECROFT</span>
-          <span className="text-[22vw] font-black text-gray-900 uppercase tracking-tighter">BELLECROFT</span>
+        <div className="absolute top-1/2 -translate-y-1/2 right-0 pointer-events-none select-none z-0 opacity-[0.04]">
+          <span className="text-[60vw] md:text-[40vw] font-black text-gray-900 leading-none">b</span>
         </div>
         {/* LEFT — text content */}
         <div className="relative z-10 flex flex-col justify-center px-8 md:px-16 lg:px-28 pt-32 pb-10 md:py-0 w-full md:w-[60%]">
           {/* Eyebrow */}
-          <p className="text-[15px] font-bold tracking-[0.25em] uppercase text-gray-800">
-            Professional Development &amp; Strategy
+          <p className="text-[15px] font-bold tracking-[0.25em] uppercase text-gray-800 mb-2">
+            Professional Development &amp; Strategic Advisory
           </p>
 
           {/* Headline */}
@@ -53,13 +52,13 @@ const HeroSection: React.FC = () => {
                   letterSpacing: "0.02em",
                 }}
               >
-                LEADERS
+                LEADERS.
               </span>
             </span>
 
             {/* Line 3 */}
             <span className="text-[48px] font-bold">
-                Strengthening Organisations
+                Strengthening Organisations.
             </span>
           </h1>
 
