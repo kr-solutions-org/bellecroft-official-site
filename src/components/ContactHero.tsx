@@ -43,9 +43,9 @@ const ContactHero: React.FC = () => {
               <span 
                 className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9]"
                 style={{
-                  fontFamily: "'Caveat', 'Pacifico', 'Dancing Script', cursive",
-                  fontWeight: 300,
-                  fontStyle: 'italic'
+                  fontFamily: "'Inter', system-ui, sans-serif",
+                  fontWeight: 500,
+                  fontStyle: 'normal'
                 }}
               >
                 Strategic

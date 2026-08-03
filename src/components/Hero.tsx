@@ -16,10 +16,6 @@ const partners: { name: string; logo?: string }[] = [
   { name: "Blue Ocean Partners" },
 ];
 
-// ─── Utility: thin marquee-like scroll for partner strip ─────────
-// Pure CSS via Tailwind's animate-[marquee] — add the keyframe in
-// your tailwind.config.js (see comment at bottom of this file).
-
 const HeroSection: React.FC = () => {
   return (
     <section 
@@ -28,51 +24,48 @@ const HeroSection: React.FC = () => {
     >
       {/* ── Main content row ───────────────────────────────────── */}
       <div className="flex-1 flex flex-col md:flex-row relative">
+        {/* Faint Background Text */}
+        <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 flex flex-col gap-0 leading-[0.8] opacity-3">
+          <span className="text-[22vw] font-black text-gray-900 uppercase mt-12 tracking-tighter">BELLECROFT</span>
+          <span className="text-[22vw] font-black text-gray-900 uppercase tracking-tighter">BELLECROFT</span>
+        </div>
         {/* LEFT — text content */}
         <div className="relative z-10 flex flex-col justify-center px-8 md:px-16 lg:px-28 pt-32 pb-10 md:py-0 w-full md:w-[60%]">
           {/* Eyebrow */}
-          <p className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-800 mb-5">
+          <p className="text-[15px] font-bold tracking-[0.25em] uppercase text-gray-800">
             Professional Development &amp; Strategy
           </p>
 
           {/* Headline */}
           <h1 className="leading-none mb-8">
             {/* Line 1 */}
-            <span className="block text-[clamp(3rem,7vw,6rem)] font-black text-gray-900 leading-[1.05] tracking-tight">
-              Elevating
+            <span className="block text-[100px] font-black text-gray-900">
+              Empowering
             </span>
 
-            {/* Line 2 — accent bar + script word */}
-            <span className="relative block my-2 w-max">
-              <span className="absolute top-[15%] bottom-[15%] left-[-100vw] -right-5 bg-[#E6A2A9] skew-y-0 z-0" />
+            {/* Line 2 — accent word */}
+            <span className="block w-max">
               <span
-                className="relative z-10 block text-[clamp(4rem,9vw,8rem)] text-white leading-none pr-4 pl-2"
+                className="relative block text-[clamp(4rem,9vw,8rem)] text-[#E6A2A9] mt-8 mb-8"
                 style={{
-                  fontFamily: "'Caveat', 'Pacifico', 'Dancing Script', cursive",
-                  fontWeight: 400,
+                  fontFamily: "'Inter', system-ui, sans-serif",
+                  fontWeight: 700,
                   letterSpacing: "0.02em",
                 }}
               >
-                LEADERSHIP
+                LEADERS
               </span>
             </span>
 
             {/* Line 3 */}
-            <span className="block text-[clamp(3rem,7vw,6rem)] leading-[1.05] tracking-tight mt-2">
-              <span className="text-[#E6A2A9] font-bold">
-                Across
-              </span>{" "}
-              <span className="text-gray-800 font-light" style={{ fontWeight: 300 }}>
-                Borders
-              </span>
+            <span className="text-[48px] font-bold">
+                Strengthening Organisations
             </span>
           </h1>
 
           {/* Body copy */}
-          <p className="text-gray-600 text-base md:text-[17px] leading-relaxed max-w-md mb-10">
-            Bellecroft combines international excellence with local Maldivian
-            insights to deliver transformative consulting and corporate training
-            solutions.
+          <p className="text-gray-600 text-base md:text-[20px] leading-relaxed mb-8">
+            Bellecroft helps organisations build capability, develop leadership, and navigate change through strategic advisory, professional development, and tailored corporate training solutions.
           </p>
 
           {/* CTA row */}
@@ -81,13 +74,13 @@ const HeroSection: React.FC = () => {
               to="/contact"
               className="inline-flex items-center justify-center px-8 py-3.5 bg-[#2B2A2A] text-white text-[15px] font-bold rounded-xl hover:bg-[#404040] transition-colors duration-200 shadow-sm"
             >
-              Get in Touch
+              Contact Us
             </Link>
             <Link
               to="/team"
               className="inline-flex items-center gap-2 text-sm font-semibold text-gray-800 hover:text-[#c9878a] transition-colors duration-200 group"
             >
-              Our Story
+              Explore Our Services 
               <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
                 →
               </span>

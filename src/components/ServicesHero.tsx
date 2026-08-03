@@ -34,10 +34,10 @@ const ServicesHero: React.FC = () => {
             <span 
               className="text-transparent text-[clamp(4rem,7vw,6.5rem)] leading-[0.8] mt-2 mr-2"
               style={{
-                fontFamily: "'Caveat', 'Pacifico', 'Dancing Script', cursive",
+                fontFamily: "'Inter', system-ui, sans-serif",
                 WebkitTextStroke: "1px #E6A2A9",
-                fontWeight: 300,
-                fontStyle: "italic",
+                fontWeight: 600,
+                fontStyle: "normal",
               }}
             >
               Growth

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 // Replace with your actual logo import
 // import BellecroftLogo from "../assets/bellecroft-logo.svg";
-const BellecrogtLogo = "LOGO_PLACEHOLDER";
+import BellecroftLogo from "../assets/logo.png";
 
 const NAV_LINKS = [
   { label: "About", href: "/about" },
@@ -16,34 +16,15 @@ const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 w-full px-6 md:px-12 py-6 flex items-center justify-between z-50 bg-transparent">
+    <nav className="absolute top-0 left-0 w-full md:px-12 py-4 flex items-center justify-between z-50 bg-transparent">
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2 shrink-0">
         {/* Replace <img> src with your actual logo variable */}
         <img
-          src={BellecrogtLogo}
+          src={BellecroftLogo}
           alt="Bellecroft Logo"
-          className="h-12 w-auto"
-          onError={(e) => {
-            // Fallback inline SVG-style placeholder when no image provided
-            (e.currentTarget as HTMLImageElement).style.display = "none";
-          }}
-        />
-        {/* Inline fallback logo — remove once real logo is provided */}
-        <span className="flex items-center gap-3">
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-t-lg rounded-b-full border-2 border-[#E6A2A9] text-[#E6A2A9] font-bold text-lg font-serif relative">
-            <span className="absolute -top-3 text-xs">👑</span>
-            b
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span className="text-[#E6A2A9] font-medium text-2xl tracking-wide lowercase font-sans">
-              bellecroft
-            </span>
-            <span className="text-[#E6A2A9]/60 text-[8px] uppercase tracking-[0.2em] font-sans font-medium">
-              PVT LTD
-            </span>
-          </span>
-        </span>
+          className="h-22 w-auto"
+        />      
       </Link>
 
       {/* Desktop Nav Links — pill container */}

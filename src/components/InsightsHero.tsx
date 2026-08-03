@@ -17,10 +17,10 @@ const InsightsHero: React.FC = () => {
           <span 
             className="text-transparent text-[clamp(3.5rem,7vw,6.5rem)] leading-[0.9] mt-[-0.1em]"
             style={{
-              fontFamily: "'Caveat', 'Pacifico', 'Dancing Script', cursive",
+              fontFamily: "'Inter', system-ui, sans-serif",
               WebkitTextStroke: "1.5px #E6A2A9",
-              fontWeight: 300,
-              fontStyle: "italic",
+              fontWeight: 600,
+              fontStyle: "normal",
             }}
           >
             Excellence

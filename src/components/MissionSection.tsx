@@ -9,9 +9,8 @@ const MissionSection: React.FC = () => {
         
         {/* Left: Our Mission */}
         <div className="w-full md:w-[60%] h-1/2 md:h-full bg-[#E6A2A9] p-8 md:p-16 lg:p-24 flex flex-col justify-center text-gray-900">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-white relative inline-block self-start">
-            <span className="relative z-10">Our Mission</span>
-            <span className="absolute bottom-0 left-0 w-[45%] h-1 bg-white z-0" />
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-white self-start">
+            Our Mission
           </h2>
           <h3 className="text-xl md:text-3xl lg:text-4xl font-bold italic mb-4 md:mb-6 max-w-2xl leading-tight text-gray-800">
             Empowering leaders to architect resilient futures through tailored
@@ -41,9 +40,8 @@ const MissionSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center mb-6 md:mb-10 lg:mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 relative inline-block">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Why <span className="relative z-10">Belle</span>Croft?
-            <span className="absolute -bottom-2 left-16 w-14 h-1 bg-[#E6A2A9]" />
           </h2>
           <p className="text-gray-500 text-sm md:text-base max-w-3xl mx-auto font-medium">
             Our methodology is built on four pillars that ensure every engagement yields measurable, high-impact results.
