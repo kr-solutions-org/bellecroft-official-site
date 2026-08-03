@@ -1,4 +1,5 @@
 import React from 'react';
+import StredgeLogo from '../assets/StredgeLogo.png';
 
 const VisionSection: React.FC = () => {
   return (
@@ -37,7 +38,7 @@ const VisionSection: React.FC = () => {
           {/* This box is positioned to overlap the top row */}
           <div className="absolute -top-7.5 md:-top-20 left-1/2 md:left-[55%] -translate-x-1/2 w-[70%] max-w-100 aspect-4/3 bg-white flex items-center justify-center p-4 md:p-8 z-20 pointer-events-auto shadow-sm">
             {/* StrEdge Logo Placeholder */}
-            <img src="/path/to/StrEdgeLogo.png" alt="StrEdge Logo" className="w-3/4 h-auto object-contain" />
+            <img src={StredgeLogo} alt="StrEdge Logo" className="w-3/4 h-auto object-contain" />
           </div>
         </div>
 

@@ -22,29 +22,23 @@ const GlobalWisdom: React.FC = () => {
           
           <h2 className="leading-[1.15] mb-6 flex flex-col items-end">
             <span className="block text-[clamp(2.2rem,4vw,3.5rem)] font-black text-[#2B2A2A] tracking-tight">
-              A Blend of
+              Local Understanding.
             </span>
             <div className="flex items-baseline gap-2 md:gap-3 flex-wrap justify-end">
               <span 
-                className="text-[clamp(3rem,5vw,4.5rem)] text-[#E6A2A9]"
+                className="text-[clamp(2.5rem,4vw,4rem)] text-[#E6A2A9]"
                 style={{
                   fontFamily: "'Inter', system-ui, sans-serif",
                   fontWeight: 600,
                 }}
               >
-                Global Wisdom
-              </span>
-              <span className="text-[clamp(2.2rem,4vw,3.5rem)] font-medium text-[#2B2A2A] tracking-tight">
-                and
+                Global Perspective.
               </span>
             </div>
-            <span className="block text-[clamp(2.2rem,4vw,3.5rem)] font-black text-[#2B2A2A] tracking-tight">
-              Local Insight.
-            </span>
           </h2>
 
           <p className="text-gray-800 text-base md:text-[1.1rem] leading-relaxed max-w-[500px] mb-8 font-medium">
-            We don't just apply foreign frameworks. We adapt international best practices to the unique cultural and economic landscape of the Maldives, ensuring solutions that actually work.
+            Bellecroft works closely with StrEdge Advisory as its international strategic partner. This collaboration enables our clients to benefit from broader perspectives, specialised expertise, and internationally informed approaches while maintaining solutions that remain practical and relevant to local contexts.
           </p>
 
           <Link
