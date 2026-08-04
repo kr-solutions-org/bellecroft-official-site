@@ -36,7 +36,7 @@ const TestimonialCTASection: React.FC = () => {
             
             <div className="relative z-10 mt-6 md:mt-8">
               <p className="text-gray-800 text-lg md:text-xl lg:text-[22px] leading-relaxed font-medium mb-8">
-                <span className="font-bold text-gray-900">BelleCroft</span> <span className="italic">transformed our board's approach to risk. Their insight was not just deep, it was actionable and immediate.</span>
+                <span className="font-bold text-gray-900">Bellecroft</span> <span className="italic">transformed our board's approach to risk. Their insight was not just deep, it was actionable and immediate.</span>
               </p>
               
               <div className="flex items-center justify-between">
