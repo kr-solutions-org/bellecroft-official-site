@@ -22,7 +22,7 @@ const VisionSection: React.FC = () => {
             A Vision for Excellence
           </h2>
           <p className="text-sm md:text-base lg:text-[17px] mb-3 md:mb-6 leading-relaxed opacity-90 font-medium">
-            Founded on the principles of precision and strategic foresight, BelleCroft emerged to bridge the gap between abstract corporate theory and tangible operational success.
+            Founded on the principles of precision and strategic foresight, Bellecroft emerged to bridge the gap between abstract corporate theory and tangible operational success.
           </p>
           <p className="text-sm md:text-base lg:text-[17px] leading-relaxed opacity-90 font-medium">
             Our journey began with a simple question: How can we cultivate lasting growth in an ever-shifting global landscape?

@@ -33,13 +33,13 @@ const MissionSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Half - Why BelleCroft */}
+      {/* Bottom Half - Why Bellecroft */}
       <div className="flex-1 flex flex-col w-full min-h-0 items-center justify-center p-4 md:p-8 lg:p-12">
         
         {/* Header */}
         <div className="text-center mb-6 md:mb-10 lg:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why <span className="relative z-10">Belle</span>Croft?
+            Why <span className="relative z-10">Belle</span>croft?
           </h2>
           <p className="text-gray-500 text-sm md:text-base max-w-3xl mx-auto font-medium">
             Our methodology is built on four pillars that ensure every engagement yields measurable, high-impact results.
