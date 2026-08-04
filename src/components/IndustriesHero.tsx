@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SkycraperBG from '../assets/SkycraperBG.png';
 
 const IndustriesHero: React.FC = () => {
@@ -29,15 +30,15 @@ const IndustriesHero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-6">
-          <button className="bg-[#2B2A2A] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg hover:bg-black transition-colors w-full sm:w-auto shadow-md">
+          <Link to="/contact" className="bg-[#2B2A2A] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg hover:bg-black transition-colors w-full sm:w-auto shadow-md text-center block">
             Request a Consultation
-          </button>
-          <button className="flex items-center gap-2 bg-transparent text-[#2B2A2A] font-bold text-sm tracking-wide px-6 py-4 rounded-lg hover:text-[#E6A2A9] transition-colors group w-full sm:w-auto justify-center">
+          </Link>
+          <Link to="/services" className="flex items-center gap-2 bg-transparent text-[#2B2A2A] font-bold text-sm tracking-wide px-6 py-4 rounded-lg hover:text-[#E6A2A9] transition-colors group w-full sm:w-auto justify-center">
             Our Services 
             <span className="inline-block transition-transform duration-200 group-hover:translate-x-1 font-normal text-lg leading-none">
               &rarr;
             </span>
-          </button>
+          </Link>
         </div>
 
       </div>

@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import VisionSection from '../components/VisionSection';
 import MissionSection from '../components/MissionSection';
-import TestimonialCTASection from '../components/TestimonialCTASection';
 import AboutUsHero from '../assets/AboutUsHero.png';
 
 const AboutUsPage: React.FC = () => {
@@ -13,7 +12,7 @@ const AboutUsPage: React.FC = () => {
 
       {/* Hero Section */}
       <section className="relative w-full h-screen overflow-hidden bg-white">
-        
+
         {/* Faint Background Text */}
         <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 flex flex-col gap-0 leading-[0.8] opacity-5">
           <span className="text-[22vw] font-black text-gray-900 uppercase tracking-tighter">BELLECROFT</span>
@@ -29,7 +28,7 @@ const AboutUsPage: React.FC = () => {
         </div>
 
         {/* Team Photo */}
-        <div className="absolute top-24 bottom-0 left-0 w-full h-[75%] md:h-[95%] z-10 flex items-end justify-center pointer-events-none">
+        <div className="absolute top-36 bottom-0 left-0 w-full h-[75%] md:h-[95%] z-10 flex items-end justify-center pointer-events-none">
           <img 
             src={AboutUsHero} 
             alt="Team Collaboration" 
@@ -46,7 +45,7 @@ const AboutUsPage: React.FC = () => {
             <h3 className="text-[#3b3b4f] font-bold text-lg md:text-[22px] mb-2 max-w-4xl mx-auto">
               Bellecroft was established to help organisations and leaders navigate complexity with clarity, confidence, and purpose
             </h3>
-            <p className="text-[#848496] text-sm md:text-base text-justify font-medium max-w-4xl mx-auto">
+            <p className="text-[#848496] text-sm md:text-base text-center font-medium max-w-6xl mx-auto">
               In today’s rapidly evolving environment, organisations require more than advice. They need trusted partners who understand both strategic priorities and operational realities.
 Bellecroft was founded to bridge that gap.
 Through strategic advisory, leadership development, professional training, and organisational support, we help organisations strengthen capability, improve performance, and achieve sustainable success.
@@ -63,11 +62,13 @@ Rooted in the Maldives and informed by international best practices, Bellecroft 
       {/* Mission Section */}
       <MissionSection />
 
+      <Footer />
+
       {/* Final Section (Testimonial + Footer) */}
-      <section className="w-full h-screen flex flex-col overflow-hidden">
+      {/* <section className="w-full h-screen flex flex-col overflow-hidden">
         <TestimonialCTASection />
-        <Footer />
-      </section>
+
+      </section> */}
     </div>
   );
 };

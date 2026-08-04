@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // Add these images to your src/assets folder
 import TeamPhoto from "../assets/TeamPhoto.png";
-import HeroArm from "../assets/HeroArm.png";
 import StrategicConsultingImg from "../assets/StrategicConsulting.png";
 import CorporateTrainingImg from "../assets/CorporateTraining.png";
 import ExecutiveCoachingImg from "../assets/ExecutiveCoaching.png";
@@ -9,10 +9,13 @@ import ExecutiveCoachingImg from "../assets/ExecutiveCoaching.png";
 const CoreOfferings: React.FC = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden bg-[#F9FAFB] flex flex-col">
+      {/* Soft transition from the hero ticker into the offerings section */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-20 z-40 bg-gradient-to-b from-[#E6A2A9]/80 via-[#E6A2A9]/30 to-transparent" />
+
       {/* Overlapping Arm Image (adjust positioning as needed) */}
-      <div className="absolute right-0 z-10 pointer-events-none hidden md:block">
+      {/* <div className="absolute right-0 z-10 pointer-events-none hidden md:block">
         <img src={HeroArm} alt="Gesturing Arm" className=" object-contain object-right" />
-      </div>
+      </div> */}
 
       {/* Top Banner Area */}
       <div className="relative w-full overflow-hidden bg-[#f0c8cc0c] flex flex-col justify-center flex-[0.45] min-h-0 shrink-0">
@@ -23,7 +26,7 @@ const CoreOfferings: React.FC = () => {
             <img src={TeamPhoto} alt="Team collaborating" className="w-full h-full object-cover object-left md:object-center" />
           </div>
           {/* Gradient to blend the text side into the image side */}
-          <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-[#E6A2A9] via-[#E6A2A9]/95 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-[#E6A2A9] via-[#E6A2A9]/60 to-transparent"></div>
         </div>
 
         {/* Content */}
@@ -40,15 +43,15 @@ const CoreOfferings: React.FC = () => {
             <p className="text-white/90 text-sm md:text-[20px] leading-relaxed max-w-md mb-4 md:mb-6 font-light">
               We deliver specialized expertise through a methodology that
             </p>
-            <a
-              href="#services"
+            <Link
+              to="/services"
               className="inline-flex items-center gap-2 text-[13px] md:text-[20px] font-bold text-gray-900 hover:text-gray-700 transition-colors group"
             >
               See All Services
               <span className="transition-transform duration-200 group-hover:translate-x-1">
                 →
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

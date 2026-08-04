@@ -1,4 +1,6 @@
 import React from 'react';
+import MissionImage from '../assets/MissionImage.png';
+
 
 const MissionSection: React.FC = () => {
   return (
@@ -23,15 +25,11 @@ const MissionSection: React.FC = () => {
         {/* Right: Our Vision Image Placeholder */}
         <div className="w-full md:w-[40%] h-1/2 md:h-full relative bg-gray-900 flex flex-col justify-end overflow-hidden">
           {/* Placeholder for the Eye/HUD image */}
-          <div className="absolute inset-0 bg-linear-to-b from-[#1a1a1a] to-[#3a2020] opacity-80" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-30 border-2 border-dashed border-gray-600 m-4">
-             <span className="text-white uppercase tracking-widest text-sm">(Vision Image Placeholder)</span>
+          <div className="absolute inset-0 flex items-center justify-center ">
+             <img src={MissionImage} alt="" className='object-fit' />
           </div>
           
-          {/* Our Vision Banner */}
-          <div className="relative z-10 w-full bg-[#E6A2A9]/80 backdrop-blur-xs py-3 md:py-4 text-center">
-            <span className="text-white text-xl md:text-3xl font-light tracking-wide">Our Vision</span>
-          </div>
+         
         </div>
       </div>
 

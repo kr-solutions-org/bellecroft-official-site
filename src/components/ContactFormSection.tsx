@@ -81,7 +81,7 @@ const ContactFormSection: React.FC = () => {
             <p className="text-[12px] text-gray-500 italic leading-snug max-w-[160px]">
               Standard Maldivian Government Hours
             </p>
-            <a href="#" className="text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors flex items-center gap-1.5 mt-1">
+            <a href="#form" className="text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors flex items-center gap-1.5 mt-1">
               View calendar <span>→</span>
             </a>
           </div>

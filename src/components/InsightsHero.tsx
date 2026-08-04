@@ -9,42 +9,27 @@ const InsightsHero: React.FC = () => {
       <div className="w-full md:w-[55%] flex flex-col justify-center px-6 md:px-16 lg:px-24 pt-24 md:pt-0 z-10">
         <h1 className="flex flex-col items-start leading-[1.05] mb-6">
           <span className="text-[#333333] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight">
-            The Future of
+            Ideas That Inform
           </span>
-          <span className="text-[#E6A2A9] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight mt-[-0.2em]">
-            Operational
-          </span>
-          <span 
-            className="text-transparent text-[clamp(3.5rem,7vw,6.5rem)] leading-[0.9] mt-[-0.1em]"
-            style={{
-              fontFamily: "'Inter', system-ui, sans-serif",
-              WebkitTextStroke: "1.5px #E6A2A9",
-              fontWeight: 600,
-              fontStyle: "normal",
-            }}
-          >
-            Excellence
-          </span>
-          <span className="text-[#333333] text-[clamp(2rem,4.5vw,4rem)] font-black italic tracking-tight mt-2">
-            In Island Economies
+          <span className="text-[#E6A2A9] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight ">
+            Better Decisions
           </span>
         </h1>
 
         <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed max-w-lg mb-8 font-medium">
-          Our latest deep-dive guide explores how digital transformation and ESG integration are reshaping the competitive landscape for businesses in the Maldives and beyond.
-        </p>
+          Thought leadership, practical guidance, and professional perspectives designed to support organisational growth.</p>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <button className="bg-[#2B2A2A] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg shadow-md hover:bg-black transition-colors w-full sm:w-auto">
+        {/* <div className="flex flex-col sm:flex-row items-center gap-4">
+          <Link to="/insights" className="bg-[#2B2A2A] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg shadow-md hover:bg-black transition-colors w-full sm:w-auto">
             Read the full Report
-          </button>
-          <button className="flex items-center justify-center gap-2 bg-transparent text-[#333333] font-bold text-sm tracking-wide px-6 py-4 rounded-lg hover:text-[#E6A2A9] transition-colors group w-full sm:w-auto">
+          </Link>
+          <Link to="/insights" className="flex items-center justify-center gap-2 bg-transparent text-[#333333] font-bold text-sm tracking-wide px-6 py-4 rounded-lg hover:text-[#E6A2A9] transition-colors group w-full sm:w-auto">
             Download PDF 
             <span className="inline-block transition-transform duration-200 group-hover:translate-x-1 font-normal text-lg leading-none">
               &rarr;
             </span>
-          </button>
-        </div>
+          </Link>
+        </div> */}
       </div>
 
       {/* Right side: Image */}
