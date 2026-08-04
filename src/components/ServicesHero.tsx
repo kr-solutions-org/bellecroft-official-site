@@ -29,7 +29,7 @@ const ServicesHero: React.FC = () => {
               Solutions
             </span>
             <span className="text-[#E6A2A9] text-[clamp(2.5rem,4.5vw,4rem)] font-bold mt-1">
-              Tailored for
+              Meaningful 
             </span>
             <span 
               className="text-transparent text-[clamp(4rem,7vw,6.5rem)] leading-[0.8] mt-2 mr-2"

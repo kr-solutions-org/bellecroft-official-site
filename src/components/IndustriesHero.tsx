@@ -14,10 +14,10 @@ const IndustriesHero: React.FC = () => {
         
         <h1 className="flex flex-col leading-[1.05] mb-6">
           <span className="text-[#333333] text-[clamp(3.5rem,8vw,7rem)] font-black tracking-tight">
-            Industries
+            Sectors 
           </span>
           <span className="text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)] font-black tracking-tight -mt-2">
-            We Shape.
+            We Serve
           </span>
         </h1>
 
@@ -30,7 +30,7 @@ const IndustriesHero: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row items-center gap-6">
           <button className="bg-[#2B2A2A] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg hover:bg-black transition-colors w-full sm:w-auto shadow-md">
-            Get Sector Analyse
+            Request a Consultation
           </button>
           <button className="flex items-center gap-2 bg-transparent text-[#2B2A2A] font-bold text-sm tracking-wide px-6 py-4 rounded-lg hover:text-[#E6A2A9] transition-colors group w-full sm:w-auto justify-center">
             Our Services 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BellecroftLogo from '../assets/Bellcroft_Logo.png';
+import BellecroftLogo from '../assets/logo.png';
 
 const NAV_LINKS = [
   { label: "About", href: "/about" },
