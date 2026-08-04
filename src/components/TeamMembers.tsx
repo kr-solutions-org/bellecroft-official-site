@@ -57,10 +57,10 @@ const TeamMembers: React.FC = () => {
         </div>
 
         {/* ASSOCIATES & EXPERTS SECTION */}
-        <div className="flex flex-col gap-4">
+        {/* <div className="flex flex-col gap-4"> */}
           
           {/* Header Row */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 border-b border-gray-200 pb-2 md:pb-3">
+          {/* <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 border-b border-gray-200 pb-2 md:pb-3">
             <div className="flex flex-col gap-0.5">
               <h2 className="text-xl md:text-2xl font-black text-[#2B2A2A] tracking-tight">
                 Associates &amp; Experts
@@ -69,18 +69,18 @@ const TeamMembers: React.FC = () => {
                 Bellecroft collaborates with a trusted network of consultants, trainers, and subject matter experts to deliver specialised expertise across a range of sectors and disciplines.
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Cards Grid */}
-          {associates.length > 0 && (
+          {/* {associates.length > 0 && (
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {associates.map((member, i) => (
                 <TeamCard key={i} member={member} />
               ))}
             </div>
-          )}
+          )} */}
 
-        </div>
+        {/* </div> */}
 
       </div>
     </section>

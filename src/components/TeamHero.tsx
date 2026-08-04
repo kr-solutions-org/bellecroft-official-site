@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import StredgeLogo from "../assets/StredgeLogo.png"
 
 const TeamHero: React.FC = () => {
   return (
@@ -21,8 +22,8 @@ const TeamHero: React.FC = () => {
       </div>
 
       {/* Main Content Container (Top half) */}
-      <div className="relative z-10 w-full px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center max-w-7xl mx-auto pt-24">
-        <div className="w-full md:w-[65%] lg:w-[55%] flex flex-col items-start text-left">
+      <div className="relative z-10 w-full px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center items-center max-w-7xl mx-auto pt-24">
+        <div className="w-full md:w-[65%] lg:w-[55%] flex flex-col items-center text-center">
           
           <h1 className="leading-[1.1] mb-6 flex flex-col">
             <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight">
@@ -51,19 +52,14 @@ const TeamHero: React.FC = () => {
           {/* StrEdge Logo Placeholder */}
           <div className="flex items-center gap-1 text-[2.5rem] font-bold tracking-widest text-black mb-4">
             {/* Simple geometric icon representing the logo */}
-            <div className="flex flex-col gap-1 mr-3 relative top-1">
-               <div className="w-8 h-1 bg-[#4bbbf2] transform -skew-x-12 rounded-sm"></div>
-               <div className="w-8 h-1 bg-[#2B2A2A] transform -skew-x-12 rounded-sm"></div>
-               <div className="w-8 h-1 bg-[#4bbbf2] transform -skew-x-12 rounded-sm"></div>
-            </div>
-            <span className="tracking-[0.1em]">str<span className="text-[#4bbbf2]">e</span>dge</span>
+            <img src={StredgeLogo} alt="Stredge Logo" className="w-100" />
           </div>
 
         </div>
       </div>
 
       {/* Bottom Pink Bar */}
-      <div className="relative z-20 w-full bg-[#E2A6AA]/75 py-10 md:py-12 px-8 md:px-16 lg:px-28 flex flex-col justify-center mt-auto">
+      {/* <div className="relative z-20 w-full bg-[#E2A6AA]/75 py-10 md:py-12 px-8 md:px-16 lg:px-28 flex flex-col justify-center mt-auto">
         <div className="max-w-7xl mx-auto w-full flex flex-col md:w-[70%] lg:w-[65%]">
           
           <div className="flex items-center gap-4 mb-4 flex-wrap">
@@ -99,7 +95,7 @@ const TeamHero: React.FC = () => {
           </div>
           
         </div>
-      </div>
+      </div> */}
       
     </section>
   );

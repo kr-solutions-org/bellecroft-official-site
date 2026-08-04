@@ -88,7 +88,7 @@ const WorkshopsTraining: React.FC = () => {
               Schedule a Consultation
             </button>
             <button className="bg-transparent border border-white text-white font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-white/10 transition-colors w-full sm:w-auto">
-              Browse Upcoming Workshops
+              Contact Us
             </button>
           </div>
         </div>

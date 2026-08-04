@@ -70,14 +70,14 @@ const TestimonialCTASection: React.FC = () => {
         <div className="relative z-20 w-full shrink-0 pointer-events-auto mt-4">
           <div className="w-full bg-[#1c1c1c] rounded-xl px-8 md:px-12 py-8 flex flex-col md:flex-row items-center justify-between shadow-2xl">
             <div className="mb-6 md:mb-0 text-center md:text-left max-w-2xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Ready to architect your success?</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Let’s Start a Conversation</h3>
               <p className="text-gray-400 text-sm md:text-[15px]">
-                Connect with our consultants to explore how BelleCroft's tailored solutions can cultivate growth within your organization.
+                Discover how Bellecroft can support your organisation’s next stage of growth.
               </p>
             </div>
             <div className="flex items-center gap-4 shrink-0">
               <button className="px-6 py-3 bg-[#E6A2A9] text-white font-bold rounded-md hover:bg-[#d68a91] transition-colors text-sm shadow-md">
-                Register Today
+                Contact Us
               </button>
             </div>
           </div>

@@ -74,7 +74,7 @@ const GlobalStandardsSection: React.FC = () => {
         </div>
 
         {/* Bottom CTA Box */}
-        <div className="w-full px-6 flex-1 flex items-end md:items-center justify-center pb-6 md:pb-0 mt-6 md:mt-8">
+        {/* <div className="w-full px-6 flex-1 flex items-end md:items-center justify-center pb-6 md:pb-0 mt-6 md:mt-8">
           <div className="w-full max-w-5xl bg-[#222222] rounded-xl shadow-2xl px-6 md:px-12 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex flex-col text-center md:text-left">
               <h3 className="text-white text-xl md:text-3xl font-bold mb-2">Ready to lead your Industry?</h3>
@@ -84,7 +84,7 @@ const GlobalStandardsSection: React.FC = () => {
               Register Today
             </button>
           </div>
-        </div>
+        </div> */}
 
       </div>
 
