@@ -16,7 +16,7 @@ const Newsletter: React.FC = () => {
       
       {/* Description */}
       <p className="text-[#333333] text-base md:text-lg lg:text-xl font-medium max-w-3xl mb-10 leading-relaxed">
-        Join our network of 2000+ senior leaders receiving monthly strategic briefing, market analysis, and exclusive workshop invitations.
+        Receive updates on leadership, governance, professional development, and organisational growth.
       </p>
       
       {/* Form */}
@@ -31,7 +31,7 @@ const Newsletter: React.FC = () => {
           type="submit" 
           className="bg-[#2B2A2A] text-white font-bold text-sm md:text-base px-8 py-4 rounded-md shadow-md hover:bg-black transition-colors whitespace-nowrap"
         >
-          Subscribe Now
+          Subscribe
         </button>
       </form>
       

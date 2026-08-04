@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const INDUSTRIES = [
   {
@@ -80,9 +81,9 @@ const IndustryCards: React.FC = () => {
                     <p className="text-gray-600 text-[10px] md:text-[13px] leading-relaxed max-w-xs mx-auto mb-4 px-2 mt-2">
                       {industry.description}
                     </p>
-                    <button className="bg-[#E6A2A9] text-white font-bold text-[10px] md:text-xs px-4 py-2 rounded-sm shadow-sm hover:bg-[#d98b92] transition-colors whitespace-nowrap">
+                    <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-[10px] md:text-xs px-4 py-2 rounded-sm shadow-sm hover:bg-[#d98b92] transition-colors whitespace-nowrap">
                       {industry.buttonText}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -102,9 +103,9 @@ const IndustryCards: React.FC = () => {
           </p>
         </div>
         <div className="mt-[-1.5rem] z-10">
-          <button className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-3.5 rounded-sm shadow-xl hover:bg-[#d98b92] transition-colors">
+          <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-3.5 rounded-sm shadow-xl hover:bg-[#d98b92] transition-colors">
             Inquire for Consultation
-          </button>
+          </Link>
         </div>
       </div>
 

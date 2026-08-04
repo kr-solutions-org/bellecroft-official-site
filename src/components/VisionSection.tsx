@@ -1,5 +1,6 @@
 import React from 'react';
 import StredgeLogo from '../assets/StredgeLogo.png';
+import VisionImage from '../assets/VisionImage.png';
 
 const VisionSection: React.FC = () => {
   return (
@@ -8,11 +9,10 @@ const VisionSection: React.FC = () => {
       {/* Top Row */}
       <div className="flex-1 flex flex-col md:flex-row w-full min-h-0 relative z-0">
         {/* Top Left - Image */}
-        <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-gray-900 flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-linear-to-br from-[#1a0b0b] to-[#4a1c1c] opacity-80" />
-          <div className="relative z-10 w-3/4 h-3/4 border-4 border-gray-800/50 flex flex-col items-center justify-center p-4 text-center">
-             <span className="text-white/20 font-black text-3xl md:text-5xl lg:text-7xl uppercase tracking-widest -rotate-12">Excellence</span>
-             <p className="text-white/50 text-xs md:text-sm mt-4 uppercase tracking-widest">(Placeholder)</p>
+        <div className="w-full md:w-1/2 h-1/2 md:h-full relative flex items-center justify-center ">
+          <div className="absolute inset-0 opacity-80" />
+          <div className="relative z-10  flex flex-col items-center justify-center text-center">
+             <img src={VisionImage} alt="" />
           </div>
         </div>
 

@@ -48,12 +48,12 @@ const AboutUs: React.FC = () => {
             <p className="text-gray-400 text-sm md:text-[15px]">Let’s explore how Bellecroft can support your organisation’s growth and development.</p>
           </div>
           <div className="flex items-center gap-4 shrink-0">
-            <button className="px-6 py-3 bg-[#E6A2A9] text-white font-bold rounded-md hover:bg-[#d68a91] transition-colors text-sm">
+            <Link to="/contact" className="px-6 py-3 bg-[#E6A2A9] text-white font-bold rounded-md hover:bg-[#d68a91] transition-colors text-sm">
               Schedule a Consultation
-            </button>
-            <button className="px-6 py-3 bg-transparent border border-gray-600 text-gray-300 font-bold rounded-md hover:bg-gray-800 transition-colors text-sm">
+            </Link>
+            <Link to="/team" className="px-6 py-3 bg-transparent border border-gray-600 text-gray-300 font-bold rounded-md hover:bg-gray-800 transition-colors text-sm">
               Meet Our Team
-            </button>
+            </Link>
           </div>
         </div>
       </div>

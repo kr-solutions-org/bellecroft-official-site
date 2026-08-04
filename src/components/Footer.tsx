@@ -13,7 +13,7 @@ const NAV_LINKS = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="shrink-0 w-full bg-[#1C1410] px-8 md:px-16 lg:px-28 pt-12 pb-8 flex flex-col z-10 relative text-gray-300">
+    <footer className="shrink-0 w-full bg-[#141414] px-8 md:px-16 lg:px-28 pt-12 pb-8 flex flex-col z-10 relative text-gray-300">
       
       {/* Top Section: Three Columns */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-center text-center md:text-left">
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         <div className="flex justify-center md:justify-start">
           <Link to="/">
             {/* We apply brightness-0 invert to make the logo white for the dark background */}
-            <img src={BellecroftLogo} alt="Bellecroft Logo" className="h-16 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+            <img src={BellecroftLogo} alt="Bellecroft Logo" className="h-16 w-auto object-contain hover:opacity-100 transition-opacity" />
           </Link>
         </div>
         

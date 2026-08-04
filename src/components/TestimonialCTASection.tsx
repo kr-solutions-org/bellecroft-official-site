@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TestimonialCTASection: React.FC = () => {
   return (
@@ -76,9 +77,9 @@ const TestimonialCTASection: React.FC = () => {
               </p>
             </div>
             <div className="flex items-center gap-4 shrink-0">
-              <button className="px-6 py-3 bg-[#E6A2A9] text-white font-bold rounded-md hover:bg-[#d68a91] transition-colors text-sm shadow-md">
+              <Link to="/contact" className="px-6 py-3 bg-[#E6A2A9] text-white font-bold rounded-md hover:bg-[#d68a91] transition-colors text-sm shadow-md">
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CorporateTrainingImg from '../assets/CorporateTraining.png';
 
 const WorkshopsTraining: React.FC = () => {
@@ -84,12 +85,12 @@ const WorkshopsTraining: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            <button className="bg-white text-[#E2A6A9] font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-gray-50 transition-colors w-full sm:w-auto shadow-md">
+            <Link to="/contact" className="bg-white text-[#E2A6A9] font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-gray-50 transition-colors w-full sm:w-auto shadow-md">
               Schedule a Consultation
-            </button>
-            <button className="bg-transparent border border-white text-white font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-white/10 transition-colors w-full sm:w-auto">
+            </Link>
+            <Link to="/contact" className="bg-transparent border border-white text-white font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-white/10 transition-colors w-full sm:w-auto">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
 

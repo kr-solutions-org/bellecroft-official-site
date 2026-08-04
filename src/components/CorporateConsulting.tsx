@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import StrategicConsultingImg from '../assets/StrategicConsulting.png'; // Assuming this is the correct image based on filename
 
 const CorporateConsulting: React.FC = () => {
@@ -82,9 +83,9 @@ const CorporateConsulting: React.FC = () => {
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
               Success isn't just about what you do, but how you do it. We blend international standard frameworks with deep-rooted Maldivian market insights to deliver results that are both globally competitive and locally relevant.
             </p>
-            <button className="bg-[#E6A2A9] text-white font-bold text-[10px] md:text-xs tracking-widest uppercase px-5 py-2.5 rounded-sm hover:bg-[#d98b92] transition-colors flex items-center gap-2">
+            <Link to="/methodology" className="bg-[#E6A2A9] text-white font-bold text-[10px] md:text-xs tracking-widest uppercase px-5 py-2.5 rounded-sm hover:bg-[#d98b92] transition-colors flex items-center gap-2 w-max">
               Our Approach <span>&rarr;</span>
-            </button>
+            </Link>
           </div>
 
           {/* Right Side Cards */}
