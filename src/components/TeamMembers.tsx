@@ -5,8 +5,6 @@ const leadership = [
   { name: "Neefeen Ibrahim", role: "Founder & Managing Director", img: FounderImg },
 ];
 
-const associates: { name: string; role: string; img: string }[] = [];
-
 interface Member {
   name: string;
   role: string;
