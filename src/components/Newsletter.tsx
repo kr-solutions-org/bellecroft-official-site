@@ -29,7 +29,7 @@ const Newsletter: React.FC = () => {
         />
         <button 
           type="submit" 
-          className="bg-[#2B2A2A] text-white font-bold text-sm md:text-base px-8 py-4 rounded-md shadow-md hover:bg-black transition-colors whitespace-nowrap"
+          className="bg-[#E6A2A9] text-white font-bold text-sm md:text-base px-8 py-4 rounded-md shadow-md hover:bg-[#c9878a] transition-colors whitespace-nowrap"
         >
           Subscribe
         </button>

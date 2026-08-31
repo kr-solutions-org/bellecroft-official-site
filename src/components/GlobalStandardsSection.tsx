@@ -52,7 +52,7 @@ const GlobalStandardsSection: React.FC = () => {
           </h3>
           <div className="w-16 h-1 bg-[#E6A2A9]/40 mb-6 rounded-full"></div>
           <p className="text-gray-500 text-sm md:text-base font-medium leading-relaxed">
-            Our consultants have partnered with over 150+ organizations globally, ranging from boutique law firms to international luxury resort groups.
+            Our consultants have partnered with over 150+ organisations globally, ranging from boutique law firms to international luxury resort groups.
           </p>
         </div>
 

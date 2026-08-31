@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import HeroBG from "../assets/HeroBG.png";
+import { Link } from "react-router-dom";import HeroBG from "../assets/HeroBG.png";
 import HeroPerson from "../assets/HeroPerson.png";
 
 // ─── Image variables ─────────────────────────────────────────────
@@ -45,11 +44,12 @@ const HeroSection: React.FC = () => {
             {/* Line 2 — accent word */}
             <span className="block w-max">
               <span
-                className="relative block text-[clamp(4rem,9vw,8rem)] text-[#E6A2A9] mt-8 mb-8"
+                className="relative block text-[clamp(4rem,9vw,8rem)] text-[#E6A2A9] mt-8"
                 style={{
-                  fontFamily: "'Inter', system-ui, sans-serif",
-                  fontWeight: 700,
+                  fontFamily: "var(--font-script)",
+                  fontWeight: 100,
                   letterSpacing: "0.02em",
+                  fontStyle: "normal"
                 }}
               >
                 LEADERS.
@@ -71,7 +71,7 @@ const HeroSection: React.FC = () => {
           <div className="flex items-center gap-6 flex-wrap">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#2B2A2A] text-white text-[15px] font-bold rounded-xl hover:bg-[#404040] transition-colors duration-200 shadow-sm"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#c9878a] transition-colors duration-200 shadow-sm"
             >
               Contact Us
             </Link>

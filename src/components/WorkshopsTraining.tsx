@@ -19,7 +19,7 @@ const WorkshopsTraining: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 md:pl-10">
             <p className="text-[#333333] text-sm md:text-base lg:text-lg font-medium italic border-l-2 border-transparent md:border-none leading-relaxed">
-              " Investment in human capital is the highest yielding strategy. Our corporate training programs are designed to transform your workforce into a competitive asset. "
+              " Investment in human capital is the highest yielding strategy. Our corporate training programmes are designed to transform your workforce into a competitive asset. "
             </p>
           </div>
         </div>
@@ -81,7 +81,7 @@ const WorkshopsTraining: React.FC = () => {
           </h2>
           
           <p className="text-[#333333] text-sm md:text-base max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
-            Whether you're looking for organizational transformation or high-impact training workshops, our team is ready to design a solution tailored to your specific goals.
+            Whether you're looking for organisational transformation or high-impact training workshops, our team is ready to design a solution tailored to your specific goals.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-3">

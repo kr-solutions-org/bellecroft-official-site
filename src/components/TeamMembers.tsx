@@ -20,9 +20,9 @@ const TeamCard: React.FC<{ member: Member }> = ({ member }) => (
         className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-500 ease-in-out group-hover:scale-105" 
       />
     </div>
-    <div className="bg-[#2B2A2A] p-4 md:p-6 flex flex-col gap-1 border-t-4 border-transparent group-hover:border-[#E6A2A9] transition-colors duration-300">
-      <h4 className="text-white font-bold text-base md:text-lg">{member.name}</h4>
-      <p className="text-gray-400 text-xs md:text-sm">{member.role}</p>
+    <div className="p-4 md:p-6 flex flex-col justify-center items-center gap-1 border-t-4 border-transparent group-hover:border-[#E6A2A9] transition-colors duration-300">
+      <h4 className="text-black font-bold text-base md:text-2xl">{member.name}</h4>
+      <p className="text-gray-500 text-xs md:text-sm">{member.role}</p>
     </div>
   </div>
 );

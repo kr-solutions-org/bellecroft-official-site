@@ -41,7 +41,7 @@ const CoreOfferings: React.FC = () => {
               </span>
             </h2>
             <p className="text-white/90 text-sm md:text-[20px] leading-relaxed max-w-md mb-4 md:mb-6 font-light">
-              We deliver specialized expertise through a methodology that
+              We deliver specialised expertise through a methodology that
             </p>
             <Link
               to="/services"

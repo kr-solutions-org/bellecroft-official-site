@@ -30,7 +30,7 @@ const IndustriesHero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-6">
-          <Link to="/contact" className="bg-[#2B2A2A] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg hover:bg-black transition-colors w-full sm:w-auto shadow-md text-center block">
+          <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg hover:bg-[#c9878a] transition-colors w-full sm:w-auto shadow-md text-center block">
             Request a Consultation
           </Link>
           <Link to="/services" className="flex items-center gap-2 bg-transparent text-[#2B2A2A] font-bold text-sm tracking-wide px-6 py-4 rounded-lg hover:text-[#E6A2A9] transition-colors group w-full sm:w-auto justify-center">

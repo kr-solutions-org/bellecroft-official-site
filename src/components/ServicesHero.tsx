@@ -39,7 +39,7 @@ const ServicesHero: React.FC = () => {
           <p className="text-[#666666] text-sm md:text-base leading-relaxed max-w-md text-center font-medium mt-2">
             At Bellecroft, we bridge the gap between global<br className="hidden md:block"/>
             expertise and local market nuances. Our service suite<br className="hidden md:block"/>
-            is built to empower organizations to navigate<br className="hidden md:block"/>
+            is built to empower organisations to navigate<br className="hidden md:block"/>
             complex business landscapes with<br className="hidden md:block"/>
             confidence.
           </p>

@@ -140,7 +140,7 @@ const ContactFormSection: React.FC = () => {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Company Name</label>
-                  <input type="text" placeholder="Organization Ltd." className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
+                  <input type="text" placeholder="Organisation Ltd." className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
                 </div>
               </div>
 

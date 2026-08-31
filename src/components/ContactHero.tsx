@@ -63,7 +63,7 @@ const ContactHero: React.FC = () => {
           <div className="flex items-center gap-6">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#2B2A2A] text-white text-[15px] font-bold rounded-xl hover:bg-[#404040] transition-colors duration-200 shadow-sm"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#c9878a] transition-colors duration-200 shadow-sm"
             >
               Get In Touch
             </Link>

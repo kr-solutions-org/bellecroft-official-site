@@ -57,7 +57,7 @@ const CorporateConsulting: React.FC = () => {
             <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Operational<br/>Excellence</h4>
               <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
-                Process optimization and organizational restructuring focused on efficiency, scalability, and long-term sustainability.
+                Process optimisation and organisational restructuring focused on efficiency, scalability, and long-term sustainability.
               </p>
             </div>
 
@@ -65,7 +65,7 @@ const CorporateConsulting: React.FC = () => {
             <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Digital<br/>Transformation</h4>
               <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
-                Guiding organizations through the complexities of modernization, from infrastructure overhaul to AI-Driven workflow integration.
+                Guiding organisations through the complexities of modernisation, from infrastructure overhaul to AI-driven workflow integration.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ const CorporateConsulting: React.FC = () => {
               The Bellecroft<br/>Methodology
             </h2>
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
-              Success isn't just about what you do, but how you do it. We blend international standard frameworks with deep-rooted Maldivian market insights to deliver results that are both globally competitive and locally relevant.
+              Success isn’t just about what you do, but how you do it. We blend international standard frameworks with deep-rooted Maldivian market insights to deliver results that are both globally competitive and locally relevant.
             </p>
             <Link to="/methodology" className="bg-[#E6A2A9] text-white font-bold text-[10px] md:text-xs tracking-widest uppercase px-5 py-2.5 rounded-sm hover:bg-[#d98b92] transition-colors flex items-center gap-2 w-max">
               Our Approach <span>&rarr;</span>
