@@ -36,7 +36,13 @@ const CoreOfferings: React.FC = () => {
               <span className="block text-[clamp(1.75rem,3.5vw,3.5rem)] font-black text-white tracking-tight">
                 Our Core
               </span>
-              <span className="block text-[clamp(1.75rem,3.5vw,3.5rem)] font-light text-white tracking-tight">
+              <span className="block text-[clamp(1.75rem,3.5vw,3.5rem)] font-cursive font-light text-white tracking-tight"
+              style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>
                 Offerings
               </span>
             </h2>

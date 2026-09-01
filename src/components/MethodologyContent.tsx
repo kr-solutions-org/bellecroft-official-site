@@ -105,7 +105,12 @@ const MethodologyContent: React.FC = () => {
           <div className="flex flex-col flex-1 gap-4 w-full">
             <h2 className="text-2xl md:text-4xl font-black tracking-tight leading-tight">
               <span className="text-[#3b3b4f]">The Synthesis of </span>
-              <span className="text-[#E6A2A9]">Two Worlds</span>
+              <span className="text-[#E6A2A9] text-6xl"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>Two Worlds</span>
             </h2>
             
             <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed font-medium">

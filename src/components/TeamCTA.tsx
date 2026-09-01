@@ -9,7 +9,12 @@ const TeamCTA: React.FC = () => {
         
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
           <span className="text-white block">Ready to collaborate with</span>
-          <span className="text-[#2B2A2A] block mt-1 md:mt-2">Our Experts?</span>
+          <span className="text-[#2B2A2A] block mt-1 md:mt-2 text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>Our Experts?</span>
         </h2>
         
         <p className="text-[#2B2A2A]/80 text-[15px] md:text-[17px] font-medium max-w-3xl leading-relaxed">

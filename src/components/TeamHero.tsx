@@ -28,17 +28,21 @@ const TeamHero: React.FC = () => {
             <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight">
               The Architects of
             </span>
-            <span className="block text-[clamp(3.5rem,7vw,6.5rem)] font-black text-[#E6A2A9] tracking-tighter leading-[0.9] mt-1">
+            <span className="block text-[clamp(3.5rem,7vw,6.5rem)] font-black text-[#E6A2A9] tracking-tighter leading-[0.9] mt-1 text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>
               Strategic
             </span>
             <span 
-              className="block text-[clamp(3.5rem,7vw,6.5rem)] italic tracking-tight leading-[0.9] mt-2"
-              style={{ 
-                fontWeight: 300, 
-                WebkitTextStroke: '2px #E6A2A9', 
-                color: 'transparent',
-                fontFamily: "'Inter', sans-serif" 
-              }}
+              className="block text-[#E6A2A9]  text-[clamp(3.5rem,7vw,6.5rem)] italic tracking-tight leading-[0.9] mt-2 text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}
             >
               Growth
             </span>

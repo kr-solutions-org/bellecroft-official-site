@@ -17,7 +17,12 @@ const IndustriesHero: React.FC = () => {
           <span className="text-[#333333] text-[clamp(3.5rem,8vw,7rem)] font-black tracking-tight">
             Sectors 
           </span>
-          <span className="text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)] font-black tracking-tight -mt-2">
+          <span className="text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)] font-black tracking-tight -mt-2" style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>
             We Serve
           </span>
         </h1>

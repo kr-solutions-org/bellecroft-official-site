@@ -30,15 +30,20 @@ const MethodologyHero: React.FC = () => {
               Perspective
             </span>
             <div className="flex items-baseline gap-2 md:gap-3 flex-wrap justify-end mt-1">
-              <span className="text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#E6A2A9] tracking-tight">
+              <span className="text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#E6A2A9] tracking-tight text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>
                 Local
               </span>
               <span 
-                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9]"
-                style={{
-                  fontFamily: "'Inter', system-ui, sans-serif",
-                  fontWeight: 600,
-                  fontStyle: 'normal'
+                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
                 }}
               >
                 Insight.

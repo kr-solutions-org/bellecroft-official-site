@@ -108,7 +108,12 @@ const ContactFormSection: React.FC = () => {
                 <span className="text-[2.2rem] lg:text-[2.75rem] font-black text-[#2B2A2A] tracking-tight">
                   Send an
                 </span>
-                <span className="text-[2.2rem] lg:text-[3rem] font-black text-[#E6A2A9] tracking-tight">
+                <span className="text-[2.2rem] lg:text-[4rem] font-black text-[#E6A2A9] tracking-tight"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>
                   Inquiry
                 </span>
               </h2>

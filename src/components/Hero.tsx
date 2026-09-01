@@ -44,15 +44,15 @@ const HeroSection: React.FC = () => {
             {/* Line 2 — accent word */}
             <span className="block w-max">
               <span
-                className="relative block text-[clamp(4rem,9vw,8rem)] text-[#E6A2A9] mt-8"
+                className="relative block text-[200px] text-[#E6A2A9]"
                 style={{
-                  fontFamily: "var(--font-script)",
-                  fontWeight: 100,
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
                   letterSpacing: "0.02em",
                   fontStyle: "normal"
                 }}
               >
-                LEADERS.
+                Leaders
               </span>
             </span>
 
