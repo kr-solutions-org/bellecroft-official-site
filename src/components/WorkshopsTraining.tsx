@@ -19,7 +19,7 @@ const WorkshopsTraining: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 md:pl-10">
             <p className="text-[#333333] text-sm md:text-base lg:text-lg font-medium italic border-l-2 border-transparent md:border-none leading-relaxed">
-              " Investment in human capital is the highest yielding strategy. Our corporate training programs are designed to transform your workforce into a competitive asset. "
+              " Investment in human capital is the highest yielding strategy. Our corporate training programmes are designed to transform your workforce into a competitive asset. "
             </p>
           </div>
         </div>
@@ -77,11 +77,16 @@ const WorkshopsTraining: React.FC = () => {
         <div className="flex flex-col items-center justify-center text-center mt-8 mb-4">
           <h2 className="text-3xl md:text-4xl tracking-tight mb-2 leading-tight">
             <span className="text-white font-bold">Ready to Elevate your Professional</span><br className="hidden md:block"/>
-            <span className="text-[#333333] font-black"> Standard?</span>
+            <span className="text-[#333333] text-[clamp(3.5rem,6vw,3rem)] font-black" style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}> Standard?</span>
           </h2>
           
           <p className="text-[#333333] text-sm md:text-base max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
-            Whether you're looking for organizational transformation or high-impact training workshops, our team is ready to design a solution tailored to your specific goals.
+            Whether you're looking for organisational transformation or high-impact training workshops, our team is ready to design a solution tailored to your specific goals.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-3">

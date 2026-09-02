@@ -61,7 +61,7 @@ const MissionSection: React.FC = () => {
           <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-pink-500/10 border border-gray-50 flex flex-col">
             <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4">Uncompromising<br/>Integrity</h4>
             <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed">
-              Our ethos is transparent, evidence-based, and focused precisely on the long-term health of your organization.
+              Our ethos is transparent, evidence-based, and focused precisely on the long-term health of your organisation.
             </p>
           </div>
 

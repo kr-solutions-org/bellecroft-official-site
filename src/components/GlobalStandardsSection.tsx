@@ -12,7 +12,12 @@ const GlobalStandardsSection: React.FC = () => {
           <div className="w-full md:w-1/2 flex flex-col">
             <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-black leading-[1.05] tracking-tight mb-4 md:mb-6">
               <span className="text-white block">Global Standards,</span>
-              <span className="text-[#333333] block">Local Soul.</span>
+              <span className="text-[#333333] block text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>Local Soul.</span>
             </h2>
             <p className="text-[#333333] text-sm md:text-base leading-relaxed max-w-md font-medium">
               Bellecroft bridges the gap between international management best practices and the unique socio-economic landscape of the Maldives and the wider Indian Ocean region.
@@ -52,7 +57,7 @@ const GlobalStandardsSection: React.FC = () => {
           </h3>
           <div className="w-16 h-1 bg-[#E6A2A9]/40 mb-6 rounded-full"></div>
           <p className="text-gray-500 text-sm md:text-base font-medium leading-relaxed">
-            Our consultants have partnered with over 150+ organizations globally, ranging from boutique law firms to international luxury resort groups.
+            Our consultants have partnered with over 150+ organisations globally, ranging from boutique law firms to international luxury resort groups.
           </p>
         </div>
 

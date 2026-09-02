@@ -41,11 +41,11 @@ const ContactHero: React.FC = () => {
             </div>
             <div className="flex items-baseline gap-3 md:gap-4 flex-wrap mt-1">
               <span 
-                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9]"
-                style={{
-                  fontFamily: "'Inter', system-ui, sans-serif",
-                  fontWeight: 500,
-                  fontStyle: 'normal'
+                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
                 }}
               >
                 Strategic
@@ -63,7 +63,7 @@ const ContactHero: React.FC = () => {
           <div className="flex items-center gap-6">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#2B2A2A] text-white text-[15px] font-bold rounded-xl hover:bg-[#404040] transition-colors duration-200 shadow-sm"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#c9878a] transition-colors duration-200 shadow-sm"
             >
               Get In Touch
             </Link>

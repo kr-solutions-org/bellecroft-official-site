@@ -80,12 +80,17 @@ const ContextMatters: React.FC = () => {
         {/* BOTTOM: CTA Section */}
         <div className="flex flex-col items-center text-center gap-3">
           <h2 className="text-xl md:text-2xl font-bold tracking-tight leading-tight">
-            <span className="text-white block">Empower Your Organization with</span>
-            <span className="text-[#2B2A2A] block mt-0.5">Strategic Precision.</span>
+            <span className="text-white block">Empower Your Organisation with</span>
+            <span className="text-[#2B2A2A] block mt-0.5 text-5xl"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>Strategic Precision.</span>
           </h2>
           
           <p className="text-[#2B2A2A]/80 text-[13px] md:text-[14px] font-medium max-w-2xl">
-            Contact our consultants today for a confidential assessment of your organizational needs.
+            Contact our consultants today for a confidential assessment of your organisational needs.
           </p>
           
           <div className="flex items-center gap-3 mt-1">

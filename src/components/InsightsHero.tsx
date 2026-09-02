@@ -11,7 +11,12 @@ const InsightsHero: React.FC = () => {
           <span className="text-[#333333] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight">
             Ideas That Inform
           </span>
-          <span className="text-[#E6A2A9] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight ">
+          <span className="text-[#E6A2A9] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>
             Better Decisions
           </span>
         </h1>

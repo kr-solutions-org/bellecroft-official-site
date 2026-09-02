@@ -8,17 +8,17 @@ const MethodologyContent: React.FC = () => {
     {
       title: "International Benchmarking",
       subtitle: "Leveraging global frameworks like Six Sigma, Agile, and OKRs.",
-      content: "We utilize strategic tools and management methodologies practiced by the world's leading organizations. This ensures our clients are not just competitive locally, but are building organizations capable on the global stage."
+      content: "We utilise strategic tools and management methodologies practised by the world's leading organisations. This ensures our clients are not just competitive locally, but are building organisations capable on the global stage."
     },
     {
-      title: "Hyper-Local Customization",
+      title: "Hyper-Local Customisation",
       subtitle: "Nuanced adaptation for the Maldivian legislative and social context.",
       content: "We deeply embed local context into every strategy, ensuring that global frameworks are adapted to fit the specific regulatory, cultural, and operational realities of the Maldives."
     },
     {
       title: "Ethical Stewardship",
-      subtitle: "Prioritizing sustainable growth and organizational health.",
-      content: "Our approach goes beyond short-term gains. We focus on ethical practices that ensure long-term sustainability, preserving both the environment and the integrity of the organizations we work with."
+      subtitle: "Prioritising sustainable growth and organisational health.",
+      content: "Our approach goes beyond short-term gains. We focus on ethical practices that ensure long-term sustainability, preserving both the environment and the integrity of the organisations we work with."
     }
   ];
 
@@ -47,7 +47,7 @@ const MethodologyContent: React.FC = () => {
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Contextual Audit</h3>
               <p className="text-gray-500 text-xs leading-relaxed relative z-10">
-                We begin by deep-diving into your current organizational state, identifying unique local challenges and global opportunities.
+                We begin by deep-diving into your current organisational state, identifying unique local challenges and global opportunities.
               </p>
             </div>
 
@@ -105,11 +105,16 @@ const MethodologyContent: React.FC = () => {
           <div className="flex flex-col flex-1 gap-4 w-full">
             <h2 className="text-2xl md:text-4xl font-black tracking-tight leading-tight">
               <span className="text-[#3b3b4f]">The Synthesis of </span>
-              <span className="text-[#E6A2A9]">Two Worlds</span>
+              <span className="text-[#E6A2A9] text-6xl"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>Two Worlds</span>
             </h2>
             
             <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed font-medium">
-              Many firms offer cookie-cutter global solutions that fail to account for local complexities. Others offer local knowledge but lack the rigor of international benchmarks.
+              Many firms offer cookie-cutter global solutions that fail to account for local complexities. Others offer local knowledge but lack the rigour of international benchmarks.
             </p>
 
             <blockquote className="border-l-2 border-[#E6A2A9] pl-5 py-0.5 mt-2">

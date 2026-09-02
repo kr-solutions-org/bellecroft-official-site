@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MethodologyHeroBg from "../assets/MethodologyBgHero.png";
 
 const MethodologyHero: React.FC = () => {
   return (
@@ -7,12 +8,9 @@ const MethodologyHero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1513622264627-28f0904d6cb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-          alt="Pink Tram in City" 
+          src={MethodologyHeroBg}
+          alt="Methodology hero background" 
           className="w-full h-full object-cover object-center" 
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).src = 'https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80';
-          }}
         />
         {/* Gradient overlay to ensure text readability on the right side - matching the image */}
         <div className="absolute inset-0 bg-gradient-to-l from-white via-white/80 to-transparent w-full md:w-[70%] right-0 ml-auto"></div>
@@ -32,15 +30,20 @@ const MethodologyHero: React.FC = () => {
               Perspective
             </span>
             <div className="flex items-baseline gap-2 md:gap-3 flex-wrap justify-end mt-1">
-              <span className="text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#E6A2A9] tracking-tight">
+              <span className="text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#E6A2A9] tracking-tight text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
+                }}>
                 Local
               </span>
               <span 
-                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9]"
-                style={{
-                  fontFamily: "'Inter', system-ui, sans-serif",
-                  fontWeight: 600,
-                  fontStyle: 'normal'
+                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
                 }}
               >
                 Insight.
@@ -55,7 +58,7 @@ const MethodologyHero: React.FC = () => {
           <div className="flex items-center gap-6">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#2B2A2A] text-white text-[15px] font-bold rounded-xl hover:bg-[#404040] transition-colors duration-200 shadow-sm"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#c9878a] transition-colors duration-200 shadow-sm"
             >
               Start Your Journey
             </Link>

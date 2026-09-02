@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 @import "tailwindcss";
+
 
 @layer base {
   :root {
@@ -7,6 +9,7 @@
     
     --font-sans: 'Inter', system-ui, sans-serif;
     --font-serif: 'Georgia', serif;
+    --font-cursive: "Birthstone", cursive;
 
     --text-black: #2B2A2A;
     --text-pink: #E6A2A9;
