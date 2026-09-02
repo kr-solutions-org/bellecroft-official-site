@@ -33,7 +33,7 @@ const AboutUsPage: React.FC = () => {
         </div>
 
         {/* Team Photo */}
-        <div className="absolute top-36 bottom-0 left-0 w-full h-[75%] md:h-[95%] z-10 flex items-end justify-center pointer-events-none">
+        <div className="absolute top-55 bottom-0 left-0 w-full h-[75%] md:h-[95%] z-10 flex items-end justify-center pointer-events-none">
           <img 
             src={AboutUsHero} 
             alt="Team Collaboration" 
