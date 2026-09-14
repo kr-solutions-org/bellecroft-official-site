@@ -28,11 +28,13 @@ const GlobalWisdom: React.FC = () => {
               <span 
                 className="text-[clamp(2.5rem,4vw,4rem)] text-[#E6A2A9]"
                 style={{
-                  fontFamily: "'Inter', system-ui, sans-serif",
-                  fontWeight: 600,
+                  fontFamily: "var(--font-cursive)",
+                  fontWeight: 400,
+                  letterSpacing: "0.02em",
+                  fontStyle: "normal"
                 }}
               >
-                Global Perspective.
+                Global Perspective
               </span>
             </div>
           </h2>

@@ -17,7 +17,7 @@ const GlobalStandardsSection: React.FC = () => {
                   fontWeight: 400,
                   letterSpacing: "0.02em",
                   fontStyle: "normal"
-                }}>Local Soul.</span>
+                }}>Local Soul</span>
             </h2>
             <p className="text-[#333333] text-sm md:text-base leading-relaxed max-w-md font-medium">
               Bellecroft bridges the gap between international management best practices and the unique socio-economic landscape of the Maldives and the wider Indian Ocean region.
