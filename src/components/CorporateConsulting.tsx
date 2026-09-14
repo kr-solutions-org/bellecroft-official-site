@@ -20,7 +20,7 @@ const CorporateConsulting: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 md:pl-10">
             <p className="text-[#4A4A4A] text-sm md:text-base lg:text-lg font-medium italic border-l-2 border-transparent md:border-none leading-relaxed">
-              " Our consultancy arm provides high-impact strategic roadmaps, ensuring that your business not only adapts to change but drives it. "
+              "Our consultancy arm provides high-impact strategic roadmaps, ensuring that your business not only adapts to change but drives it."
             </p>
           </div>
         </div>

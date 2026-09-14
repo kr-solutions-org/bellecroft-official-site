@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
           <h2 className="text-[clamp(2rem,3.5vw,3rem)] font-black text-gray-900 leading-[1.2] mb-6">
             Organisations thrive when<br />
             people, strategy, and purpose<br />
-            work together.
+            work together
           </h2>
           <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed mb-8 max-w-125">
             Bellecroft partners with businesses, institutions, and public sector organisations to strengthen leadership, improve performance, and create sustainable pathways for growth.
