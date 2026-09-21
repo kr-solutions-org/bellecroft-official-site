@@ -46,7 +46,7 @@ const MethodologyHero: React.FC = () => {
                   fontStyle: "normal"
                 }}
               >
-                Insight.
+                Insight
               </span>
             </div>
           </h1>

@@ -22,7 +22,7 @@ const GlobalWisdom: React.FC = () => {
           
           <h2 className="leading-[1.15] mb-6 flex flex-col items-end">
             <span className="block text-[clamp(2.2rem,4vw,3.5rem)] font-black text-[#2B2A2A] tracking-tight">
-              Local Understanding.
+              Local Understanding
             </span>
             <div className="flex items-baseline gap-2 md:gap-3 flex-wrap justify-end">
               <span 

@@ -22,13 +22,13 @@ const AboutUsPage: React.FC = () => {
         {/* Title */}
         <div className="absolute top-32 md:top-36 left-0 w-full z-10 text-center">
           <h1 className="text-6xl md:text-[5.5rem] font-black tracking-tight leading-none">
-            <span className="text-[#2c2c2c]">Building Capability.</span><br/>
+            <span className="text-[#2c2c2c]">Building Capability</span><br/>
             <span className="text-[#E6A2A9]" style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",
                   fontStyle: "normal"
-                }}>Creating Impact.</span>
+                }}>Creating Impact</span>
           </h1>
         </div>
 
