@@ -86,7 +86,7 @@ const ContextMatters: React.FC = () => {
                   fontWeight: 400,
                   letterSpacing: "0.02em",
                   fontStyle: "normal"
-                }}>Strategic Precision.</span>
+                }}>Strategic Precision</span>
           </h2>
           
           <p className="text-[#2B2A2A]/80 text-[13px] md:text-[14px] font-medium max-w-2xl">

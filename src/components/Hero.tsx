@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
 
             {/* Line 3 */}
             <span className="text-[48px] font-bold">
-                Strengthening Organisations.
+                Strengthening Organisations
             </span>
           </h1>
 
