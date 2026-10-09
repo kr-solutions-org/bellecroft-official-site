@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 w-full md:px-12 py-4 flex items-center justify-between z-50 bg-transparent">
+    <nav className="fixed top-0 left-0 w-full md:px-12 py-4 flex items-center justify-between z-50 bg-transparent">
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2 shrink-0">
         {/* Replace <img> src with your actual logo variable */}

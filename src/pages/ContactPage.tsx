@@ -6,18 +6,22 @@ import Footer from '../components/Footer';
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans relative overflow-x-hidden">
+    <>
       <Navbar />
 
       {/* Hero Section */}
-      <ContactHero />
+      <div className="snap-start snap-always w-full shrink-0">
+        <ContactHero />
+      </div>
 
-      <ContactFormSection />
+      <div className="snap-start snap-always w-full shrink-0">
+        <ContactFormSection />
+      </div>
 
-      <section className="w-full flex flex-col overflow-hidden">
+      <div className="snap-end snap-always w-full shrink-0 relative bg-white">
         <Footer />
-      </section>
-    </div>
+      </div>
+    </>
   );
 };
 

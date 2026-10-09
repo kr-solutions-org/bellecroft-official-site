@@ -9,12 +9,12 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <Navbar />
-      <ServicesHero />
-      <CorporateConsulting />
-      <WorkshopsTraining />
-      <section className="relative w-full overflow-hidden flex flex-col bg-white">
+      <div className="snap-start snap-always w-full shrink-0"><ServicesHero /></div>
+      <div className="snap-start snap-always w-full shrink-0"><CorporateConsulting /></div>
+      <div className="snap-start snap-always w-full shrink-0"><WorkshopsTraining /></div>
+      <div className="snap-end snap-always w-full shrink-0 relative bg-white">
         <Footer />
-      </section>
+      </div>
     </>
   );
 };

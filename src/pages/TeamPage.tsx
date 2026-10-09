@@ -7,19 +7,25 @@ import Footer from '../components/Footer';
 
 const TeamPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans relative overflow-x-hidden">
+    <>
       <Navbar />
 
       {/* Hero Section */}
-      <TeamHero />
+      <div className="snap-start snap-always w-full shrink-0">
+        <TeamHero />
+      </div>
 
-      <TeamMembers />
+      <div className="snap-start snap-always w-full shrink-0">
+        <TeamMembers />
+      </div>
 
-      <section className="w-full h-screen flex flex-col snap-center overflow-hidden">
-        <TeamCTA />
-        <Footer />
-      </section>
-    </div>
+      <div className="snap-start snap-always w-full shrink-0">
+        <section className="w-full h-screen flex flex-col snap-center overflow-hidden">
+          <TeamCTA />
+          <Footer />
+        </section>
+      </div>
+    </>
   );
 };
 
