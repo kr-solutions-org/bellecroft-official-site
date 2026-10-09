@@ -12,7 +12,10 @@ import TeamPage from './pages/TeamPage'
 function App() {
   return(
     <Router>
-      <div className="h-screen w-full bg-white font-sans overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth relative">
+      <div
+        data-scroll-container
+        className="h-screen w-full bg-white font-sans overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth relative"
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUsPage />} />
