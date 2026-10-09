@@ -26,6 +26,9 @@
   a:active {
     text-decoration: none;
   }
+  body {
+    overflow: hidden;
+  }
 }
 
 @layer utilities {

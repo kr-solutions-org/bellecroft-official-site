@@ -12,16 +12,18 @@ import TeamPage from './pages/TeamPage'
 function App() {
   return(
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/industries" element={<IndustriesPage />} />
-        <Route path="/insights" element={<InsightsPage />} />
-        <Route path="/methodology" element={<MethodologyPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/team" element={<TeamPage />} />
-      </Routes>
+      <div className="h-screen w-full bg-white font-sans overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth relative">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/industries" element={<IndustriesPage />} />
+          <Route path="/insights" element={<InsightsPage />} />
+          <Route path="/methodology" element={<MethodologyPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/team" element={<TeamPage />} />
+        </Routes>
+      </div>
     </Router>
   )
 }

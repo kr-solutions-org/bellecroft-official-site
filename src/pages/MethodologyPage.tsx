@@ -7,19 +7,25 @@ import ContextMatters from '../components/ContextMatters';
 
 const MethodologyPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans relative overflow-x-hidden">
+    <>
       <Navbar />
 
       {/* Hero Section */}
-      <MethodologyHero />
+      <div className="snap-start snap-always w-full shrink-0">
+        <MethodologyHero />
+      </div>
 
-      <MethodologyContent />
+      <div className="snap-start snap-always w-full shrink-0">
+        <MethodologyContent />
+      </div>
 
-      <section className="w-full h-screen flex flex-col snap-center overflow-hidden">
-        <ContextMatters />
-        <Footer />
-      </section>
-    </div>
+      <div className="snap-start snap-always w-full shrink-0">
+        <section className="w-full h-screen flex flex-col snap-center overflow-hidden">
+          <ContextMatters />
+          <Footer />
+        </section>
+      </div>
+    </>
   );
 };
 
