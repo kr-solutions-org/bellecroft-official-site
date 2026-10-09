@@ -18,10 +18,8 @@ const ContactPage: React.FC = () => {
         <ContactFormSection />
       </div>
 
-      <div className="snap-start snap-always w-full shrink-0">
-        <section className="w-full h-screen flex flex-col overflow-hidden">
-          <Footer />
-        </section>
+      <div className="snap-end snap-always w-full shrink-0 relative bg-white">
+        <Footer />
       </div>
     </>
   );

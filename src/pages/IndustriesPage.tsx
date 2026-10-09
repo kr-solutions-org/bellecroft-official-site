@@ -12,10 +12,8 @@ const IndustriesPage: React.FC = () => {
       <div className="snap-start snap-always w-full shrink-0"><IndustriesHero /></div>
       <div className="snap-start snap-always w-full shrink-0"><IndustryCards /></div>
       <div className="snap-start snap-always w-full shrink-0"><GlobalStandardsSection /></div>
-      <div className="snap-start snap-always w-full shrink-0">
-        <section className="relative w-full h-screen overflow-hidden flex flex-col bg-white">
-          <Footer />
-        </section>
+      <div className="snap-end snap-always w-full shrink-0 relative bg-white">
+        <Footer />
       </div>
     </>
   );
