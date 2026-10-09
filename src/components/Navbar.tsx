@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 // Replace with your actual logo import
@@ -15,9 +15,46 @@ const NAV_LINKS = [
 
 const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const lastScrollTop = useRef(0);
+
+  useEffect(() => {
+    // The app scrolls inside its full-height wrapper rather than the window.
+    const scrollContainer = document.querySelector<HTMLElement>(
+      "[data-scroll-container]"
+    );
+
+    if (!scrollContainer) return;
+
+    const handleScroll = () => {
+      const currentScrollTop = Math.max(scrollContainer.scrollTop, 0);
+      const scrollDelta = currentScrollTop - lastScrollTop.current;
+
+      // Always show the navbar at the top of a page.
+      if (currentScrollTop <= 8) {
+        setHidden(false);
+      } else if (Math.abs(scrollDelta) >= 6) {
+        // Hide on a meaningful downward movement and reveal on upward movement.
+        setHidden(scrollDelta > 0 && !mobileOpen);
+        lastScrollTop.current = currentScrollTop;
+      }
+    };
+
+    scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      scrollContainer.removeEventListener("scroll", handleScroll);
+    };
+  }, [mobileOpen]);
+
+  const shouldHide = hidden && !mobileOpen;
 
   return (
-    <nav className="fixed top-0 left-0 w-full md:px-12 py-4 flex items-center justify-between z-50 bg-transparent">
+    <nav
+      className={`fixed top-0 left-0 w-full md:px-12 py-4 flex items-center justify-between z-50 bg-transparent transform transition-transform duration-300 motion-reduce:transition-none ${
+        shouldHide ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2 shrink-0">
         {/* Replace <img> src with your actual logo variable */}
