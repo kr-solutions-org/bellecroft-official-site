@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ContactFormSection: React.FC = () => {
   return (
@@ -176,7 +177,7 @@ const ContactFormSection: React.FC = () => {
               <div className="flex items-start gap-3 mt-2">
                 <input type="checkbox" id="privacy" className="mt-1 w-4 h-4 rounded border-gray-300 text-[#E6A2A9] focus:ring-[#E6A2A9] cursor-pointer" />
                 <label htmlFor="privacy" className="text-[13px] text-gray-500 leading-snug cursor-pointer">
-                  I agree to the privacy policy and consent to Bellecroft processing my data.
+                  I agree to the <Link to="/terms-and-policies" className="underline text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors">privacy policy</Link> and consent to Bellecroft processing my data.
                 </label>
               </div>
 

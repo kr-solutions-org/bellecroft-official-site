@@ -52,7 +52,10 @@ const Footer: React.FC = () => {
         <p className="tracking-wide">
           In strategic partnership with <span className="text-gray-300">StrEdge Advisory</span>
         </p>
-        <div className="flex gap-6">
+        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+          <Link to="/terms-and-policies" className="hover:text-white transition-colors">
+            Terms & Conditions and Policies
+          </Link>
           <p>© {new Date().getFullYear()} Bellecroft Pvt Ltd. All rights reserved.</p>
         </div>
       </div>
