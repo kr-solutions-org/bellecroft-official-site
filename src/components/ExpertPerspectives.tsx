@@ -155,7 +155,7 @@ const ArticleCard = ({ item, onOpen }: { item: Article; onOpen: (article: Articl
   <button
     type="button"
     onClick={() => onOpen(item)}
-    className="group relative w-full overflow-hidden rounded-[28px] min-h-[420px] text-left shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_60px_rgba(0,0,0,0.14)]"
+    className="group relative w-full overflow-hidden rounded-[24px] md:rounded-[28px] min-h-[340px] sm:min-h-[420px] text-left shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_60px_rgba(0,0,0,0.14)]"
   >
     <img
       src={item.image}
@@ -164,7 +164,7 @@ const ArticleCard = ({ item, onOpen }: { item: Article; onOpen: (article: Articl
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
     <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
-      <span className="mb-3 inline-block rounded-full border border-white/30 bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm">
+      <span className="mb-3 inline-block rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm">
         {item.meta}
       </span>
       <h3 className="text-2xl font-bold leading-tight text-white md:text-[2rem]">
@@ -234,13 +234,13 @@ const ExpertPerspectives: React.FC = () => {
               ×
             </button>
 
-            <div className="max-h-[90vh] overflow-y-auto">
-              <div className="relative h-64 w-full overflow-hidden md:h-80">
+            <div className="max-h-[90dvh] overflow-y-auto">
+              <div className="relative h-48 w-full overflow-hidden sm:h-64 md:h-80">
                 <img src={selectedArticle.image} alt={selectedArticle.title} className="h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
               </div>
 
-              <div className="p-6 md:p-8">
+              <div className="p-5 sm:p-6 md:p-8">
                 <div className="mb-4 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#666666]">
                   <span className="rounded-full bg-[#F4C8CC] px-3 py-1 text-[#333333]">{selectedArticle.category}</span>
                   <span>{selectedArticle.meta}</span>

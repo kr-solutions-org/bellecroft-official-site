@@ -8,7 +8,7 @@ import ExecutiveCoachingImg from "../assets/ExecutiveCoaching.png";
 
 const CoreOfferings: React.FC = () => {
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-[#F9FAFB] flex flex-col">
+    <section className="relative w-full min-h-[100svh] md:overflow-hidden bg-[#F9FAFB] flex flex-col">
       {/* Soft transition from the hero ticker into the offerings section */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-20 z-40 bg-gradient-to-b from-[#E6A2A9]/80 via-[#E6A2A9]/30 to-transparent" />
 
@@ -18,19 +18,19 @@ const CoreOfferings: React.FC = () => {
       </div> */}
 
       {/* Top Banner Area */}
-      <div className="relative w-full overflow-hidden bg-[#f0c8cc0c] flex flex-col justify-center flex-[0.45] min-h-0 shrink-0">
+      <div className="relative w-full overflow-hidden bg-[#f0c8cc0c] flex flex-col justify-center flex-none py-12 md:py-0 md:flex-[0.45] md:min-h-0 shrink-0">
         {/* Background image placeholder & Gradient overlay */}
         <div className="absolute inset-0 z-10">
           {/* Right side image */}
           <div className="absolute top-0 right-0 w-full z-30 md:w-2/3 h-full">
-            <img src={TeamPhoto} alt="Team collaborating" className="w-full h-full object-cover object-left md:object-center" />
+            <img src={TeamPhoto} alt="Team collaborating" className="w-full h-full object-cover object-center" />
           </div>
           {/* Gradient to blend the text side into the image side */}
-          <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-[#E6A2A9] via-[#E6A2A9]/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-[#E6A2A9] via-[#E6A2A9]/80 md:via-[#E6A2A9]/60 to-[#E6A2A9]/30 md:to-transparent"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 w-full px-8 md:px-16 lg:px-28 py-4 md:py-8 flex flex-col">
+        <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 py-2 md:py-8 flex flex-col">
           <div className="w-full md:w-[60%] lg:w-[50%]">
             <h2 className="mb-2 md:mb-4 leading-[1.1]">
               <span className="block text-[clamp(1.75rem,3.5vw,3.5rem)] font-black text-white tracking-tight">
@@ -51,7 +51,7 @@ const CoreOfferings: React.FC = () => {
             </p>
             <Link
               to="/services"
-              className="inline-flex items-center gap-2 text-[13px] md:text-[20px] font-bold text-gray-900 hover:text-gray-700 transition-colors group"
+              className="inline-flex items-center gap-2 text-[13px] md:text-[20px] font-bold text-gray-900 hover:text-gray-700 transition-colors group py-1 min-h-11"
             >
               See All Services
               <span className="transition-transform duration-200 group-hover:translate-x-1">
@@ -63,13 +63,13 @@ const CoreOfferings: React.FC = () => {
       </div>
 
       {/* Cards Area */}
-      <div className="relative z-20 w-full px-8 md:px-16 lg:px-28 py-4 md:py-8 flex-[0.55] min-h-0 flex flex-col justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-0 max-w-7xl mx-auto w-full h-full">
+      <div className="relative z-20 w-full px-5 sm:px-8 md:px-16 lg:px-28 pb-10 md:py-8 flex-none md:flex-[0.55] md:min-h-0 flex flex-col justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-0 max-w-7xl mx-auto w-full md:h-full">
           
           {/* Card 1 */}
           <div className="group flex flex-col h-full min-h-0 cursor-pointer hover:shadow-xl transition-shadow duration-300">
             {/* Image Box */}
-            <div className="relative w-full flex-1 min-h-[150px] bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+            <div className="relative w-full flex-1 min-h-[180px] md:min-h-[150px] bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
               <div className="absolute inset-0">
                 <img src={StrategicConsultingImg} alt="Strategic Advisory" className="w-full h-full object-cover object-top" />
               </div>
@@ -87,7 +87,7 @@ const CoreOfferings: React.FC = () => {
                   Advisory
                 </span>
               </h3>
-              <p className="text-gray-600 text-[12px] md:text-[13px] leading-relaxed max-w-xs mx-auto">
+              <p className="text-gray-600 text-[13px] leading-relaxed max-w-xs mx-auto">
                 Governance, planning, and transformation — for decisions made with confidence.
               </p>
               <div className="absolute bottom-2 right-4 text-[#E6A2A9] opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold">
@@ -98,7 +98,7 @@ const CoreOfferings: React.FC = () => {
 
           {/* Card 2 */}
           <div className="group flex flex-col h-full min-h-0 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-            <div className="relative w-full flex-1 min-h-[150px] bg-gray-300 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+            <div className="relative w-full flex-1 min-h-[180px] md:min-h-[150px] bg-gray-300 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
               <div className="absolute inset-0">
                 <img src={CorporateTrainingImg} alt="Corporate Training" className="w-full h-full object-cover object-top" />
               </div>
@@ -114,7 +114,7 @@ const CoreOfferings: React.FC = () => {
                   Training
                 </span>
               </h3>
-              <p className="text-gray-600 text-[12px] md:text-[13px] leading-relaxed max-w-xs mx-auto">
+              <p className="text-gray-600 text-[13px] leading-relaxed max-w-xs mx-auto">
                 Practical learning experiences that enhance professional capability and workplace performance.
               </p>
               <div className="absolute bottom-2 right-4 text-[#E6A2A9] opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold">
@@ -125,7 +125,7 @@ const CoreOfferings: React.FC = () => {
 
           {/* Card 3 */}
           <div className="group flex flex-col h-full min-h-0 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-            <div className="relative w-full flex-1 min-h-[150px] bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+            <div className="relative w-full flex-1 min-h-[180px] md:min-h-[150px] bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
               <div className="absolute inset-0">
                 <img src={ExecutiveCoachingImg} alt="Executive Development" className="w-full h-full object-cover object-top" />
               </div>
@@ -141,7 +141,7 @@ const CoreOfferings: React.FC = () => {
                   Development
                 </span>
               </h3>
-              <p className="text-gray-600 text-[12px] md:text-[13px] leading-relaxed max-w-xs mx-auto">
+              <p className="text-gray-600 text-[13px] leading-relaxed max-w-xs mx-auto">
                 Leadership coaching and development programmes for current and future leaders.
               </p>
               <div className="absolute bottom-2 right-4 text-[#E6A2A9] opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold">
@@ -152,7 +152,7 @@ const CoreOfferings: React.FC = () => {
 
           {/* Card 4 */}
           <div className="group flex flex-col h-full min-h-0 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-            <div className="relative w-full flex-1 min-h-[150px] bg-gray-300 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+            <div className="relative w-full flex-1 min-h-[180px] md:min-h-[150px] bg-gray-300 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
               <div className="absolute inset-0">
                 {/* Reusing StrategicConsultingImg as no new image was provided */}
                 <img src={StrategicConsultingImg} alt="Organisational Development" className="w-full h-full object-cover object-center" />
@@ -169,7 +169,7 @@ const CoreOfferings: React.FC = () => {
                   Development
                 </span>
               </h3>
-              <p className="text-gray-600 text-[12px] md:text-[13px] leading-relaxed max-w-xs mx-auto">
+              <p className="text-gray-600 text-[13px] leading-relaxed max-w-xs mx-auto">
                 Building stronger organisations through culture, capability, and performance improvement.
               </p>
               <div className="absolute bottom-2 right-4 text-[#E6A2A9] opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold">

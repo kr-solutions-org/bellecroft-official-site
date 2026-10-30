@@ -13,7 +13,7 @@ function Home() {
       <div className="snap-start snap-always w-full shrink-0"><CoreOfferings></CoreOfferings></div>
       <div className="snap-start snap-always w-full shrink-0"><GlobalWisdom></GlobalWisdom></div>
       <div className="snap-start snap-always w-full shrink-0">
-        <section className="relative w-full h-screen overflow-hidden flex flex-col bg-white">
+        <section className="relative w-full min-h-[100svh] md:overflow-hidden flex flex-col bg-white">
           <AboutUs></AboutUs>
           <Footer></Footer>
         </section>

@@ -4,13 +4,13 @@ import MissionImage from '../assets/MissionImage.png';
 
 const MissionSection: React.FC = () => {
   return (
-    <section className="w-full h-screen relative flex flex-col font-sans overflow-hidden bg-[#fafafa]">
+    <section className="w-full relative flex flex-col font-sans overflow-hidden bg-[#fafafa] md:flex-1 md:min-h-0">
       
       {/* Top Half - Mission & Vision */}
-      <div className="flex-1 flex flex-col md:flex-row w-full min-h-0">
+      <div className="flex-none md:flex-1 flex flex-col md:flex-row w-full min-h-0">
         
         {/* Left: Our Mission */}
-        <div className="w-full md:w-[60%] h-1/2 md:h-full bg-[#E6A2A9] p-8 md:p-16 lg:p-24 flex flex-col justify-center text-gray-900">
+        <div className="w-full md:w-[60%] md:h-full bg-[#E6A2A9] p-7 sm:p-8 md:p-16 lg:p-24 flex flex-col justify-center text-gray-900">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-white self-start">
             Our Mission
           </h2>
@@ -23,10 +23,10 @@ const MissionSection: React.FC = () => {
         </div>
 
         {/* Right: Our Vision Image Placeholder */}
-        <div className="w-full md:w-[40%] h-1/2 md:h-full relative bg-gray-900 flex flex-col justify-end overflow-hidden">
+        <div className="w-full md:w-[40%] h-56 sm:h-72 md:h-full relative bg-gray-900 flex flex-col justify-end overflow-hidden">
           {/* Placeholder for the Eye/HUD image */}
           <div className="absolute inset-0 flex items-center justify-center ">
-             <img src={MissionImage} alt="" className='object-fit' />
+             <img src={MissionImage} alt="Bellecroft mission" className='w-full h-full object-cover' />
           </div>
           
          
@@ -34,7 +34,7 @@ const MissionSection: React.FC = () => {
       </div>
 
       {/* Bottom Half - Why Bellecroft */}
-      <div className="flex-1 flex flex-col w-full min-h-0 items-center justify-center p-4 md:p-8 lg:p-12">
+      <div className="flex-none md:flex-1 flex flex-col w-full min-h-0 items-center justify-center p-6 sm:p-8 md:p-8 lg:p-12">
         
         {/* Header */}
         <div className="text-center mb-6 md:mb-10 lg:mb-12">
@@ -47,7 +47,7 @@ const MissionSection: React.FC = () => {
         </div>
 
         {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full max-w-7xl mx-auto px-4 md:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full max-w-7xl mx-auto px-0 md:px-0">
           
           {/* Card 1 */}
           <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-cyan-500/10 border border-gray-50 flex flex-col">

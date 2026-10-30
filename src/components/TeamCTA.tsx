@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const TeamCTA: React.FC = () => {
   return (
-    <div className="w-full flex-1 bg-[#E6A2A9] flex flex-col items-center justify-center relative overflow-hidden py-10 md:py-16 px-6">
+    <div className="w-full flex-1 bg-[#E6A2A9] flex flex-col items-center justify-center relative overflow-hidden py-12 md:py-16 px-5 sm:px-6">
       
       <div className="w-full max-w-4xl mx-auto flex flex-col items-center text-center gap-5 md:gap-6">
         
@@ -22,16 +22,16 @@ const TeamCTA: React.FC = () => {
           Our team is equipped to deliver results that transcend traditional consulting boundaries.
         </p>
         
-        <div className="flex items-center gap-4 mt-4">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mt-4 w-full sm:w-auto">
           <Link
             to="/contact"
-            className="px-8 py-3 bg-white text-[#E6A2A9] text-[14px] md:text-[15px] font-bold rounded hover:bg-gray-50 transition-colors shadow-sm"
+            className="px-8 py-3 bg-white text-[#E6A2A9] text-[14px] md:text-[15px] font-bold rounded hover:bg-gray-50 transition-colors shadow-sm text-center"
           >
             Inquire Now
           </Link>
           <Link
             to="/services"
-            className="px-8 py-3 bg-transparent border-2 border-white text-white text-[14px] md:text-[15px] font-bold rounded hover:bg-white/10 transition-colors shadow-sm"
+            className="px-8 py-3 bg-transparent border-2 border-white text-white text-[14px] md:text-[15px] font-bold rounded hover:bg-white/10 transition-colors shadow-sm text-center"
           >
             Our Services
           </Link>

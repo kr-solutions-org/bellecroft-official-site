@@ -3,7 +3,7 @@ import StredgeLogo from "../assets/StredgeLogo.png"
 
 const TeamHero: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col justify-between overflow-hidden bg-white">
+    <section className="relative w-full min-h-[100svh] flex flex-col justify-between overflow-hidden bg-white">
       
       {/* Background Image (Tree) */}
       <div className="absolute inset-y-0 right-0 w-full md:w-[65%] lg:w-[60%] z-0">
@@ -21,7 +21,7 @@ const TeamHero: React.FC = () => {
       </div>
 
       {/* Main Content Container (Top half) */}
-      <div className="relative z-10 w-full px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center items-center max-w-7xl mx-auto pt-24">
+      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center items-center max-w-7xl mx-auto pt-28 md:pt-24 pb-10 md:pb-0">
         <div className="w-full md:w-[65%] lg:w-[55%] flex flex-col items-center text-center">
           
           <h1 className="leading-[1.1] mb-6 flex flex-col">
@@ -48,14 +48,14 @@ const TeamHero: React.FC = () => {
             </span>
           </h1>
 
-          <p className="text-gray-600 text-base md:text-[1.1rem] leading-relaxed max-w-[600px] mb-8 font-medium">
+          <p className="text-gray-600 text-sm sm:text-base md:text-[1.1rem] leading-relaxed max-w-[600px] mb-8 font-medium">
             At Bellecroft, we bridge the gap between global strategic theory and local operational excellence. Our team is comprised of seasoned consultants, world-class trainers, and visionary partners dedicated to your professional evolution.
           </p>
 
           {/* StrEdge Logo Placeholder */}
           <div className="flex items-center gap-1 text-[2.5rem] font-bold tracking-widest text-black mb-4">
             {/* Simple geometric icon representing the logo */}
-            <img src={StredgeLogo} alt="Stredge Logo" className="w-100" />
+            <img src={StredgeLogo} alt="Stredge Logo" className="w-48 sm:w-64 md:w-80 lg:w-100 max-w-full h-auto" />
           </div>
 
         </div>

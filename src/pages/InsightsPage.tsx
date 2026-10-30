@@ -12,7 +12,7 @@ const InsightsPage: React.FC = () => {
       <div className="snap-start snap-always w-full shrink-0"><InsightsHero /></div>
       <div className="snap-start snap-always w-full shrink-0"><ExpertPerspectives /></div>
       <div className="snap-start snap-always w-full shrink-0">
-        <section className="relative w-full h-screen flex flex-col bg-white overflow-hidden">
+        <section className="relative w-full min-h-[100svh] flex flex-col bg-white md:overflow-hidden">
           <Newsletter />
           <div className="shrink-0 w-full">
             <Footer />

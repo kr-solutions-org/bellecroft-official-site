@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactFormSection: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center snap-center">
+    <section className="relative w-full min-h-[100svh] flex flex-col items-center snap-center">
       {/* Background Image for the lower part */}
       <div className="absolute inset-0 z-0 top-[200px]">
         <img 
@@ -20,7 +20,7 @@ const ContactFormSection: React.FC = () => {
       </div>
 
       {/* TOP BANNER: Contact Details */}
-      <div className="relative z-20 w-full bg-white shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)] py-12 px-8 md:px-12 lg:px-24 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-0">
+      <div className="relative z-20 w-full bg-white shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)] py-10 md:py-12 px-5 sm:px-8 md:px-12 lg:px-24 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-0">
         
         {/* Left Intro */}
         <div className="flex flex-col gap-3 lg:max-w-[280px]">
@@ -31,7 +31,7 @@ const ContactFormSection: React.FC = () => {
           <p className="text-[13px] text-gray-500 font-medium leading-relaxed">
             Our consultants are available for global inquiries with a local heart in the Maldives.
           </p>
-          <a href="#form" className="text-[13px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors flex items-center gap-1.5 mt-2">
+          <a href="#form" className="inline-flex items-center min-h-11 text-[13px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors gap-1.5 mt-1">
             Send an Inquiry <span>→</span>
           </a>
         </div>
@@ -41,39 +41,39 @@ const ContactFormSection: React.FC = () => {
           
           {/* Item 1 */}
           <div className="flex flex-col gap-2.5">
-            <div className="bg-[#E6A2A9] text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase w-fit rounded-sm">
+            <div className="bg-[#E6A2A9] text-white text-xs font-bold tracking-widest px-3 py-1 uppercase w-fit rounded-sm">
               Direct Inquiries
             </div>
-            <a href="mailto:hello@bellecroft.mv" className="text-lg font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors">
+            <a href="mailto:hello@bellecroft.mv" className="inline-flex items-center min-h-11 text-lg font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors">
               hello@bellecroft.mv
             </a>
             <p className="text-[12px] text-gray-500 italic leading-snug max-w-[150px]">
               2-4 business hours response time
             </p>
-            <a href="mailto:hello@bellecroft.mv" className="text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors flex items-center gap-1.5 mt-1">
+            <a href="mailto:hello@bellecroft.mv" className="inline-flex items-center min-h-11 text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors gap-1.5 mt-0.5">
               Write to us <span>→</span>
             </a>
           </div>
 
           {/* Item 2 */}
           <div className="flex flex-col gap-2.5">
-            <div className="bg-[#E6A2A9] text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase w-fit rounded-sm">
+            <div className="bg-[#E6A2A9] text-white text-xs font-bold tracking-widest px-3 py-1 uppercase w-fit rounded-sm">
               Call Us
             </div>
-            <a href="tel:+9601234567" className="text-lg font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors">
+            <a href="tel:+9601234567" className="inline-flex items-center min-h-11 text-lg font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors">
               +960 123 4567
             </a>
             <p className="text-[12px] text-gray-500 italic leading-snug max-w-[150px]">
               Mon-Fri, 9am - 5pm GMT+5
             </p>
-            <a href="tel:+9601234567" className="text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors flex items-center gap-1.5 mt-1">
+            <a href="tel:+9601234567" className="inline-flex items-center min-h-11 text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors gap-1.5 mt-0.5">
               Call now <span>→</span>
             </a>
           </div>
 
           {/* Item 3 */}
           <div className="flex flex-col gap-2.5">
-            <div className="bg-[#E6A2A9] text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase w-fit rounded-sm">
+            <div className="bg-[#E6A2A9] text-white text-xs font-bold tracking-widest px-3 py-1 uppercase w-fit rounded-sm">
               Office Hours
             </div>
             <div className="text-lg font-bold text-[#2B2A2A]">
@@ -82,7 +82,7 @@ const ContactFormSection: React.FC = () => {
             <p className="text-[12px] text-gray-500 italic leading-snug max-w-[160px]">
               Standard Maldivian Government Hours
             </p>
-            <a href="#form" className="text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors flex items-center gap-1.5 mt-1">
+            <a href="#form" className="inline-flex items-center min-h-11 text-[12px] font-bold text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors gap-1.5 mt-0.5">
               View calendar <span>→</span>
             </a>
           </div>
@@ -91,11 +91,11 @@ const ContactFormSection: React.FC = () => {
       </div>
 
       {/* BOTTOM FORM AREA */}
-      <div id="form" className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center py-16">
+      <div id="form" className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-12 flex-1 flex flex-col justify-center py-10 md:py-16">
         <div className="flex flex-col md:flex-row w-full bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] overflow-hidden">
           
           {/* Left Panel - Image & Title */}
-          <div className="w-full md:w-[45%] relative bg-gray-100 flex flex-col justify-end p-10 md:p-14 min-h-[300px]">
+          <div className="w-full md:w-[45%] relative bg-gray-100 flex flex-col justify-end p-7 sm:p-10 md:p-14 min-h-[220px] sm:min-h-[300px]">
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
               alt="Building structure" 
@@ -125,36 +125,36 @@ const ContactFormSection: React.FC = () => {
           </div>
 
           {/* Right Panel - Form Fields */}
-          <div className="w-full md:w-[55%] p-10 md:p-14 bg-white flex flex-col justify-center">
+          <div className="w-full md:w-[55%] p-6 sm:p-10 md:p-14 bg-white flex flex-col justify-center">
             <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">First Name</label>
-                  <input type="text" placeholder="John" className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
+                  <label className="text-xs font-bold text-gray-500 uppercase tracking-widest">First Name</label>
+                  <input type="text" placeholder="John" className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-base md:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Last Name</label>
-                  <input type="text" placeholder="Doe" className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
+                  <label className="text-xs font-bold text-gray-500 uppercase tracking-widest">Last Name</label>
+                  <input type="text" placeholder="Doe" className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-base md:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Work Email</label>
-                  <input type="email" placeholder="john@company.com" className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
+                  <label className="text-xs font-bold text-gray-500 uppercase tracking-widest">Work Email</label>
+                  <input type="email" placeholder="john@company.com" className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-base md:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Company Name</label>
-                  <input type="text" placeholder="Organisation Ltd." className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
+                  <label className="text-xs font-bold text-gray-500 uppercase tracking-widest">Company Name</label>
+                  <input type="text" placeholder="Organisation Ltd." className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-base md:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9]" />
                 </div>
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Primary Interest</label>
+                <label className="text-xs font-bold text-gray-500 uppercase tracking-widest">Primary Interest</label>
                 <div className="relative">
-                  <select className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-400 appearance-none focus:outline-none focus:ring-1 focus:ring-[#E6A2A9] cursor-pointer">
-                    <option value="" disabled selected>Select your primary interest...</option>
+                  <select defaultValue="" className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-base md:text-sm text-gray-400 appearance-none focus:outline-none focus:ring-1 focus:ring-[#E6A2A9] cursor-pointer">
+                    <option value="" disabled>Select your primary interest...</option>
                     <option value="consulting">Consulting</option>
                     <option value="training">Training</option>
                     <option value="audit">Operational Audit</option>
@@ -166,22 +166,22 @@ const ContactFormSection: React.FC = () => {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Tell us about your needs</label>
+                <label className="text-xs font-bold text-gray-500 uppercase tracking-widest">Tell us about your needs</label>
                 <textarea 
                   rows={4} 
                   placeholder="Briefly describe your current challenge or the training requirements of your team..." 
-                  className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9] resize-none"
+                  className="w-full bg-[#f2f2f2] border-none px-4 py-3 text-base md:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E6A2A9] resize-none"
                 ></textarea>
               </div>
 
               <div className="flex items-start gap-3 mt-2">
-                <input type="checkbox" id="privacy" className="mt-1 w-4 h-4 rounded border-gray-300 text-[#E6A2A9] focus:ring-[#E6A2A9] cursor-pointer" />
-                <label htmlFor="privacy" className="text-[13px] text-gray-500 leading-snug cursor-pointer">
+                <input type="checkbox" id="privacy" className="mt-0.5 h-6 w-6 shrink-0 rounded border-gray-300 text-[#E6A2A9] focus:ring-[#E6A2A9] cursor-pointer" />
+                <label htmlFor="privacy" className="text-[13px] text-gray-500 leading-snug cursor-pointer min-h-11">
                   I agree to the <Link to="/terms-and-policies" className="underline text-[#2B2A2A] hover:text-[#E6A2A9] transition-colors">privacy policy</Link> and consent to Bellecroft processing my data.
                 </label>
               </div>
 
-              <button type="submit" className="mt-4 px-8 py-3.5 bg-[#E6A2A9] text-white text-[14px] font-bold rounded-lg hover:bg-[#d68a91] transition-colors duration-200 shadow-sm self-start">
+              <button type="submit" className="mt-2 md:mt-4 px-8 py-3.5 bg-[#E6A2A9] text-white text-[14px] font-bold rounded-lg hover:bg-[#d68a91] transition-colors duration-200 shadow-sm self-stretch sm:self-start">
                 Send Strategic Inquiry
               </button>
             </form>

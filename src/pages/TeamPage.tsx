@@ -20,7 +20,7 @@ const TeamPage: React.FC = () => {
       </div>
 
       <div className="snap-start snap-always w-full shrink-0">
-        <section className="w-full h-screen flex flex-col snap-center overflow-hidden">
+        <section className="w-full min-h-[100svh] flex flex-col md:snap-center md:overflow-hidden">
           <TeamCTA />
           <Footer />
         </section>

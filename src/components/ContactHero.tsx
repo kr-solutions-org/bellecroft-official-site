@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactHero: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col justify-between overflow-hidden pt-20">
+    <section className="relative w-full min-h-[100svh] flex flex-col justify-between overflow-hidden pt-20 pb-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -17,12 +17,12 @@ const ContactHero: React.FC = () => {
         {/* Pinkish/sepia overlay to match image tone */}
         <div className="absolute inset-0 bg-[#E6A2A9]/20 mix-blend-overlay"></div>
         {/* White gradient from left to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent w-[90%] md:w-[75%]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/90 to-white/40 md:bg-gradient-to-r md:from-white md:via-white/90 md:to-transparent w-full md:w-[75%]"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent"></div>
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 w-full px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center max-w-7xl mx-auto">
+      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center max-w-7xl mx-auto py-12 md:py-0">
         <div className="w-full md:w-[65%] lg:w-[55%] flex flex-col items-start text-left">
           
           <h1 className="leading-[1.1] mb-6 flex flex-col">
@@ -60,7 +60,7 @@ const ContactHero: React.FC = () => {
             Bellecroft combines international excellence with local Maldivian insights to deliver transformative consulting and corporate training solutions.
           </p>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#c9878a] transition-colors duration-200 shadow-sm"
@@ -70,7 +70,7 @@ const ContactHero: React.FC = () => {
             
             <Link
               to="/about"
-              className="inline-flex items-center justify-center gap-2 text-[#2B2A2A] text-[15px] font-bold hover:text-[#E6A2A9] transition-colors duration-200 group"
+              className="inline-flex items-center justify-center gap-2 text-[#2B2A2A] text-[15px] font-bold hover:text-[#E6A2A9] transition-colors duration-200 group py-1 min-h-11"
             >
               Our Story 
               <span className="group-hover:translate-x-1 transition-transform duration-200">

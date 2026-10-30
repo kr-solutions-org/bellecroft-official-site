@@ -3,15 +3,15 @@ import InsightsHeroImg from '../assets/InsightsHero.png';
 
 const InsightsHero: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col md:flex-row bg-white overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex flex-col md:flex-row bg-white overflow-hidden">
       
       {/* Left side: Text Content */}
-      <div className="w-full md:w-[55%] flex flex-col justify-center px-6 md:px-16 lg:px-24 pt-24 md:pt-0 z-10">
+      <div className="w-full md:w-[55%] flex flex-col justify-center px-5 sm:px-6 md:px-16 lg:px-24 pt-28 pb-12 md:pt-0 md:pb-0 z-10">
         <h1 className="flex flex-col items-start leading-[1.05] mb-6">
-          <span className="text-[#333333] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight">
+          <span className="text-[#333333] text-[clamp(2.25rem,8vw,5.5rem)] font-black tracking-tight">
             Ideas That Inform
           </span>
-          <span className="text-[#E6A2A9] text-[clamp(2.5rem,6vw,5.5rem)] font-black tracking-tight text-[clamp(3.5rem,8vw,7rem)]"  style={{
+          <span className="text-[#E6A2A9] text-[clamp(2.25rem,9vw,7rem)] font-black tracking-tight leading-tight"  style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",

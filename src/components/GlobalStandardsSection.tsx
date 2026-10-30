@@ -2,11 +2,11 @@ import React from 'react';
 
 const GlobalStandardsSection: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex flex-col md:overflow-hidden">
       
       {/* Top Half: Pink Background */}
-      <div className="w-full flex-1 bg-[#E6A2A9] flex flex-col justify-center px-6 md:px-16 lg:px-24">
-        <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      <div className="w-full flex-none md:flex-1 bg-[#E6A2A9] flex flex-col justify-center px-5 sm:px-6 md:px-16 lg:px-24 py-12 md:py-0">
+        <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
           
           {/* Left Text */}
           <div className="w-full md:w-1/2 flex flex-col">
@@ -28,7 +28,7 @@ const GlobalStandardsSection: React.FC = () => {
           <div className="w-full md:w-1/2 flex flex-col gap-4">
             
             {/* Pill 1 */}
-            <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-8 py-5 shadow-lg flex flex-col justify-center">
+            <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl md:rounded-full px-5 sm:px-8 py-5 shadow-lg flex flex-col justify-center">
               <h4 className="text-[#333333] text-lg font-bold mb-1">Market Adaptability</h4>
               <p className="text-[#333333] text-xs font-medium">
                 Tailoring strategic frameworks to local market dynamics and conditions.
@@ -36,7 +36,7 @@ const GlobalStandardsSection: React.FC = () => {
             </div>
 
             {/* Pill 2 */}
-            <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-8 py-5 shadow-lg flex flex-col justify-center ml-0 md:ml-8 lg:ml-12">
+            <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl md:rounded-full px-5 sm:px-8 py-5 shadow-lg flex flex-col justify-center ml-0 md:ml-8 lg:ml-12">
               <h4 className="text-[#333333] text-lg font-bold mb-1">Regulatory Alignment</h4>
               <p className="text-[#333333] text-xs font-medium">
                 Ensuring all corporate strategies comply with local mandates and governance.
@@ -48,10 +48,10 @@ const GlobalStandardsSection: React.FC = () => {
       </div>
 
       {/* Bottom Half: White Background */}
-      <div className="w-full flex-[1.1] bg-gradient-to-b from-[#F9FAFB] to-[#F3F4F6] flex flex-col relative pt-10 pb-8 md:pt-12">
+      <div className="w-full flex-none md:flex-[1.1] bg-gradient-to-b from-[#F9FAFB] to-[#F3F4F6] flex flex-col relative pt-10 pb-8 md:pt-12">
         
         {/* Header & Text */}
-        <div className="flex flex-col items-center text-center px-6 mb-8 md:mb-10 max-w-3xl mx-auto">
+        <div className="flex flex-col items-center text-center px-5 sm:px-6 mb-8 md:mb-10 max-w-3xl mx-auto">
           <h3 className="text-[#E6A2A9] text-2xl md:text-4xl font-black mb-4">
             Proven Results Across the Board
           </h3>
