@@ -154,7 +154,7 @@ const TermsAndPoliciesPage: React.FC = () => {
           </div>
 
           <div className="relative z-10 text-center max-w-4xl">
-            <h1 className="text-4xl md:text-[4rem] font-black tracking-tight leading-[1.1] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-[4rem] font-black tracking-tight leading-[1.1] mb-6">
               <span className="text-[#2B2A2A]">Terms, Conditions & Policies</span><br />
             </h1>
             <p className="text-gray-500 text-base md:text-lg font-medium max-w-2xl mx-auto leading-relaxed">
@@ -194,7 +194,7 @@ const TermsAndPoliciesPage: React.FC = () => {
               <div
                 key={section.id}
                 id={section.id}
-                className={`py-10 ${index < sections.length - 1 ? 'border-b border-gray-100' : ''}`}
+                className={`py-10 scroll-mt-28 ${index < sections.length - 1 ? 'border-b border-gray-100' : ''}`}
               >
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-1 h-8 bg-[#E6A2A9] rounded-full"></div>
@@ -255,7 +255,7 @@ const TermsAndPoliciesPage: React.FC = () => {
             <div className="text-center pt-8 pb-4">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 text-sm font-bold text-[#E6A2A9] hover:text-[#c9878a] transition-colors"
+                className="inline-flex items-center gap-2 min-h-11 text-sm font-bold text-[#E6A2A9] hover:text-[#c9878a] transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   document.querySelector('[data-scroll-container]')?.scrollTo({ top: 0, behavior: 'smooth' });

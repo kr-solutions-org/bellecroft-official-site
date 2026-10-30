@@ -30,9 +30,64 @@
     overflow: hidden;
   }
 
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  :focus-visible {
+    outline: 2px solid #E6A2A9;
+    outline-offset: 2px;
+  }
+
+}
+
+/* Short viewports (landscape phones, shallow laptop windows): the layered
+   desktop About hero would overlap itself, so let it stack like mobile. */
+@media (min-width: 768px) and (max-height: 640px) {
+  .about-hero {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .about-hero-backdrop {
+    display: none;
+  }
+
+  .about-hero-title {
+    position: relative !important;
+    top: auto !important;
+    padding-top: 7rem;
+  }
+
+  .about-hero-photo {
+    position: relative !important;
+    top: auto !important;
+    height: 46vh !important;
+  }
+
+  .about-hero-bottom {
+    position: relative !important;
+    bottom: auto !important;
+  }
+}
+
+/* Short viewports: full-height sections can be taller than the screen, so
+   mandatory scroll snapping would fight the user. Let them scroll freely. */
+@media (max-height: 640px) {
+  [data-scroll-container] {
+    scroll-snap-type: none !important;
+  }
 }
 
 @layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
   .animate-marquee {
     animation: marquee 30s linear infinite;
   }

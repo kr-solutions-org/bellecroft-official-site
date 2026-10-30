@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Newsletter: React.FC = () => {
   return (
-    <div className="w-full flex-1 bg-[#d5a5ac] flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 py-12 md:py-16 text-center" style={{ backgroundColor: '#DBA8AF' }}>
+    <div className="w-full flex-1 bg-[#d5a5ac] flex flex-col items-center justify-center px-5 sm:px-6 md:px-12 lg:px-24 py-12 md:py-16 text-center" style={{ backgroundColor: '#DBA8AF' }}>
       
       {/* Title */}
       <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-black leading-tight tracking-tight mb-4">

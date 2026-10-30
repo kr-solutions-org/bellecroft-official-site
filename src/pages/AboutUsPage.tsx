@@ -12,16 +12,16 @@ const AboutUsPage: React.FC = () => {
 
       {/* Hero Section */}
       <div className="snap-start snap-always w-full shrink-0 bg-white">
-        <section className="relative w-full h-screen overflow-hidden bg-white">
+        <section className="about-hero relative w-full min-h-[100svh] overflow-hidden bg-white flex flex-col md:block">
           {/* Faint Background Text */}
-          <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 flex flex-col gap-0 leading-[0.8] opacity-5">
+          <div className="about-hero-backdrop absolute top-[15%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 flex flex-col gap-0 leading-[0.8] opacity-5">
             <span className="text-[22vw] font-black text-gray-900 uppercase tracking-tighter">BELLECROFT</span>
             <span className="text-[22vw] font-black text-gray-900 uppercase tracking-tighter">BELLECROFT</span>
           </div>
 
           {/* Title */}
-          <div className="absolute top-32 md:top-36 left-0 w-full z-10 text-center">
-            <h1 className="text-6xl md:text-[5.5rem] font-black tracking-tight leading-none">
+          <div className="about-hero-title relative md:absolute md:top-36 left-0 w-full z-10 text-center pt-28 md:pt-0 pb-4 md:pb-0">
+            <h1 className="text-4xl sm:text-5xl md:text-[5.5rem] font-black tracking-tight leading-none">
               <span className="text-[#2c2c2c]">Building Capability</span><br/>
               <span className="text-[#E6A2A9]" style={{
                     fontFamily: "var(--font-cursive)",
@@ -33,11 +33,11 @@ const AboutUsPage: React.FC = () => {
           </div>
 
           {/* Team Photo */}
-          <div className="absolute top-55 bottom-0 left-0 w-full h-[75%] md:h-[95%] z-10 flex items-end justify-center pointer-events-none">
+          <div className="about-hero-photo relative md:absolute md:top-55 md:bottom-0 left-0 w-full h-[42vh] sm:h-[50vh] md:h-[95%] z-10 flex items-end justify-center pointer-events-none">
             <img 
               src={AboutUsHero} 
               alt="Team Collaboration" 
-              className="w-full h-full object-cover object-bottom" 
+              className="w-full h-full object-cover object-center md:object-bottom" 
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).src = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
               }}
@@ -45,12 +45,12 @@ const AboutUsPage: React.FC = () => {
           </div>
 
           {/* Bottom Bar Gradient Overlay */}
-          <div className="absolute bottom-0 left-0 w-full z-20">
-            <div className="w-full bg-linear-to-t from-[#e9ebed] via-[#e9ebed]/90 to-transparent pt-24 pb-8 px-6 text-center">
-              <h3 className="text-[#3b3b4f] font-bold text-lg md:text-[22px] mb-2 max-w-4xl mx-auto">
+          <div className="about-hero-bottom relative md:absolute md:bottom-0 left-0 w-full z-20">
+            <div className="w-full bg-linear-to-t from-[#e9ebed] via-[#e9ebed]/90 to-transparent pt-6 md:pt-24 pb-8 px-5 sm:px-6 text-center">
+              <h3 className="text-[#3b3b4f] font-bold text-base sm:text-lg md:text-[22px] mb-2 max-w-4xl mx-auto">
                 Bellecroft was established to help organisations and leaders navigate complexity with clarity, confidence, and purpose
               </h3>
-              <p className="text-[#848496] text-sm md:text-base text-center font-medium max-w-6xl mx-auto">
+              <p className="text-[#848496] text-[13px] sm:text-sm md:text-base text-center font-medium max-w-6xl mx-auto">
                 In today’s rapidly evolving environment, organisations require more than advice. They need trusted partners who understand both strategic priorities and operational realities.
   Bellecroft was founded to bridge that gap.
   Through strategic advisory, leadership development, professional training, and organisational support, we help organisations strengthen capability, improve performance, and achieve sustainable success.
@@ -69,7 +69,7 @@ const AboutUsPage: React.FC = () => {
 
       {/* Mission Section & Footer */}
       <div className="snap-start snap-always w-full shrink-0">
-        <section className="relative w-full h-screen overflow-hidden flex flex-col bg-white">
+        <section className="relative w-full min-h-[100svh] md:overflow-hidden flex flex-col bg-white">
           <MissionSection />
           <Footer />
         </section>

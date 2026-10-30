@@ -4,14 +4,14 @@ import StrategicConsultingImg from '../assets/StrategicConsulting.png'; // Assum
 
 const CorporateConsulting: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col justify-center bg-[#FAFAFA] overflow-hidden py-8">
+    <section className="relative w-full min-h-[100svh] flex flex-col justify-center bg-[#FAFAFA] overflow-hidden py-12 md:py-8">
       {/* Background subtle curve if needed, relying on clean background for now as it matches the vibe */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 w-full">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 lg:px-16 w-full">
         
         {/* Top Header Row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
           <div className="w-full md:w-1/2">
-            <h3 className="text-gray-400 font-bold tracking-widest text-[10px] md:text-xs uppercase mb-1">
+            <h3 className="text-gray-400 font-bold tracking-widest text-xs uppercase mb-1">
               Corporate Consulting
             </h3>
             <h2 className="text-[#333333] text-3xl md:text-4xl lg:text-5xl font-black tracking-tight">
@@ -26,7 +26,7 @@ const CorporateConsulting: React.FC = () => {
         </div>
 
         {/* Middle Cards Section */}
-        <div className="relative mb-12">
+        <div className="relative mb-10 md:mb-12">
           
           <div className="flex flex-col lg:flex-row items-center">
             {/* Image */}
@@ -43,12 +43,12 @@ const CorporateConsulting: React.FC = () => {
           </div>
 
           {/* Cards overlapping */}
-          <div className="w-full lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 flex flex-col md:flex-row gap-3 lg:gap-4 z-10 px-4 lg:px-0 lg:pl-[35%] mt-[-2rem] lg:mt-0">
+          <div className="w-full lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 flex flex-col sm:flex-row gap-3 lg:gap-4 z-10 px-3 sm:px-4 lg:px-0 lg:pl-[35%] mt-[-2rem] lg:mt-0">
             
             {/* Card 1 */}
             <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm lg:-ml-10 border border-gray-50">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Strategic<br/>Advisory</h4>
-              <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+              <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Comprehensive market analysis and growth strategy formulation designed to position your enterprise as a market leader in the Asia-Pacific region.
               </p>
             </div>
@@ -56,7 +56,7 @@ const CorporateConsulting: React.FC = () => {
             {/* Card 2 */}
             <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Operational<br/>Excellence</h4>
-              <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+              <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Process optimisation and organisational restructuring focused on efficiency, scalability, and long-term sustainability.
               </p>
             </div>
@@ -64,7 +64,7 @@ const CorporateConsulting: React.FC = () => {
             {/* Card 3 */}
             <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Digital<br/>Transformation</h4>
-              <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+              <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Guiding organisations through the complexities of modernisation, from infrastructure overhaul to AI-driven workflow integration.
               </p>
             </div>
@@ -83,7 +83,7 @@ const CorporateConsulting: React.FC = () => {
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
               Success isn’t just about what you do, but how you do it. We blend international standard frameworks with deep-rooted Maldivian market insights to deliver results that are both globally competitive and locally relevant.
             </p>
-            <Link to="/methodology" className="bg-[#E6A2A9] text-white font-bold text-[10px] md:text-xs tracking-widest uppercase px-5 py-2.5 rounded-sm hover:bg-[#d98b92] transition-colors flex items-center gap-2 w-max">
+            <Link to="/methodology" className="bg-[#E6A2A9] text-white font-bold text-xs tracking-widest uppercase px-5 py-3 md:py-2.5 rounded-sm hover:bg-[#d98b92] transition-colors flex items-center gap-2 w-max">
               Our Approach <span>&rarr;</span>
             </Link>
           </div>

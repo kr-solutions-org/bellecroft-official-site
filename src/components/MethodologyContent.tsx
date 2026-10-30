@@ -23,13 +23,13 @@ const MethodologyContent: React.FC = () => {
   ];
 
   return (
-    <section className="w-full h-screen bg-[#f8f9fa] relative overflow-hidden flex flex-col items-center justify-center snap-center">
+    <section className="w-full min-h-[100svh] bg-[#f8f9fa] relative overflow-hidden flex flex-col items-center justify-center snap-center py-10 md:py-12">
       {/* Background radial gradient for subtle effect */}
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'radial-gradient(circle at 50% 0%, #ffffff 0%, transparent 70%)'
       }}></div>
 
-      <div className="w-full max-w-7xl px-6 md:px-12 lg:px-20 mx-auto relative z-10 flex flex-col gap-6 md:gap-10 h-full max-h-[900px] justify-center">
+      <div className="w-full max-w-7xl px-5 sm:px-6 md:px-12 lg:px-20 mx-auto relative z-10 flex flex-col gap-8 md:gap-10 justify-center">
         
         {/* BLOCK 1: How we work with You */}
         <div className="flex flex-col items-center">
@@ -46,7 +46,7 @@ const MethodologyContent: React.FC = () => {
             <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Contextual Audit</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 We begin by deep-diving into your current organisational state, identifying unique local challenges and global opportunities.
               </p>
             </div>
@@ -55,7 +55,7 @@ const MethodologyContent: React.FC = () => {
             <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Strategic Design</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 Co-creating a tailored roadmap that aligns with international excellence while respecting local cultural and operational nuances.
               </p>
             </div>
@@ -64,7 +64,7 @@ const MethodologyContent: React.FC = () => {
             <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Tactical Execution</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 Deploying our team of experts to implement solutions on the ground, ensuring seamless integration into daily operations.
               </p>
             </div>
@@ -73,7 +73,7 @@ const MethodologyContent: React.FC = () => {
             <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Excellence Loop</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 Continuous monitoring and benchmarking against global KPIs to ensure sustainable growth and long-term capability building.
               </p>
             </div>
@@ -105,7 +105,7 @@ const MethodologyContent: React.FC = () => {
           <div className="flex flex-col flex-1 gap-4 w-full">
             <h2 className="text-2xl md:text-4xl font-black tracking-tight leading-tight">
               <span className="text-[#3b3b4f]">The Synthesis of </span>
-              <span className="text-[#E6A2A9] text-6xl"  style={{
+              <span className="text-[#E6A2A9] text-[clamp(2.5rem,8vw,3.75rem)] leading-tight"  style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",

@@ -4,23 +4,23 @@ import ServicesHeroImg from "../assets/ServicesHero.jpeg";
 const ServicesHero: React.FC = () => {
   return (
     <section
-      className="relative w-full h-screen overflow-hidden flex items-center justify-end bg-white bg-cover bg-center"
+      className="relative w-full min-h-[100svh] overflow-hidden flex items-center justify-end bg-white bg-cover bg-center"
       style={{ backgroundImage: `url(${ServicesHeroImg})` }}
     >
       {/* Soft overlay keeps the existing typography readable over the image */}
       <div className="absolute inset-0 z-0 bg-white/20"></div>
 
       {/* Centered text content */}
-      <div className="relative z-10 w-full max-w-3xl px-8 md:px-12 lg:px-16 flex flex-col items-center">
+      <div className="relative z-10 w-full max-w-3xl px-5 sm:px-8 md:px-12 lg:px-16 py-28 md:py-0 flex flex-col items-center">
           
           <h1 className="flex flex-col items-center leading-[1.05] mb-6 w-full">
-            <span className="text-[#333333] text-[clamp(3.5rem,6vw,5.5rem)] font-black tracking-tight">
+            <span className="text-[#333333] text-[clamp(2.75rem,11vw,5.5rem)] font-black tracking-tight">
               Strategic
             </span>
-            <span className="text-[#333333] text-[clamp(3.5rem,6vw,5.5rem)] font-black tracking-tight">
+            <span className="text-[#333333] text-[clamp(2.75rem,11vw,5.5rem)] font-black tracking-tight">
               Solutions
             </span>
-            <span className="text-[#E6A2A9] text-[clamp(4rem,7vw,6.5rem)] font-bold mt-1" style={{
+            <span className="text-[#E6A2A9] text-[clamp(2.75rem,12vw,6.5rem)] font-bold mt-1 leading-tight" style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",
@@ -29,7 +29,7 @@ const ServicesHero: React.FC = () => {
               Meaningful 
             </span>
             <span 
-              className="text-[#E6A2A9] text-[clamp(4rem,7vw,6.5rem)] leading-[0.8] mt-2"
+              className="text-[#E6A2A9] text-[clamp(2.75rem,12vw,6.5rem)] leading-[0.9] mt-2"
               style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
