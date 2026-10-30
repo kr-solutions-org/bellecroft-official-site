@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Newsletter: React.FC = () => {
   return (
@@ -37,7 +38,7 @@ const Newsletter: React.FC = () => {
       
       {/* Disclaimer text */}
       <p className="text-[#444444] text-sm md:text-base font-medium">
-        By subscribing, you agree to our privacy Policy and consent to receive marketing updates.<br className="hidden md:block"/>
+        By subscribing, you agree to our <Link to="/terms-and-policies" className="underline hover:text-[#2B2A2A] transition-colors">Privacy Policy</Link> and consent to receive marketing updates.<br className="hidden md:block"/>
         No spam, just pure strategy.
       </p>
       

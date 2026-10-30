@@ -9,6 +9,7 @@ import InsightsPage from './pages/InsightsPage'
 import MethodologyPage from './pages/MethodologyPage'
 import ContactPage from './pages/ContactPage'
 import TeamPage from './pages/TeamPage'
+import TermsAndPoliciesPage from './pages/TermsAndPoliciesPage'
 
 function AppContent() {
   const { pathname } = useLocation()
@@ -35,6 +36,7 @@ function AppContent() {
         <Route path="/methodology" element={<MethodologyPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/team" element={<TeamPage />} />
+        <Route path="/terms-and-policies" element={<TermsAndPoliciesPage />} />
       </Routes>
     </div>
   )
