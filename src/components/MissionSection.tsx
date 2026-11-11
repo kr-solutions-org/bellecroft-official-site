@@ -4,18 +4,19 @@ import MissionImage from '../assets/MissionImage.png';
 
 const MissionSection: React.FC = () => {
   return (
-    <section className="w-full h-screen relative flex flex-col font-sans overflow-hidden bg-[#fafafa]">
+    <section className="w-full relative flex flex-col font-sans overflow-hidden bg-[#fafafa] md:flex-1 md:min-h-0">
       
       {/* Top Half - Mission & Vision */}
-      <div className="flex-1 flex flex-col md:flex-row w-full min-h-0">
+      <div className="flex-none md:flex-1 flex flex-col md:flex-row w-full min-h-0">
         
         {/* Left: Our Mission */}
-        <div className="w-full md:w-[60%] h-1/2 md:h-full bg-[#E6A2A9] p-8 md:p-16 lg:p-24 flex flex-col justify-center text-gray-900">
+        <div className="w-full md:w-[60%] md:h-full bg-[#E6A2A9] p-7 sm:p-8 md:p-16 lg:p-24 flex flex-col justify-center text-gray-900">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-white self-start">
             Our Mission
           </h2>
           <h3 className="text-xl md:text-3xl lg:text-4xl font-bold italic mb-4 md:mb-6 max-w-2xl leading-tight text-gray-800">
-            Empowering leaders to architect resilient futures through tailored
+            <span className="hidden sm:inline">Empowering leaders to architect resilient futures through tailored</span>
+            <span className="sm:hidden">Empowering leaders to architect resilient futures through tailored strategy and development</span>
           </h3>
           <p className="text-sm md:text-base text-gray-800 opacity-90 max-w-xl font-medium leading-relaxed">
             We exist to provide the intellectual scaffolding upon which businesses can build their most ambitious projects, ensuring stability through expert-led transformation.
@@ -23,10 +24,10 @@ const MissionSection: React.FC = () => {
         </div>
 
         {/* Right: Our Vision Image Placeholder */}
-        <div className="w-full md:w-[40%] h-1/2 md:h-full relative bg-gray-900 flex flex-col justify-end overflow-hidden">
+        <div className="w-full md:w-[40%] h-56 sm:h-72 md:h-full relative bg-gray-900 flex flex-col justify-end overflow-hidden">
           {/* Placeholder for the Eye/HUD image */}
           <div className="absolute inset-0 flex items-center justify-center ">
-             <img src={MissionImage} alt="" className='object-fit' />
+             <img src={MissionImage} alt="Bellecroft mission" className='w-full h-full object-cover' />
           </div>
           
          
@@ -34,7 +35,7 @@ const MissionSection: React.FC = () => {
       </div>
 
       {/* Bottom Half - Why Bellecroft */}
-      <div className="flex-1 flex flex-col w-full min-h-0 items-center justify-center p-4 md:p-8 lg:p-12">
+      <div className="flex-none md:flex-1 flex flex-col w-full min-h-0 items-center justify-center p-6 sm:p-8 md:p-8 lg:p-12">
         
         {/* Header */}
         <div className="text-center mb-6 md:mb-10 lg:mb-12">
@@ -46,37 +47,37 @@ const MissionSection: React.FC = () => {
           </p>
         </div>
 
-        {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full max-w-7xl mx-auto px-4 md:px-0">
+        {/* 4 Pillars Grid — clean horizontal scroll on mobile */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full max-w-7xl mx-auto px-0 md:px-0 max-sm:flex max-sm:gap-3.5 max-sm:-mx-6 max-sm:px-6 max-sm:pb-4 max-sm:overflow-x-auto max-sm:snap-x max-sm:snap-mandatory max-sm:scrollbar-hide">
           
           {/* Card 1 */}
-          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-cyan-500/10 border border-gray-50 flex flex-col">
-            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4">Global Perspective</h4>
-            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed">
+          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-cyan-500/10 border border-gray-50 flex flex-col max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center">
+            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4 max-sm:mb-2.5">Global Perspective</h4>
+            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed max-sm:text-[13px] max-sm:leading-[1.65]">
               We import international best practices and tailor them precisely for the unique dynamics of the Maldivian and regional markets.
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-pink-500/10 border border-gray-50 flex flex-col">
-            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4">Uncompromising<br/>Integrity</h4>
-            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed">
+          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-pink-500/10 border border-gray-50 flex flex-col max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center">
+            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4 max-sm:mb-2.5">Uncompromising<br/>Integrity</h4>
+            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed max-sm:text-[13px] max-sm:leading-[1.65]">
               Our ethos is transparent, evidence-based, and focused precisely on the long-term health of your organisation.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-cyan-500/10 border border-gray-50 flex flex-col">
-            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4">Agile Methodology</h4>
-            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed">
+          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-cyan-500/10 border border-gray-50 flex flex-col max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center">
+            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4 max-sm:mb-2.5">Agile Methodology</h4>
+            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed max-sm:text-[13px] max-sm:leading-[1.65]">
               We don't believe in rigid frameworks. We adapt our approach to meet your specific cultural and operational challenges.
             </p>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-pink-500/10 border border-gray-50 flex flex-col">
-            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4">Outcome Driven</h4>
-            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed">
+          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] shadow-pink-500/10 border border-gray-50 flex flex-col max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center">
+            <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-4 max-sm:mb-2.5">Outcome Driven</h4>
+            <p className="text-gray-400 text-xs md:text-sm font-medium leading-relaxed max-sm:text-[13px] max-sm:leading-[1.65]">
               Our success is measured by your growth. Every strategy is designed with clear KPIs and implementation roadmaps built for accountability.
             </p>
           </div>

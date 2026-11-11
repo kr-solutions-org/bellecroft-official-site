@@ -25,7 +25,7 @@ function AppContent() {
   return(
     <div
       data-scroll-container
-      className="h-screen w-full bg-white font-sans overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth relative"
+      className="h-dvh w-full bg-white font-sans overflow-y-auto overflow-x-hidden snap-none md:snap-y md:snap-mandatory scroll-smooth relative"
     >
       <Routes>
         <Route path="/" element={<Home />} />

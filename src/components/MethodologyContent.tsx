@@ -23,17 +23,17 @@ const MethodologyContent: React.FC = () => {
   ];
 
   return (
-    <section className="w-full h-screen bg-[#f8f9fa] relative overflow-hidden flex flex-col items-center justify-center snap-center">
+    <section className="w-full min-h-[100svh] bg-[#f8f9fa] relative overflow-hidden flex flex-col items-center justify-center snap-center py-10 md:py-12 max-sm:min-h-0 max-sm:py-14">
       {/* Background radial gradient for subtle effect */}
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'radial-gradient(circle at 50% 0%, #ffffff 0%, transparent 70%)'
       }}></div>
 
-      <div className="w-full max-w-7xl px-6 md:px-12 lg:px-20 mx-auto relative z-10 flex flex-col gap-6 md:gap-10 h-full max-h-[900px] justify-center">
+      <div className="w-full max-w-7xl px-5 sm:px-6 md:px-12 lg:px-20 mx-auto relative z-10 flex flex-col gap-8 md:gap-10 justify-center">
         
         {/* BLOCK 1: How we work with You */}
         <div className="flex flex-col items-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#2B2A2A] mb-8 tracking-tight text-center relative">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#2B2A2A] mb-8 tracking-tight text-center relative max-sm:mb-6">
             How we <span className="relative">
               work
               {/* Pink underline */}
@@ -41,39 +41,39 @@ const MethodologyContent: React.FC = () => {
             </span> with You
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-sm:flex max-sm:gap-3.5 max-sm:-mx-5 max-sm:px-5 max-sm:pb-3 max-sm:overflow-x-auto max-sm:snap-x max-sm:snap-mandatory max-sm:scrollbar-hide">
             {/* Card 1 */}
-            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
+            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center max-sm:shadow-sm">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Contextual Audit</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10 max-sm:text-[15.5px] max-sm:mb-1.5">Contextual Audit</h3>
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 We begin by deep-diving into your current organisational state, identifying unique local challenges and global opportunities.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
+            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center max-sm:shadow-sm">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Strategic Design</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10 max-sm:text-[15.5px] max-sm:mb-1.5">Strategic Design</h3>
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 Co-creating a tailored roadmap that aligns with international excellence while respecting local cultural and operational nuances.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
+            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center max-sm:shadow-sm">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Tactical Execution</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10 max-sm:text-[15.5px] max-sm:mb-1.5">Tactical Execution</h3>
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 Deploying our team of experts to implement solutions on the ground, ensuring seamless integration into daily operations.
               </p>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center">
+            <div className="bg-white/80 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white hover:shadow-[0_8px_30px_rgba(230,162,169,0.15)] transition-shadow duration-300 relative group flex flex-col justify-center max-sm:rounded-2xl max-sm:p-5 max-sm:w-[76vw] max-sm:max-w-[18rem] max-sm:shrink-0 max-sm:snap-center max-sm:shadow-sm">
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#E6A2A9]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10">Excellence Loop</h3>
-              <p className="text-gray-500 text-xs leading-relaxed relative z-10">
+              <h3 className="text-lg font-bold text-[#2B2A2A] mb-2 relative z-10 max-sm:text-[15.5px] max-sm:mb-1.5">Excellence Loop</h3>
+              <p className="text-gray-500 text-[13px] leading-relaxed relative z-10">
                 Continuous monitoring and benchmarking against global KPIs to ensure sustainable growth and long-term capability building.
               </p>
             </div>
@@ -92,7 +92,7 @@ const MethodologyContent: React.FC = () => {
           </div>
           <Link
             to="/insights"
-            className="shrink-0 px-6 py-2.5 bg-[#E6A2A9] text-white font-bold rounded-xl hover:bg-[#d68a91] transition-colors duration-200 shadow-md text-[13px] md:text-sm"
+            className="shrink-0 px-6 py-2.5 bg-[#E6A2A9] text-white font-bold rounded-xl hover:bg-[#d68a91] transition-colors duration-200 shadow-md text-[13px] md:text-sm max-sm:min-h-12 max-sm:w-full max-sm:flex max-sm:items-center max-sm:justify-center max-sm:py-0"
           >
             Explore Case Studies
           </Link>
@@ -105,7 +105,7 @@ const MethodologyContent: React.FC = () => {
           <div className="flex flex-col flex-1 gap-4 w-full">
             <h2 className="text-2xl md:text-4xl font-black tracking-tight leading-tight">
               <span className="text-[#3b3b4f]">The Synthesis of </span>
-              <span className="text-[#E6A2A9] text-6xl"  style={{
+              <span className="text-[#E6A2A9] text-[clamp(2.5rem,8vw,3.75rem)] leading-tight"  style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",
@@ -131,10 +131,19 @@ const MethodologyContent: React.FC = () => {
               return (
                 <div 
                   key={index}
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={isActive}
                   className={`flex flex-col transition-all duration-300 border-b border-white last:border-b-0 cursor-pointer ${
                     isActive ? 'bg-white shadow-sm relative z-10' : 'hover:bg-gray-100'
                   }`}
                   onClick={() => setActiveTab(index)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setActiveTab(index);
+                    }
+                  }}
                 >
                   <div className={`p-4 md:p-5 flex flex-col ${isActive ? 'border-l-4 border-[#E6A2A9]' : 'border-l-4 border-transparent'}`}>
                     <h3 className="text-base md:text-lg font-bold text-[#2B2A2A] mb-0.5">{item.title}</h3>

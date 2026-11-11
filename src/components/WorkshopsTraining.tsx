@@ -4,13 +4,13 @@ import CorporateTrainingImg from '../assets/CorporateTraining.png';
 
 const WorkshopsTraining: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col justify-center bg-[#E2A6A9] overflow-hidden py-8">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 w-full">
+    <section className="relative w-full min-h-[100svh] flex flex-col justify-center bg-[#E2A6A9] overflow-hidden py-12 md:py-8 max-sm:min-h-0 max-sm:py-14">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 lg:px-16 w-full">
         
         {/* Top Header Row */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4 max-sm:mb-7 max-sm:gap-3">
           <div className="w-full md:w-1/2">
-            <h3 className="text-white font-bold tracking-widest text-[10px] md:text-xs uppercase mb-1">
+            <h3 className="text-white font-bold tracking-widest text-xs uppercase mb-1">
               Workshops and Training
             </h3>
             <h2 className="text-[#333333] text-3xl md:text-4xl lg:text-5xl font-black tracking-tight">
@@ -18,7 +18,7 @@ const WorkshopsTraining: React.FC = () => {
             </h2>
           </div>
           <div className="w-full md:w-1/2 md:pl-10">
-            <p className="text-[#333333] text-sm md:text-base lg:text-lg font-medium italic border-l-2 border-transparent md:border-none leading-relaxed">
+            <p className="text-[#333333] text-sm md:text-base lg:text-lg font-medium italic border-l-2 border-transparent md:border-none leading-relaxed max-sm:text-[14px] max-sm:leading-[1.7]">
               "Investment in human capital is the highest yielding strategy. Our corporate training programmes are designed to transform your workforce into a competitive asset."
             </p>
           </div>
@@ -35,7 +35,7 @@ const WorkshopsTraining: React.FC = () => {
               <img 
                 src={CorporateTrainingImg} 
                 alt="Corporate Training" 
-                className="w-full h-[200px] md:h-[280px] lg:h-[320px] object-cover grayscale opacity-90 relative z-0"
+                className="w-full h-[200px] md:h-[280px] lg:h-[320px] object-cover grayscale max-sm:grayscale-0 opacity-90 relative z-0"
               />
             </div>
             
@@ -43,29 +43,29 @@ const WorkshopsTraining: React.FC = () => {
             <div className="hidden lg:block lg:w-2/5"></div>
           </div>
 
-          {/* Cards overlapping */}
-          <div className="w-full lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 flex flex-col md:flex-row gap-3 lg:gap-4 z-20 px-4 lg:px-0 lg:pl-[35%] mt-[-2rem] lg:mt-0">
+          {/* Cards overlapping on desktop, clean horizontal scroll on mobile */}
+          <div className="w-full lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 flex flex-col sm:flex-row gap-3 lg:gap-4 z-20 px-3 sm:px-4 lg:px-0 lg:pl-[35%] mt-[-2rem] lg:mt-0 max-sm:flex-row max-sm:-mx-5 max-sm:px-5 max-sm:pb-3 max-sm:mt-4 max-sm:overflow-x-auto max-sm:snap-x max-sm:snap-mandatory max-sm:scrollbar-hide">
             
             {/* Card 1 */}
-            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/10 rounded-sm lg:-ml-10 border border-gray-50">
+            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/10 rounded-sm lg:-ml-10 border border-gray-50 max-sm:w-[76vw] max-sm:max-w-[19rem] max-sm:flex-none max-sm:snap-center max-sm:p-5 max-sm:rounded-2xl max-sm:shadow-md">
               <h4 className="text-[#333333] text-base md:text-lg font-bold mb-2 leading-tight">Executive<br/>Leadership</h4>
-              <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+              <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Developing the next generation of C-suite leaders through immersive workshops, emotional intelligence training, and strategic simulations.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/10 rounded-sm border border-gray-50">
+            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/10 rounded-sm border border-gray-50 max-sm:w-[76vw] max-sm:max-w-[19rem] max-sm:flex-none max-sm:snap-center max-sm:p-5 max-sm:rounded-2xl max-sm:shadow-md">
               <h4 className="text-[#333333] text-base md:text-lg font-bold mb-2 leading-tight">Soft skills Mastery</h4>
-              <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+              <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Empowering teams with essential communication, negotiation, and conflict resolution skills to foster a collaborative corporate culture.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/10 rounded-sm border border-gray-50">
+            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/10 rounded-sm border border-gray-50 max-sm:w-[76vw] max-sm:max-w-[19rem] max-sm:flex-none max-sm:snap-center max-sm:p-5 max-sm:rounded-2xl max-sm:shadow-md">
               <h4 className="text-[#333333] text-base md:text-lg font-bold mb-2 leading-tight">Technical<br/>Excellence</h4>
-              <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
+              <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Domain-specific training modules tailored for Finance, Legal, and Public Sector professionals, keeping your workforce at the cutting edge.
               </p>
             </div>
@@ -77,7 +77,7 @@ const WorkshopsTraining: React.FC = () => {
         <div className="flex flex-col items-center justify-center text-center mt-8 mb-4">
           <h2 className="text-3xl md:text-4xl tracking-tight mb-2 leading-tight">
             <span className="text-white font-bold">Ready to Elevate your Professional</span><br className="hidden md:block"/>
-            <span className="text-[#333333] text-[clamp(3.5rem,6vw,3rem)] font-black" style={{
+            <span className="text-[#333333] text-[clamp(2.5rem,10vw,3rem)] font-black" style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",
@@ -89,11 +89,11 @@ const WorkshopsTraining: React.FC = () => {
             Whether you're looking for organisational transformation or high-impact training workshops, our team is ready to design a solution tailored to your specific goals.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <Link to="/contact" className="bg-white text-[#E2A6A9] font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-gray-50 transition-colors w-full sm:w-auto shadow-md">
+          <div className="flex flex-col sm:flex-row items-center gap-3 max-sm:gap-2.5 max-sm:w-full">
+            <Link to="/contact" className="bg-white text-[#E2A6A9] font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-gray-50 transition-colors w-full sm:w-auto shadow-md max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center">
               Schedule a Consultation
             </Link>
-            <Link to="/contact" className="bg-transparent border border-white text-white font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-white/10 transition-colors w-full sm:w-auto">
+            <Link to="/contact" className="bg-transparent border border-white text-white font-bold text-xs tracking-wide px-6 py-2.5 rounded-sm hover:bg-white/10 transition-colors w-full sm:w-auto max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center">
               Contact Us
             </Link>
           </div>

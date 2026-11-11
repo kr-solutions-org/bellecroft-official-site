@@ -41,47 +41,47 @@ const INDUSTRIES = [
 
 const IndustryCards: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col bg-[#F3F4F6] overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex flex-col bg-[#F3F4F6] md:overflow-hidden max-sm:min-h-0">
       
-      {/* Cards Area (Top 70%) */}
-      <div className="w-full flex-1 flex min-h-0 pt-16 md:pt-24 px-4 md:px-12 lg:px-20 max-w-[1400px] mx-auto">
-        <div className="w-full flex flex-row h-[70vh] md:h-[60vh] gap-1 md:gap-2">
+      {/* Cards Area (Top section) */}
+      <div className="w-full flex-1 flex min-h-0 pt-24 md:pt-24 px-0 md:px-12 lg:px-20 max-w-[1400px] mx-auto max-sm:pt-20">
+        <div className="scrollbar-hide w-full flex flex-row h-[62vh] md:h-[60vh] gap-3 md:gap-2 overflow-x-auto snap-x snap-mandatory md:snap-none md:overflow-visible px-4 md:px-0 pb-2 md:pb-0 max-sm:h-[26rem]">
           {INDUSTRIES.map((industry, index) => (
             <div 
               key={index} 
-              className="group flex-1 flex flex-col h-full bg-[#E5E7EB] hover:bg-[#F9FAFB] transition-colors duration-300 overflow-hidden relative cursor-pointer shadow-sm hover:shadow-xl hover:flex-[1.5] transition-all"
+              className="group snap-center shrink-0 w-[78vw] sm:w-[45vw] md:w-auto md:flex-1 flex flex-col h-full bg-[#E5E7EB] hover:bg-[#F9FAFB] max-sm:bg-[#F9FAFB] transition-colors duration-300 overflow-hidden relative cursor-pointer shadow-sm hover:shadow-xl md:hover:flex-[1.5] transition-all rounded-lg md:rounded-none max-sm:w-[76vw]"
             >
               {/* Image box */}
               <div className="relative w-full h-1/2 flex-1 min-h-0 overflow-hidden">
                 <img 
                   src={industry.image} 
                   alt={industry.title1} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out"
+                  className="w-full h-full object-cover grayscale max-sm:grayscale-0 group-hover:grayscale-0 transition-all duration-500 ease-in-out"
                 />
                 {/* Fade at bottom of image */}
-                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#E5E7EB] group-hover:from-[#F9FAFB] to-transparent transition-colors duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#E5E7EB] max-sm:from-[#F9FAFB] group-hover:from-[#F9FAFB] to-transparent transition-colors duration-300"></div>
               </div>
               
               {/* Text content */}
-              <div className="shrink-0 bg-[#E5E7EB] group-hover:bg-[#F9FAFB] pt-2 pb-6 px-3 flex flex-col items-center justify-start text-center transition-colors duration-300 h-auto">
+              <div className="shrink-0 bg-[#E5E7EB] max-sm:bg-[#F9FAFB] group-hover:bg-[#F9FAFB] pt-2 pb-5 md:pb-6 px-3 flex flex-col items-center justify-start text-center transition-colors duration-300 h-auto max-sm:px-4 max-sm:pb-5">
                 <h3 className="mb-2 leading-tight">
-                  <span className="block text-[18px] md:text-[24px] lg:text-[28px] font-black text-gray-900 tracking-tight transition-transform duration-300 group-hover:-translate-y-1">
+                  <span className="block text-[18px] md:text-[24px] lg:text-[28px] font-black text-gray-900 tracking-tight transition-transform duration-300 md:group-hover:-translate-y-1 max-sm:text-[19px]">
                     {industry.title1}
                   </span>
                   {industry.title2 && (
-                    <span className="block text-[16px] md:text-[20px] lg:text-[22px] font-medium text-gray-800 tracking-tight transition-transform duration-300 group-hover:-translate-y-1">
+                    <span className="block text-[16px] md:text-[20px] lg:text-[22px] font-medium text-gray-800 tracking-tight transition-transform duration-300 md:group-hover:-translate-y-1 max-sm:text-[16.5px]">
                       {industry.title2}
                     </span>
                   )}
                 </h3>
                 
-                {/* Expandable description and button */}
-                <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out opacity-0 group-hover:opacity-100 w-full overflow-hidden">
+                {/* Expandable description and button — always visible on touch screens */}
+                <div className="grid grid-rows-[1fr] opacity-100 md:grid-rows-[0fr] md:opacity-0 md:group-hover:grid-rows-[1fr] md:group-hover:opacity-100 transition-[grid-template-rows,opacity] duration-500 ease-in-out w-full overflow-hidden">
                   <div className="min-h-0 flex flex-col items-center">
-                    <p className="text-gray-600 text-[10px] md:text-[13px] leading-relaxed max-w-xs mx-auto mb-4 px-2 mt-2">
+                    <p className="text-gray-600 text-xs md:text-[13px] leading-relaxed max-w-xs mx-auto mb-3 md:mb-4 px-1 md:px-2 mt-1 md:mt-2 max-sm:text-[12.5px]">
                       {industry.description}
                     </p>
-                    <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-[10px] md:text-xs px-4 py-2 rounded-sm shadow-sm hover:bg-[#d98b92] transition-colors whitespace-nowrap">
+                    <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-xs px-4 py-2.5 rounded-sm shadow-sm hover:bg-[#d98b92] transition-colors whitespace-nowrap max-sm:min-h-11 max-sm:inline-flex max-sm:items-center max-sm:px-5">
                       {industry.buttonText}
                     </Link>
                   </div>
@@ -92,18 +92,18 @@ const IndustryCards: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Area (Bottom 30%) */}
+      {/* Bottom Area */}
       <div className="w-full shrink-0 py-8 md:py-12 flex flex-col items-center justify-center">
-        <div className="bg-[#2B2A2A] rounded-xl px-6 md:px-12 py-8 md:py-10 flex flex-col items-center text-center max-w-4xl mx-4 w-full md:w-auto shadow-2xl">
-          <h2 className="text-white text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+        <div className="bg-[#2B2A2A] rounded-xl px-5 sm:px-6 md:px-12 py-7 md:py-10 flex flex-col items-center text-center max-w-4xl mx-4 w-full md:w-auto shadow-2xl">
+          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 tracking-tight">
             Your Industry Next?
           </h2>
           <p className="text-gray-300 text-sm md:text-base max-w-2xl">
             While we specialize in these key pillars, our methodology is built for cross-industry excellence.
           </p>
         </div>
-        <div className="mt-[-1.5rem] z-10">
-          <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-3.5 rounded-sm shadow-xl hover:bg-[#d98b92] transition-colors">
+        <div className="-mt-5 md:mt-[-1.5rem] z-10 w-full px-5 flex justify-center">
+          <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-3.5 rounded-md md:rounded-sm shadow-xl hover:bg-[#d98b92] transition-colors inline-block max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center max-sm:w-full max-sm:max-w-xs">
             Inquire for Consultation
           </Link>
         </div>

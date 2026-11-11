@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 
 const Newsletter: React.FC = () => {
   return (
-    <div className="w-full flex-1 bg-[#d5a5ac] flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 py-12 md:py-16 text-center" style={{ backgroundColor: '#DBA8AF' }}>
+    <div className="w-full flex-1 bg-[#d5a5ac] flex flex-col items-center justify-center px-5 sm:px-6 md:px-12 lg:px-24 py-12 md:py-16 text-center max-sm:py-10 max-sm:px-5" style={{ backgroundColor: '#DBA8AF' }}>
       
       {/* Title */}
-      <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-black leading-tight tracking-tight mb-4">
+      <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-black leading-tight tracking-tight mb-4 max-sm:text-[clamp(1.75rem,7vw,2.35rem)] max-sm:leading-[1.2]">
         <span className="text-white">Insights Delivered to<br/></span>
         <span className="text-white">Your </span>
         <span className="text-[#333333]">Executive Dashboard</span>
       </h2>
       
       {/* Separator Line */}
-      <div className="w-24 h-1 bg-white mb-6 rounded-full"></div>
+      <div className="w-24 h-1 bg-white mb-6 rounded-full max-sm:mb-4"></div>
       
       {/* Description */}
-      <p className="text-[#333333] text-base md:text-lg lg:text-xl font-medium max-w-3xl mb-10 leading-relaxed">
+      <p className="text-[#333333] text-base md:text-lg lg:text-xl font-medium max-w-3xl mb-10 leading-relaxed max-sm:mb-7 max-sm:text-[14.5px] max-sm:leading-[1.65]">
         Receive updates on leadership, governance, professional development, and organisational growth.
       </p>
       
@@ -25,19 +25,19 @@ const Newsletter: React.FC = () => {
         <input 
           type="email" 
           placeholder="Enter your professional email" 
-          className="flex-1 bg-white px-6 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333] text-gray-800 placeholder-gray-400 text-base"
+          className="flex-1 bg-white px-6 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#333333] text-gray-800 placeholder-gray-400 text-base max-sm:min-h-12 max-sm:px-4"
           required
         />
         <button 
           type="submit" 
-          className="bg-[#E6A2A9] text-white font-bold text-sm md:text-base px-8 py-4 rounded-md shadow-md hover:bg-[#c9878a] transition-colors whitespace-nowrap"
+          className="bg-[#E6A2A9] text-white font-bold text-sm md:text-base px-8 py-4 rounded-md shadow-md hover:bg-[#c9878a] transition-colors whitespace-nowrap max-sm:min-h-12 max-sm:bg-[#2B2A2A] max-sm:text-white max-sm:hover:bg-black max-sm:shadow-lg"
         >
           Subscribe
         </button>
       </form>
       
       {/* Disclaimer text */}
-      <p className="text-[#444444] text-sm md:text-base font-medium">
+      <p className="text-[#444444] text-sm md:text-base font-medium max-sm:text-[12.5px] max-sm:leading-relaxed">
         By subscribing, you agree to our <Link to="/terms-and-policies" className="underline hover:text-[#2B2A2A] transition-colors">Privacy Policy</Link> and consent to receive marketing updates.<br className="hidden md:block"/>
         No spam, just pure strategy.
       </p>
