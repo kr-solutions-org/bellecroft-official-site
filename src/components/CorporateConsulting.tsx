@@ -34,7 +34,7 @@ const CorporateConsulting: React.FC = () => {
               <img 
                 src={StrategicConsultingImg} 
                 alt="Strategic Consulting" 
-                className="w-full h-[200px] md:h-[280px] lg:h-[320px] object-cover grayscale opacity-90"
+                className="w-full h-[200px] md:h-[280px] lg:h-[320px] object-cover grayscale max-sm:grayscale-0 opacity-90"
               />
             </div>
             
