@@ -79,6 +79,35 @@
     scroll-snap-type: none !important;
   }
 }
+/* ------------------------------------------------------------------
+   Mobile-only refinements. Everything here is scoped below Tailwind's
+   `sm` breakpoint so tablet and desktop rendering stays untouched.
+   ------------------------------------------------------------------ */
+@media (max-width: 639px) {
+  h1,
+  h2 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  [data-scroll-container] {
+    scroll-padding-top: 4.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent the grey flash on tap; the components handle their own
+     active states. */
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
 
 @layer utilities {
   .scrollbar-hide {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactHero: React.FC = () => {
   return (
-    <section className="relative w-full min-h-[100svh] flex flex-col justify-between overflow-hidden pt-20 pb-0">
+    <section className="relative w-full min-h-[100svh] flex flex-col justify-between overflow-hidden pt-20 pb-0 max-sm:min-h-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -22,26 +22,26 @@ const ContactHero: React.FC = () => {
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center max-w-7xl mx-auto py-12 md:py-0">
+      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 flex-1 flex flex-col justify-center max-w-7xl mx-auto py-12 md:py-0 max-sm:pt-24 max-sm:pb-14">
         <div className="w-full md:w-[65%] lg:w-[55%] flex flex-col items-start text-left">
           
-          <h1 className="leading-[1.1] mb-6 flex flex-col">
+          <h1 className="leading-[1.1] mb-6 flex flex-col max-sm:mb-5">
             <div className="flex items-baseline gap-3">
-              <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight italic">
+              <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight italic max-sm:text-[2.25rem]">
                 Get In
               </span>
             </div>
-            <span className="block text-[clamp(3.5rem,7vw,6.5rem)] font-black text-[#E6A2A9] tracking-tighter leading-[0.9] mb-1">
+            <span className="block text-[clamp(3.5rem,7vw,6.5rem)] font-black text-[#E6A2A9] tracking-tighter leading-[0.9] mb-1 max-sm:text-[clamp(3.25rem,15vw,3.75rem)]">
               Touch
             </span>
             <div className="flex items-baseline gap-3 flex-wrap">
-              <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight">
+              <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight max-sm:text-[2.25rem]">
                 Shape Your
               </span>
             </div>
             <div className="flex items-baseline gap-3 md:gap-4 flex-wrap mt-1">
               <span 
-                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)]"  style={{
+                className="text-[clamp(3rem,6vw,5.5rem)] text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)] max-sm:text-[clamp(3rem,13.5vw,3.5rem)]"  style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",
@@ -50,20 +50,20 @@ const ContactHero: React.FC = () => {
               >
                 Strategic
               </span>
-              <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight">
+              <span className="block text-[clamp(2.5rem,5vw,4.5rem)] font-black text-[#2B2A2A] tracking-tight max-sm:text-[2.25rem]">
                 Future
               </span>
             </div>
           </h1>
 
-          <p className="text-gray-600 text-base md:text-[1.1rem] leading-relaxed max-w-[550px] mb-10 font-medium">
+          <p className="text-gray-600 text-base md:text-[1.1rem] leading-relaxed max-w-[550px] mb-10 font-medium max-sm:mb-8 max-sm:text-[15px] max-sm:leading-[1.68]">
             Bellecroft combines international excellence with local Maldivian insights to deliver transformative consulting and corporate training solutions.
           </p>
 
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 max-sm:w-full max-sm:gap-2">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#c9878a] transition-colors duration-200 shadow-sm"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#c9878a] transition-colors duration-200 shadow-sm max-sm:min-h-12 max-sm:py-0"
             >
               Get In Touch
             </Link>

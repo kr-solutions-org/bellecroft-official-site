@@ -147,7 +147,7 @@ const TermsAndPoliciesPage: React.FC = () => {
 
       {/* Hero Section */}
       <div className="snap-start snap-always w-full shrink-0 bg-white">
-        <section className="relative w-full min-h-[50vh] flex flex-col items-center justify-center overflow-hidden bg-white pt-28 pb-12 px-6 md:px-16 lg:px-28">
+        <section className="relative w-full min-h-[50vh] flex flex-col items-center justify-center overflow-hidden bg-white pt-28 pb-12 px-6 md:px-16 lg:px-28 max-sm:pt-24 max-sm:px-5 max-sm:pb-10">
           {/* Faint Background Text */}
           <div className="absolute top-[10%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 flex flex-col gap-0 leading-[0.8] opacity-[0.03]">
             <span className="text-[18vw] font-black text-gray-900 uppercase tracking-tighter">BELLECROFT</span>
@@ -166,15 +166,15 @@ const TermsAndPoliciesPage: React.FC = () => {
           </div>
 
           {/* Table of Contents */}
-          <nav className="relative z-10 mt-12 w-full max-w-3xl">
-            <div className="bg-[#fafafa] rounded-lg p-6 md:p-8">
+          <nav className="relative z-10 mt-12 w-full max-w-3xl max-sm:mt-9">
+            <div className="bg-[#fafafa] rounded-lg p-6 md:p-8 max-sm:p-5">
               <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Contents</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 max-sm:gap-y-0">
                 {sections.map((section) => (
                   <a
                     key={section.id}
                     href={`#${section.id}`}
-                    className="text-[#2B2A2A] text-sm md:text-[15px] font-semibold hover:text-[#E6A2A9] transition-colors py-1.5 flex items-center gap-2"
+                    className="text-[#2B2A2A] text-sm md:text-[15px] font-semibold hover:text-[#E6A2A9] transition-colors py-1.5 flex items-center gap-2 max-sm:min-h-11 max-sm:py-2"
                   >
                     <span className="text-[#E6A2A9] text-xs">●</span>
                     {section.title}
@@ -188,7 +188,7 @@ const TermsAndPoliciesPage: React.FC = () => {
 
       {/* Content Sections */}
       <div className="snap-start snap-always w-full shrink-0">
-        <section className="w-full bg-white px-6 md:px-16 lg:px-28 pb-20">
+        <section className="w-full bg-white px-6 md:px-16 lg:px-28 pb-20 max-sm:px-5 max-sm:pb-16">
           <div className="max-w-4xl mx-auto">
             {sections.map((section, index) => (
               <div

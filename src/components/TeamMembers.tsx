@@ -12,7 +12,7 @@ interface Member {
 }
 
 const TeamCard: React.FC<{ member: Member }> = ({ member }) => (
-  <div className="flex flex-col w-full shadow-lg overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow duration-300">
+  <div className="flex flex-col w-full shadow-lg overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow duration-300 max-sm:rounded-2xl max-sm:bg-white">
     <div className="w-full h-72 sm:h-80 md:h-80 lg:h-96 xl:h-[28rem] bg-gray-200 overflow-hidden relative">
       <img 
         src={member.img} 
@@ -29,7 +29,7 @@ const TeamCard: React.FC<{ member: Member }> = ({ member }) => (
 
 const TeamMembers: React.FC = () => {
   return (
-    <section className="relative w-full min-h-[100svh] md:snap-center py-24 md:py-16 px-5 sm:px-6 md:px-12 lg:px-20 bg-[#fdfdfd] overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative w-full min-h-[100svh] md:snap-center py-24 md:py-16 px-5 sm:px-6 md:px-12 lg:px-20 bg-[#fdfdfd] overflow-hidden flex flex-col items-center justify-center max-sm:min-h-0 max-sm:pt-14 max-sm:pb-16">
       
       {/* Subtle radial glow background to match design */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[1000px] max-h-[min(1000px,80svh)] bg-white rounded-full opacity-60 blur-3xl pointer-events-none z-0"></div>

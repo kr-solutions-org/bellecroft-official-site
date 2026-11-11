@@ -4,12 +4,12 @@ import StrategicConsultingImg from '../assets/StrategicConsulting.png'; // Assum
 
 const CorporateConsulting: React.FC = () => {
   return (
-    <section className="relative w-full min-h-[100svh] flex flex-col justify-center bg-[#FAFAFA] overflow-hidden py-12 md:py-8">
+    <section className="relative w-full min-h-[100svh] flex flex-col justify-center bg-[#FAFAFA] overflow-hidden py-12 md:py-8 max-sm:min-h-0 max-sm:py-14">
       {/* Background subtle curve if needed, relying on clean background for now as it matches the vibe */}
       <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 lg:px-16 w-full">
         
         {/* Top Header Row */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4 max-sm:mb-7 max-sm:gap-3">
           <div className="w-full md:w-1/2">
             <h3 className="text-gray-400 font-bold tracking-widest text-xs uppercase mb-1">
               Corporate Consulting
@@ -19,7 +19,7 @@ const CorporateConsulting: React.FC = () => {
             </h2>
           </div>
           <div className="w-full md:w-1/2 md:pl-10">
-            <p className="text-[#4A4A4A] text-sm md:text-base lg:text-lg font-medium italic border-l-2 border-transparent md:border-none leading-relaxed">
+            <p className="text-[#4A4A4A] text-sm md:text-base lg:text-lg font-medium italic border-l-2 border-transparent md:border-none leading-relaxed max-sm:text-[14px] max-sm:leading-[1.7]">
               "Our consultancy arm provides high-impact strategic roadmaps, ensuring that your business not only adapts to change but drives it."
             </p>
           </div>
@@ -42,11 +42,11 @@ const CorporateConsulting: React.FC = () => {
             <div className="hidden lg:block lg:w-2/5"></div>
           </div>
 
-          {/* Cards overlapping */}
-          <div className="w-full lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 flex flex-col sm:flex-row gap-3 lg:gap-4 z-10 px-3 sm:px-4 lg:px-0 lg:pl-[35%] mt-[-2rem] lg:mt-0">
+          {/* Cards overlapping on desktop, clean horizontal scroll on mobile */}
+          <div className="w-full lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 flex flex-col sm:flex-row gap-3 lg:gap-4 z-10 px-3 sm:px-4 lg:px-0 lg:pl-[35%] mt-[-2rem] lg:mt-0 max-sm:flex-row max-sm:-mx-5 max-sm:px-5 max-sm:pb-3 max-sm:mt-4 max-sm:overflow-x-auto max-sm:snap-x max-sm:snap-mandatory max-sm:scrollbar-hide">
             
             {/* Card 1 */}
-            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm lg:-ml-10 border border-gray-50">
+            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm lg:-ml-10 border border-gray-50 max-sm:w-[76vw] max-sm:max-w-[19rem] max-sm:flex-none max-sm:snap-center max-sm:p-5 max-sm:rounded-2xl max-sm:shadow-md">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Strategic<br/>Advisory</h4>
               <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Comprehensive market analysis and growth strategy formulation designed to position your enterprise as a market leader in the Asia-Pacific region.
@@ -54,7 +54,7 @@ const CorporateConsulting: React.FC = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50">
+            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50 max-sm:w-[76vw] max-sm:max-w-[19rem] max-sm:flex-none max-sm:snap-center max-sm:p-5 max-sm:rounded-2xl max-sm:shadow-md">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Operational<br/>Excellence</h4>
               <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Process optimisation and organisational restructuring focused on efficiency, scalability, and long-term sustainability.
@@ -62,7 +62,7 @@ const CorporateConsulting: React.FC = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50">
+            <div className="flex-1 bg-white p-4 md:p-6 shadow-xl shadow-black/5 rounded-sm border border-gray-50 max-sm:w-[76vw] max-sm:max-w-[19rem] max-sm:flex-none max-sm:snap-center max-sm:p-5 max-sm:rounded-2xl max-sm:shadow-md">
               <h4 className="text-[#E6A2A9] text-base md:text-lg font-bold mb-2 leading-tight">Digital<br/>Transformation</h4>
               <p className="text-gray-500 text-[13px] md:text-sm leading-relaxed">
                 Guiding organisations through the complexities of modernisation, from infrastructure overhaul to AI-driven workflow integration.
@@ -83,7 +83,7 @@ const CorporateConsulting: React.FC = () => {
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
               Success isn’t just about what you do, but how you do it. We blend international standard frameworks with deep-rooted Maldivian market insights to deliver results that are both globally competitive and locally relevant.
             </p>
-            <Link to="/methodology" className="bg-[#E6A2A9] text-white font-bold text-xs tracking-widest uppercase px-5 py-3 md:py-2.5 rounded-sm hover:bg-[#d98b92] transition-colors flex items-center gap-2 w-max">
+            <Link to="/methodology" className="bg-[#E6A2A9] text-white font-bold text-xs tracking-widest uppercase px-5 py-3 md:py-2.5 rounded-sm hover:bg-[#d98b92] transition-colors flex items-center gap-2 w-max max-sm:min-h-12 max-sm:w-full max-sm:justify-center max-sm:px-6">
               Our Approach <span>&rarr;</span>
             </Link>
           </div>

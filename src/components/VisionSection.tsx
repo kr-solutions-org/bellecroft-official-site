@@ -4,7 +4,7 @@ import VisionImage from '../assets/VisionImage.png';
 
 const VisionSection: React.FC = () => {
   return (
-    <section className="w-full min-h-[100svh] relative flex flex-col font-sans overflow-hidden">
+    <section className="w-full min-h-[100svh] relative flex flex-col font-sans overflow-hidden max-sm:min-h-0">
       
       {/* Top Row */}
       <div className="flex-none md:flex-1 flex flex-col md:flex-row w-full min-h-0 relative z-0">
@@ -17,14 +17,14 @@ const VisionSection: React.FC = () => {
         </div>
 
         {/* Top Right - Content */}
-        <div className="w-full md:w-1/2 md:h-full bg-[#E6A2A9] p-6 sm:p-8 md:p-12 lg:p-24 flex flex-col justify-center text-white">
+        <div className="w-full md:w-1/2 md:h-full bg-[#E6A2A9] p-6 sm:p-8 md:p-12 lg:p-24 flex flex-col justify-center text-white max-sm:py-10">
           <h2 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold mb-4 md:mb-8 self-start">
             A Vision for Excellence
           </h2>
-          <p className="text-sm md:text-base lg:text-[17px] mb-3 md:mb-6 leading-relaxed opacity-90 font-medium">
+          <p className="text-sm md:text-base lg:text-[17px] mb-3 md:mb-6 leading-relaxed opacity-90 font-medium max-sm:text-[14px] max-sm:leading-[1.7]">
             Founded on the principles of precision and strategic foresight, Bellecroft emerged to bridge the gap between abstract corporate theory and tangible operational success.
           </p>
-          <p className="text-sm md:text-base lg:text-[17px] leading-relaxed opacity-90 font-medium">
+          <p className="text-sm md:text-base lg:text-[17px] leading-relaxed opacity-90 font-medium max-sm:text-[14px] max-sm:leading-[1.7]">
             Our journey began with a simple question: How can we cultivate lasting growth in an ever-shifting global landscape?
           </p>
         </div>
@@ -43,12 +43,17 @@ const VisionSection: React.FC = () => {
         </div>
 
         {/* Bottom Right - Content */}
-        <div className="w-full md:w-1/2 md:h-full p-6 sm:p-8 md:p-12 lg:p-24 flex flex-col justify-center relative z-10">
+        <div className="w-full md:w-1/2 md:h-full p-6 sm:p-8 md:p-12 lg:p-24 flex flex-col justify-center relative z-10 max-sm:pt-4 max-sm:pb-8">
           <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold text-gray-900 mb-4 md:mb-8 self-start">
             The StrEdge Connection
           </h3>
-          <p className="text-[#848496] text-sm md:text-sm lg:text-[15px] leading-relaxed max-w-xl font-medium">
-            Our strategic alliance with StrEdge Advisory represents a fusion of powerhouses. By integrating their analytical depth with our developmental expertise, we offer a 360-degree transformation suite that is unparalleled in the Maldives and beyond. Together, we navigate complexity with elegant simplicity.
+          <p className="text-[#848496] text-sm md:text-sm lg:text-[15px] leading-relaxed max-w-xl font-medium max-sm:text-[13.5px] max-sm:leading-[1.65]">
+            <span className="hidden sm:inline">
+              Our strategic alliance with StrEdge Advisory represents a fusion of powerhouses. By integrating their analytical depth with our developmental expertise, we offer a 360-degree transformation suite that is unparalleled in the Maldives and beyond. Together, we navigate complexity with elegant simplicity.
+            </span>
+            <span className="sm:hidden">
+              Our strategic alliance with StrEdge Advisory integrates analytical depth with developmental expertise, delivering a comprehensive transformation suite tailored to the Maldives and the wider region.
+            </span>
           </p>
         </div>
       </div>

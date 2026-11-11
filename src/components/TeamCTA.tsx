@@ -25,13 +25,13 @@ const TeamCTA: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mt-4 w-full sm:w-auto">
           <Link
             to="/contact"
-            className="px-8 py-3 bg-white text-[#E6A2A9] text-[14px] md:text-[15px] font-bold rounded hover:bg-gray-50 transition-colors shadow-sm text-center"
+            className="px-8 py-3 bg-white text-[#E6A2A9] text-[14px] md:text-[15px] font-bold rounded hover:bg-gray-50 transition-colors shadow-sm text-center max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center"
           >
             Inquire Now
           </Link>
           <Link
             to="/services"
-            className="px-8 py-3 bg-transparent border-2 border-white text-white text-[14px] md:text-[15px] font-bold rounded hover:bg-white/10 transition-colors shadow-sm text-center"
+            className="px-8 py-3 bg-transparent border-2 border-white text-white text-[14px] md:text-[15px] font-bold rounded hover:bg-white/10 transition-colors shadow-sm text-center max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center"
           >
             Our Services
           </Link>

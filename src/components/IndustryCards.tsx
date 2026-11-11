@@ -41,35 +41,35 @@ const INDUSTRIES = [
 
 const IndustryCards: React.FC = () => {
   return (
-    <section className="relative w-full min-h-[100svh] flex flex-col bg-[#F3F4F6] md:overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex flex-col bg-[#F3F4F6] md:overflow-hidden max-sm:min-h-0">
       
       {/* Cards Area (Top section) */}
-      <div className="w-full flex-1 flex min-h-0 pt-24 md:pt-24 px-0 md:px-12 lg:px-20 max-w-[1400px] mx-auto">
-        <div className="scrollbar-hide w-full flex flex-row h-[62vh] md:h-[60vh] gap-3 md:gap-2 overflow-x-auto snap-x snap-mandatory md:snap-none md:overflow-visible px-4 md:px-0 pb-2 md:pb-0">
+      <div className="w-full flex-1 flex min-h-0 pt-24 md:pt-24 px-0 md:px-12 lg:px-20 max-w-[1400px] mx-auto max-sm:pt-20">
+        <div className="scrollbar-hide w-full flex flex-row h-[62vh] md:h-[60vh] gap-3 md:gap-2 overflow-x-auto snap-x snap-mandatory md:snap-none md:overflow-visible px-4 md:px-0 pb-2 md:pb-0 max-sm:h-[26rem]">
           {INDUSTRIES.map((industry, index) => (
             <div 
               key={index} 
-              className="group snap-center shrink-0 w-[78vw] sm:w-[45vw] md:w-auto md:flex-1 flex flex-col h-full bg-[#E5E7EB] hover:bg-[#F9FAFB] transition-colors duration-300 overflow-hidden relative cursor-pointer shadow-sm hover:shadow-xl md:hover:flex-[1.5] transition-all rounded-lg md:rounded-none"
+              className="group snap-center shrink-0 w-[78vw] sm:w-[45vw] md:w-auto md:flex-1 flex flex-col h-full bg-[#E5E7EB] hover:bg-[#F9FAFB] max-sm:bg-[#F9FAFB] transition-colors duration-300 overflow-hidden relative cursor-pointer shadow-sm hover:shadow-xl md:hover:flex-[1.5] transition-all rounded-lg md:rounded-none max-sm:w-[76vw]"
             >
               {/* Image box */}
               <div className="relative w-full h-1/2 flex-1 min-h-0 overflow-hidden">
                 <img 
                   src={industry.image} 
                   alt={industry.title1} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out"
+                  className="w-full h-full object-cover grayscale max-sm:grayscale-0 group-hover:grayscale-0 transition-all duration-500 ease-in-out"
                 />
                 {/* Fade at bottom of image */}
-                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#E5E7EB] group-hover:from-[#F9FAFB] to-transparent transition-colors duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#E5E7EB] max-sm:from-[#F9FAFB] group-hover:from-[#F9FAFB] to-transparent transition-colors duration-300"></div>
               </div>
               
               {/* Text content */}
-              <div className="shrink-0 bg-[#E5E7EB] group-hover:bg-[#F9FAFB] pt-2 pb-5 md:pb-6 px-3 flex flex-col items-center justify-start text-center transition-colors duration-300 h-auto">
+              <div className="shrink-0 bg-[#E5E7EB] max-sm:bg-[#F9FAFB] group-hover:bg-[#F9FAFB] pt-2 pb-5 md:pb-6 px-3 flex flex-col items-center justify-start text-center transition-colors duration-300 h-auto max-sm:px-4 max-sm:pb-5">
                 <h3 className="mb-2 leading-tight">
-                  <span className="block text-[18px] md:text-[24px] lg:text-[28px] font-black text-gray-900 tracking-tight transition-transform duration-300 md:group-hover:-translate-y-1">
+                  <span className="block text-[18px] md:text-[24px] lg:text-[28px] font-black text-gray-900 tracking-tight transition-transform duration-300 md:group-hover:-translate-y-1 max-sm:text-[19px]">
                     {industry.title1}
                   </span>
                   {industry.title2 && (
-                    <span className="block text-[16px] md:text-[20px] lg:text-[22px] font-medium text-gray-800 tracking-tight transition-transform duration-300 md:group-hover:-translate-y-1">
+                    <span className="block text-[16px] md:text-[20px] lg:text-[22px] font-medium text-gray-800 tracking-tight transition-transform duration-300 md:group-hover:-translate-y-1 max-sm:text-[16.5px]">
                       {industry.title2}
                     </span>
                   )}
@@ -78,10 +78,10 @@ const IndustryCards: React.FC = () => {
                 {/* Expandable description and button — always visible on touch screens */}
                 <div className="grid grid-rows-[1fr] opacity-100 md:grid-rows-[0fr] md:opacity-0 md:group-hover:grid-rows-[1fr] md:group-hover:opacity-100 transition-[grid-template-rows,opacity] duration-500 ease-in-out w-full overflow-hidden">
                   <div className="min-h-0 flex flex-col items-center">
-                    <p className="text-gray-600 text-xs md:text-[13px] leading-relaxed max-w-xs mx-auto mb-3 md:mb-4 px-1 md:px-2 mt-1 md:mt-2">
+                    <p className="text-gray-600 text-xs md:text-[13px] leading-relaxed max-w-xs mx-auto mb-3 md:mb-4 px-1 md:px-2 mt-1 md:mt-2 max-sm:text-[12.5px]">
                       {industry.description}
                     </p>
-                    <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-xs px-4 py-2.5 rounded-sm shadow-sm hover:bg-[#d98b92] transition-colors whitespace-nowrap">
+                    <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-xs px-4 py-2.5 rounded-sm shadow-sm hover:bg-[#d98b92] transition-colors whitespace-nowrap max-sm:min-h-11 max-sm:inline-flex max-sm:items-center max-sm:px-5">
                       {industry.buttonText}
                     </Link>
                   </div>
@@ -102,8 +102,8 @@ const IndustryCards: React.FC = () => {
             While we specialize in these key pillars, our methodology is built for cross-industry excellence.
           </p>
         </div>
-        <div className="-mt-5 md:mt-[-1.5rem] z-10">
-          <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-3.5 rounded-md md:rounded-sm shadow-xl hover:bg-[#d98b92] transition-colors inline-block">
+        <div className="-mt-5 md:mt-[-1.5rem] z-10 w-full px-5 flex justify-center">
+          <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-3.5 rounded-md md:rounded-sm shadow-xl hover:bg-[#d98b92] transition-colors inline-block max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center max-sm:w-full max-sm:max-w-xs">
             Inquire for Consultation
           </Link>
         </div>

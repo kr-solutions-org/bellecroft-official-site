@@ -4,7 +4,7 @@ import SkyscraperBG from "../assets/SkycraperBG.png";
 
 const GlobalWisdom: React.FC = () => {
   return (
-    <section className="relative w-full min-h-[100svh] flex items-center overflow-hidden py-24 md:py-0">
+    <section className="relative w-full min-h-[100svh] flex items-center overflow-hidden py-24 md:py-0 max-sm:min-h-0 max-sm:py-16">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -17,7 +17,7 @@ const GlobalWisdom: React.FC = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 py-10 md:py-20 flex justify-end">
+      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 py-10 md:py-20 flex justify-end max-sm:py-0">
         <div className="w-full md:w-[70%] lg:w-[50%] flex flex-col items-start text-left md:items-end md:text-right">
           
           <h2 className="leading-[1.15] mb-6 flex flex-col items-start md:items-end">
@@ -39,13 +39,13 @@ const GlobalWisdom: React.FC = () => {
             </div>
           </h2>
 
-          <p className="text-gray-800 text-sm sm:text-base md:text-[1.1rem] leading-relaxed max-w-[500px] mb-8 font-medium">
+          <p className="text-gray-800 text-sm sm:text-base md:text-[1.1rem] leading-relaxed max-w-[500px] mb-8 font-medium max-sm:text-[15px] max-sm:leading-[1.68]">
             Bellecroft works closely with StrEdge Advisory as its international strategic partner. This collaboration enables our clients to benefit from broader perspectives, specialised expertise, and internationally informed approaches while maintaining solutions that remain practical and relevant to local contexts.
           </p>
 
           <Link
             to="/methodology"
-            className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#d68a91] transition-colors duration-200 shadow-sm w-full sm:w-auto"
+            className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E6A2A9] text-white text-[15px] font-bold rounded-xl hover:bg-[#d68a91] transition-colors duration-200 shadow-sm w-full sm:w-auto max-sm:min-h-12 max-sm:py-0"
           >
             Explore Our Methodology
           </Link>

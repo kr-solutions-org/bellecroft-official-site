@@ -105,13 +105,13 @@ const ContextMatters: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-1 w-full sm:w-auto">
             <Link
               to="/contact"
-              className="px-6 py-3 sm:py-2.5 bg-white text-[#E2A6AA] text-[13px] md:text-[14px] font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-sm text-center"
+              className="px-6 py-3 sm:py-2.5 bg-white text-[#E2A6AA] text-[13px] md:text-[14px] font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-sm text-center max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center"
             >
               Get in Touch
             </Link>
             <Link
               to="/about"
-              className="px-6 py-3 sm:py-2.5 bg-transparent border-2 border-white text-white text-[13px] md:text-[14px] font-bold rounded-lg hover:bg-white/10 transition-colors shadow-sm text-center"
+              className="px-6 py-3 sm:py-2.5 bg-transparent border-2 border-white text-white text-[13px] md:text-[14px] font-bold rounded-lg hover:bg-white/10 transition-colors shadow-sm text-center max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center"
             >
               Learn About Our Team
             </Link>

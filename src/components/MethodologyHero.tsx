@@ -4,7 +4,7 @@ import MethodologyHeroBg from "../assets/MethodologyBgHero.png";
 
 const MethodologyHero: React.FC = () => {
   return (
-    <section className="relative w-full min-h-[100svh] flex items-center overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex items-center overflow-hidden max-sm:min-h-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -19,7 +19,7 @@ const MethodologyHero: React.FC = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 py-28 md:py-32 flex justify-end">
+      <div className="relative z-10 w-full px-5 sm:px-8 md:px-16 lg:px-28 py-28 md:py-32 flex justify-end max-sm:pt-24 max-sm:pb-16">
         <div className="w-full md:w-[60%] lg:w-[50%] flex flex-col items-start text-left md:items-end md:text-right">
           
           <h1 className="leading-[1.1] mb-6 flex flex-col items-start md:items-end">
@@ -51,7 +51,7 @@ const MethodologyHero: React.FC = () => {
             </div>
           </h1>
 
-          <p className="text-gray-600 text-sm sm:text-base md:text-[1.1rem] leading-relaxed max-w-[500px] mb-8 md:mb-10 font-medium">
+          <p className="text-gray-600 text-sm sm:text-base md:text-[1.1rem] leading-relaxed max-w-[500px] mb-8 md:mb-10 font-medium max-sm:text-[15px] max-sm:leading-[1.68]">
             We bridge the gap between world-class strategic frameworks and the practical realities of the Maldivian business landscape. Our approach isn't just about what works, It's about what works here.
           </p>
 

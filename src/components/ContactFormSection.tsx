@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactFormSection: React.FC = () => {
   return (
-    <section className="relative w-full min-h-[100svh] flex flex-col items-center snap-center">
+    <section className="relative w-full min-h-[100svh] flex flex-col items-center snap-center max-sm:min-h-0">
       {/* Background Image for the lower part */}
       <div className="absolute inset-0 z-0 top-[200px]">
         <img 
@@ -20,7 +20,7 @@ const ContactFormSection: React.FC = () => {
       </div>
 
       {/* TOP BANNER: Contact Details */}
-      <div className="relative z-20 w-full bg-white shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)] py-10 md:py-12 px-5 sm:px-8 md:px-12 lg:px-24 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-0">
+      <div className="relative z-20 w-full bg-white shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)] py-10 md:py-12 px-5 sm:px-8 md:px-12 lg:px-24 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-0 max-sm:gap-7">
         
         {/* Left Intro */}
         <div className="flex flex-col gap-3 lg:max-w-[280px]">
@@ -37,7 +37,7 @@ const ContactFormSection: React.FC = () => {
         </div>
 
         {/* Right Details Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 w-full lg:w-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 w-full lg:w-auto max-sm:gap-7">
           
           {/* Item 1 */}
           <div className="flex flex-col gap-2.5">
@@ -91,11 +91,11 @@ const ContactFormSection: React.FC = () => {
       </div>
 
       {/* BOTTOM FORM AREA */}
-      <div id="form" className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-12 flex-1 flex flex-col justify-center py-10 md:py-16">
+      <div id="form" className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-12 flex-1 flex flex-col justify-center py-10 md:py-16 max-sm:py-12">
         <div className="flex flex-col md:flex-row w-full bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] overflow-hidden">
           
           {/* Left Panel - Image & Title */}
-          <div className="w-full md:w-[45%] relative bg-gray-100 flex flex-col justify-end p-7 sm:p-10 md:p-14 min-h-[220px] sm:min-h-[300px]">
+          <div className="w-full md:w-[45%] relative bg-gray-100 flex flex-col justify-end p-7 sm:p-10 md:p-14 min-h-[220px] sm:min-h-[300px] max-sm:min-h-[190px] max-sm:p-6">
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
               alt="Building structure" 
@@ -125,8 +125,8 @@ const ContactFormSection: React.FC = () => {
           </div>
 
           {/* Right Panel - Form Fields */}
-          <div className="w-full md:w-[55%] p-6 sm:p-10 md:p-14 bg-white flex flex-col justify-center">
-            <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+          <div className="w-full md:w-[55%] p-6 sm:p-10 md:p-14 bg-white flex flex-col justify-center max-sm:p-6">
+            <form className="flex flex-col gap-6 max-sm:gap-5" onSubmit={(e) => e.preventDefault()}>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-1.5">
@@ -181,7 +181,7 @@ const ContactFormSection: React.FC = () => {
                 </label>
               </div>
 
-              <button type="submit" className="mt-2 md:mt-4 px-8 py-3.5 bg-[#E6A2A9] text-white text-[14px] font-bold rounded-lg hover:bg-[#d68a91] transition-colors duration-200 shadow-sm self-stretch sm:self-start">
+              <button type="submit" className="mt-2 md:mt-4 px-8 py-3.5 bg-[#E6A2A9] text-white text-[14px] font-bold rounded-lg hover:bg-[#d68a91] transition-colors duration-200 shadow-sm self-stretch sm:self-start max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center">
                 Send Strategic Inquiry
               </button>
             </form>

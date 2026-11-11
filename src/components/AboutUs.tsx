@@ -22,13 +22,13 @@ const AboutUs: React.FC = () => {
         <div className="hidden md:block md:w-1/2 h-full"></div>
 
         {/* Right: Text Content */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center px-5 sm:px-8 lg:px-16 pt-24 pb-8 md:py-8 md:overflow-y-auto pointer-events-auto">
-          <h2 className="text-[clamp(1.75rem,3.5vw,3rem)] font-black text-gray-900 leading-[1.2] mb-5 md:mb-6">
+        <div className="w-full md:w-1/2 flex flex-col justify-center px-5 sm:px-8 lg:px-16 pt-24 pb-8 md:py-8 md:overflow-y-auto pointer-events-auto max-sm:pt-14 max-sm:pb-7">
+          <h2 className="text-[clamp(1.75rem,3.5vw,3rem)] font-black text-gray-900 leading-[1.2] mb-5 md:mb-6 max-sm:text-[clamp(1.65rem,7vw,1.9rem)] max-sm:leading-[1.22]">
             Organisations thrive when<br className="hidden md:block" />
             people, strategy, and purpose<br className="hidden md:block" />
             work together
           </h2>
-          <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed mb-6 md:mb-8 max-w-125">
+          <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed mb-6 md:mb-8 max-w-125 max-sm:text-[14.5px] max-sm:leading-[1.7]">
             Bellecroft partners with businesses, institutions, and public sector organisations to strengthen leadership, improve performance, and create sustainable pathways for growth.
             <br /><br />
             Our approach combines practical expertise, professional insight, and a deep understanding of local realities to deliver meaningful outcomes.
@@ -42,16 +42,16 @@ const AboutUs: React.FC = () => {
 
       {/* CTA Banner (Sits directly between the main content and footer) */}
       <div className="relative z-20 w-full px-5 sm:px-8 md:px-16 lg:px-28 pb-6 md:pb-8 shrink-0 pointer-events-auto">
-        <div className="w-full bg-[#1c1c1c] rounded-xl px-5 sm:px-8 md:px-12 py-7 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+        <div className="w-full bg-[#1c1c1c] rounded-xl px-5 sm:px-8 md:px-12 py-7 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl max-sm:rounded-2xl max-sm:px-5 max-sm:py-6 max-sm:gap-5">
           <div className="text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">Ready to Move Forward with Confidence?</h3>
-            <p className="text-gray-400 text-sm md:text-[15px]">Let’s explore how Bellecroft can support your organisation’s growth and development.</p>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 max-sm:text-[19px] max-sm:leading-snug">Ready to Move Forward with Confidence?</h3>
+            <p className="text-gray-400 text-sm md:text-[15px] max-sm:text-[13.5px] max-sm:leading-relaxed">Let’s explore how Bellecroft can support your organisation’s growth and development.</p>
           </div>
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 shrink-0 w-full md:w-auto">
-            <Link to="/contact" className="px-6 py-3 text-center bg-[#E6A2A9] text-white font-bold rounded-md hover:bg-[#d68a91] transition-colors text-sm">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 shrink-0 w-full md:w-auto max-sm:gap-2.5">
+            <Link to="/contact" className="px-6 py-3 text-center bg-[#E6A2A9] text-white font-bold rounded-md hover:bg-[#d68a91] transition-colors text-sm max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center">
               Schedule a Consultation
             </Link>
-            <Link to="/team" className="px-6 py-3 text-center bg-transparent border border-gray-600 text-gray-300 font-bold rounded-md hover:bg-gray-800 transition-colors text-sm">
+            <Link to="/team" className="px-6 py-3 text-center bg-transparent border border-gray-600 text-gray-300 font-bold rounded-md hover:bg-gray-800 transition-colors text-sm max-sm:min-h-12 max-sm:flex max-sm:items-center max-sm:justify-center">
               Meet Our Team
             </Link>
           </div>
