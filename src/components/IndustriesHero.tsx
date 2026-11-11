@@ -5,19 +5,19 @@ import SkycraperBG from '../assets/SkycraperBG.png';
 const IndustriesHero: React.FC = () => {
   return (
     <section 
-      className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden bg-white bg-cover bg-center bg-no-repeat"
+      className="relative w-full min-h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-white bg-cover bg-center bg-no-repeat max-sm:min-h-[32rem]"
       style={{ backgroundImage: `url(${SkycraperBG})` }}
     >
       {/* Optional overlay to ensure text readability if needed, though the image seems to have a built-in fade */}
       <div className="absolute inset-0 bg-white/40 mix-blend-overlay z-0 pointer-events-none"></div>
       
-      <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-3xl px-6 mt-16 md:mt-0">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-3xl px-5 sm:px-6 py-28 md:py-0 mt-0 max-sm:pt-24 max-sm:pb-16">
         
-        <h1 className="flex flex-col leading-[1.05] mb-6">
-          <span className="text-[#333333] text-[clamp(3.5rem,8vw,7rem)] font-black tracking-tight">
+        <h1 className="flex flex-col leading-[1.05] mb-6 max-sm:mb-5">
+          <span className="text-[#333333] text-[clamp(2.75rem,8vw,7rem)] font-black tracking-tight">
             Sectors 
           </span>
-          <span className="text-[#E6A2A9] text-[clamp(3.5rem,8vw,7rem)] font-black tracking-tight -mt-2" style={{
+          <span className="text-[#E6A2A9] text-[clamp(2.75rem,8vw,7rem)] font-black tracking-tight -mt-2" style={{
                   fontFamily: "var(--font-cursive)",
                   fontWeight: 400,
                   letterSpacing: "0.02em",
@@ -27,14 +27,14 @@ const IndustriesHero: React.FC = () => {
           </span>
         </h1>
 
-        <p className="text-[#666666] text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl font-medium mb-10">
+        <p className="text-[#666666] text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl font-medium mb-8 md:mb-10 max-sm:mb-7 max-sm:text-[14.5px] max-sm:leading-[1.7]">
           We deliver tailored strategic guidance and<br className="hidden md:block"/>
           professional development across diverse sectors,<br className="hidden md:block"/>
           ensuring our clients stay ahead in an<br className="hidden md:block"/>
           ever-evolving global economy.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center gap-6">
+        <div className="flex flex-col sm:flex-row items-center gap-6 max-sm:w-full max-sm:gap-2">
           <Link to="/contact" className="bg-[#E6A2A9] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-lg hover:bg-[#c9878a] transition-colors w-full sm:w-auto shadow-md text-center block">
             Request a Consultation
           </Link>

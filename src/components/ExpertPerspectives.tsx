@@ -155,7 +155,7 @@ const ArticleCard = ({ item, onOpen }: { item: Article; onOpen: (article: Articl
   <button
     type="button"
     onClick={() => onOpen(item)}
-    className="group relative w-full overflow-hidden rounded-[28px] min-h-[420px] text-left shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_60px_rgba(0,0,0,0.14)]"
+    className="group relative w-full overflow-hidden rounded-[24px] md:rounded-[28px] min-h-[340px] sm:min-h-[420px] text-left shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_60px_rgba(0,0,0,0.14)] max-sm:min-h-[21rem] max-sm:w-[80vw] max-sm:max-w-[20rem] max-sm:shrink-0 max-sm:snap-center max-sm:rounded-2xl"
   >
     <img
       src={item.image}
@@ -164,7 +164,7 @@ const ArticleCard = ({ item, onOpen }: { item: Article; onOpen: (article: Articl
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
     <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
-      <span className="mb-3 inline-block rounded-full border border-white/30 bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm">
+      <span className="mb-3 inline-block rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm">
         {item.meta}
       </span>
       <h3 className="text-2xl font-bold leading-tight text-white md:text-[2rem]">
@@ -209,7 +209,7 @@ const ExpertPerspectives: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 max-sm:flex max-sm:gap-4 max-sm:-mx-6 max-sm:px-6 max-sm:pb-3 max-sm:overflow-x-auto max-sm:snap-x max-sm:snap-mandatory max-sm:scrollbar-hide">
           {ARTICLES.map((article) => (
             <ArticleCard key={article.id} item={article} onOpen={setSelectedArticle} />
           ))}
@@ -218,29 +218,29 @@ const ExpertPerspectives: React.FC = () => {
 
       {selectedArticle && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm max-sm:p-3"
           onClick={() => setSelectedArticle(null)}
         >
           <div
-            className="relative max-h-[90vh] w-full max-w-3xl overflow-hidden rounded-[28px] bg-white shadow-2xl"
+            className="relative max-h-[90vh] w-full max-w-3xl overflow-hidden rounded-[28px] bg-white shadow-2xl max-sm:max-h-[88dvh] max-sm:rounded-2xl"
             onClick={(event) => event.stopPropagation()}
           >
             <button
               type="button"
               aria-label="Close article"
               onClick={() => setSelectedArticle(null)}
-              className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-xl font-bold text-[#333333] shadow-lg transition-opacity hover:opacity-80"
+              className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-xl font-bold text-[#333333] shadow-lg transition-opacity hover:opacity-80 max-sm:h-11 max-sm:w-11"
             >
               ×
             </button>
 
-            <div className="max-h-[90vh] overflow-y-auto">
-              <div className="relative h-64 w-full overflow-hidden md:h-80">
+            <div className="max-h-[90dvh] overflow-y-auto max-sm:max-h-[88dvh] overscroll-contain">
+              <div className="relative h-48 w-full overflow-hidden sm:h-64 md:h-80">
                 <img src={selectedArticle.image} alt={selectedArticle.title} className="h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
               </div>
 
-              <div className="p-6 md:p-8">
+              <div className="p-5 sm:p-6 md:p-8 max-sm:p-4 max-sm:pt-5">
                 <div className="mb-4 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#666666]">
                   <span className="rounded-full bg-[#F4C8CC] px-3 py-1 text-[#333333]">{selectedArticle.category}</span>
                   <span>{selectedArticle.meta}</span>
